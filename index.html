@@ -1,7 +1,4 @@
-#pyinstaller --noconsole --onefile --add-data "index.html;." app.py
-
-
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +10,7 @@
             background-color: #f7f9fc;
             color: #333;
             margin: 0;
-            padding: 0;
+            padding: 0; /* pyinstaller --noconsole --onefile --add-data "index.html;." app.py */
         }
         header {
             background-color: #ffffff;
@@ -75,6 +72,10 @@
             transform-style: preserve-3d;
             cursor: pointer;
             touch-action: pan-y; /* Cho phép cuộn dọc, chặn cuộn ngang khi vuốt trên mobile */
+            -webkit-user-select: none; /* Ngăn bôi đen văn bản trên iOS/Android */
+            user-select: none;
+            -webkit-touch-callout: none; /* Ngăn hiện menu popup khi ấn giữ */
+            -webkit-tap-highlight-color: transparent; /* Xóa chớp màu xanh khi chạm */
         }
         .card.is-flipped {
             transform: rotateY(180deg);
@@ -94,6 +95,7 @@
             padding: 2rem;
             box-sizing: border-box;
             text-align: center;
+            -webkit-user-select: none;
             user-select: none;
             word-break: break-word;
         }
@@ -643,8 +645,11 @@
             flashcard.style.boxShadow = '';
         }
 
+        let lastTouchTime = 0;
+
         // Sự kiện hỗ trợ cảm ứng (Mobile)
         flashcard.addEventListener('touchstart', e => {
+            lastTouchTime = Date.now();
             startDrag(e.touches[0].clientX);
         }, {passive: true});
         flashcard.addEventListener('touchmove', e => {
@@ -656,6 +661,7 @@
 
         // Sự kiện kéo (Desktop)
         flashcard.addEventListener('mousedown', e => {
+            if (Date.now() - lastTouchTime < 500) return; // Chặn "click ảo" của chuột khi vừa chạm ngón tay
             startDrag(e.clientX);
         });
         document.addEventListener('mousemove', e => {
