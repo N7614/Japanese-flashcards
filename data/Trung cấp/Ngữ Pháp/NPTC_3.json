@@ -1,0 +1,310 @@
+[
+  {
+    "name": "インタビューする",
+    "mean": "phỏng vấn"
+  },
+  {
+    "name": "担当する_たんとうする",
+    "mean": "phụ trách, chịu trách nhiệm"
+  },
+  {
+    "name": "アルバイト先_アルバイトさき",
+    "mean": "chỗ làm thêm"
+  },
+  {
+    "name": "~先_〜さき",
+    "mean": "chỗ, nơi"
+  },
+  {
+    "name": "店長_てんちょう",
+    "mean": "cửa hàng trưởng"
+  },
+  {
+    "name": "研修_けんしゅう",
+    "mean": "đào tạo"
+  },
+  {
+    "name": "話し合う_はなしあう",
+    "mean": "thảo luận, trao đổi ý kiến với nhau"
+  },
+  {
+    "name": "通勤する_つうきんする",
+    "mean": "đi làm"
+  },
+  {
+    "name": "これまで",
+    "mean": "cho đến nay"
+  },
+  {
+    "name": "減らす_へらす",
+    "mean": "giảm"
+  },
+  {
+    "name": "引っ越す_ひっこす",
+    "mean": "chuyển (nhà)"
+  },
+  {
+    "name": "~か国_ かこく",
+    "mean": "(số) nước"
+  },
+  {
+    "name": "家庭_かてい",
+    "mean": "gia đình"
+  },
+  {
+    "name": "事情_じじょう",
+    "mean": "hoàn cảnh, lí do"
+  },
+  {
+    "name": "幼稚園_ようちえん",
+    "mean": "trường mẫu giáo"
+  },
+  {
+    "name": "昼寝する_ひるねする",
+    "mean": "ngủ trưa"
+  },
+  {
+    "name": "帰国する_きこくする",
+    "mean": "về nước"
+  },
+  {
+    "name": "来社_らいしゃ",
+    "mean": "đến thăm (công ty/văn phòng)"
+  },
+  {
+    "name": "新製品_しんせいひん",
+    "mean": "sản phẩm mới"
+  },
+  {
+    "name": "新~_しん〜",
+    "mean": "tân ~, ~ mới"
+  },
+  {
+    "name": "発表会_はっぴょうかい",
+    "mean": "buổi giới thiệu, buổi ra mắt"
+  },
+  {
+    "name": "いつまでも",
+    "mean": "mãi"
+  },
+  {
+    "name": "景気_けいき",
+    "mean": "tình trạng nền kinh tế, tình trạng kinh doanh"
+  },
+  {
+    "name": "これ以上_これいじょう",
+    "mean": "hơn thế này nữa"
+  },
+  {
+    "name": "森_もり",
+    "mean": "rừng"
+  },
+  {
+    "name": "受ける [インタビューを~]_うける",
+    "mean": "bị phỏng vấn, trả lời [phỏng vấn]"
+  },
+  {
+    "name": "要望_ようぼう",
+    "mean": "yêu cầu, nguyện vọng"
+  },
+  {
+    "name": "本当は_ほんとうは",
+    "mean": "thực ra"
+  },
+  {
+    "name": "おとなしい",
+    "mean": "hiền, ngoan"
+  },
+  {
+    "name": "声[市民の~]_こえ [しみんの~]",
+    "mean": "tiếng nói, ý kiến [của người dân]"
+  },
+  {
+    "name": "しゃべる",
+    "mean": "nói chuyện"
+  },
+  {
+    "name": "振る [彼女を~]_ふる [かのじょを~]",
+    "mean": "bỏ, đá [bạn gái]"
+  },
+  {
+    "name": "Tシャツ_ティーシャツ",
+    "mean": "áo phông, áo bull"
+  },
+  {
+    "name": "数_かず",
+    "mean": "số"
+  },
+  {
+    "name": "切る [電話を~]_きる [でんわを~]",
+    "mean": "cắt, ngắt, cúp [điện thoại]"
+  },
+  {
+    "name": "秘書_ひしょ",
+    "mean": "thư kí"
+  },
+  {
+    "name": "教授_きょうじゅ",
+    "mean": "giáo sư"
+  },
+  {
+    "name": "わざわざ",
+    "mean": "chủ ý, chiếu cố, cố công"
+  },
+  {
+    "name": "取る[時間を~]_とる [じかんを~]",
+    "mean": "dành [thời gian]"
+  },
+  {
+    "name": "できれば",
+    "mean": "nếu được, nếu có thể"
+  },
+  {
+    "name": "変更する_へんこうする",
+    "mean": "thay đổi"
+  },
+  {
+    "name": "急用_きゅうよう",
+    "mean": "việc gấp, việc đột xuất"
+  },
+  {
+    "name": "気にする_きにする",
+    "mean": "để tâm, bận tâm"
+  },
+  {
+    "name": "取引先_とりひきさき",
+    "mean": "khách hàng, đối tác"
+  },
+  {
+    "name": "学生用_がくせいよう",
+    "mean": "dành cho sinh viên"
+  },
+  {
+    "name": "~用[学生~]_~よう [가くせい~]",
+    "mean": "dành cho [sinh viên]"
+  },
+  {
+    "name": "コンピューター室_コンピューターしつ",
+    "mean": "phòng máy tính"
+  },
+  {
+    "name": "~室_~しつ",
+    "mean": "phòng ~"
+  },
+  {
+    "name": "渋滞_じゅうたい",
+    "mean": "(giao thông) tắc nghẽn, kẹt xe"
+  },
+  {
+    "name": "瞬間_しゅんかん",
+    "mean": "khoảnh khắc"
+  },
+  {
+    "name": "意識_いしき",
+    "mean": "ý thức"
+  },
+  {
+    "name": "アンケート",
+    "mean": "bản điều tra, phiếu điều tra"
+  },
+  {
+    "name": "調査_ちょうさ",
+    "mean": "điều tra"
+  },
+  {
+    "name": "傾向_けいこう",
+    "mean": "khuynh hướng, xu hướng"
+  },
+  {
+    "name": "避ける_さける",
+    "mean": "tránh"
+  },
+  {
+    "name": "悲観적[な]_ひかんてき [な]",
+    "mean": "bi quan"
+  },
+  {
+    "name": "グラフ",
+    "mean": "biểu đồ"
+  },
+  {
+    "name": "時_とき",
+    "mean": "thời gian"
+  },
+  {
+    "name": "最高に_さいこうに",
+    "mean": "nhất, tột đỉnh"
+  },
+  {
+    "name": "もう一つ_もうひとつ",
+    "mean": "thêm một cái nữa, thêm một điều nữa"
+  },
+  {
+    "name": "あいだ",
+    "mean": "trong lúc"
+  },
+  {
+    "name": "前者_ぜんしゃ",
+    "mean": "điều ở trước, cái ở trước"
+  },
+  {
+    "name": "後者_こうしゃ",
+    "mean": "điều ở sau, cái ở sau"
+  },
+  {
+    "name": "やはり",
+    "mean": "nói gì thì nói, rõ ràng là"
+  },
+  {
+    "name": "恋_こい",
+    "mean": "tình yêu"
+  },
+  {
+    "name": "幸せ_しあわせ",
+    "mean": "hạnh phúc"
+  },
+  {
+    "name": "感じる_かんじる",
+    "mean": "cảm nhận, cảm thấy"
+  },
+  {
+    "name": "寝坊する_ねぼうする",
+    "mean": "ngủ quên"
+  },
+  {
+    "name": "危険_きけん",
+    "mean": "nguy hiểm"
+  },
+  {
+    "name": "寝顔_ねがお",
+    "mean": "khuôn mặt lúc ngủ"
+  },
+  {
+    "name": "お電話、代わりました。",
+    "mean": "Alô, tôi nghe."
+  },
+  {
+    "name": "どうかしましたか。",
+    "mean": "Có vấn đề gì xảy ra với anh/ chị à?"
+  },
+  {
+    "name": "わざわざ~ていただいたのに、",
+    "mean": "Anh/ chị đã chủ ý ~ cho tôi, vậy mà..."
+  },
+  {
+    "name": "困りましたね。",
+    "mean": "Gay nhỉ."
+  },
+  {
+    "name": "できれば、〜ていただけないでしょうか。",
+    "mean": "Nếu có thể, xin anh/ chị ~ giúp tôi có được không?"
+  },
+  {
+    "name": "おいでください。",
+    "mean": "Hãy đến."
+  },
+  {
+    "name": "申し訳ありませんでした。",
+    "mean": "Tôi rất lấy làm xin lỗi."
+  }
+]

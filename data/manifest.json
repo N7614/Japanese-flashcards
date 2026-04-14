@@ -12,6 +12,16 @@
                 "id": "Trung cấp_Ngữ Pháp_NPTC_2",
                 "name": "NPTC 2",
                 "path": "data/Trung cấp/Ngữ Pháp/NPTC_2.json"
+            },
+            {
+                "id": "Trung cấp_Ngữ Pháp_NPTC_3",
+                "name": "NPTC 3",
+                "path": "data/Trung cấp/Ngữ Pháp/NPTC_3.json"
+            },
+            {
+                "id": "Trung cấp_Ngữ Pháp_NPTC_4",
+                "name": "NPTC 4",
+                "path": "data/Trung cấp/Ngữ Pháp/NPTC_4.json"
             }
         ]
     }

@@ -1,0 +1,346 @@
+[
+  {
+    "name": "検査する_けんさする",
+    "mean": "kiểm tra"
+  },
+  {
+    "name": "明日_あす",
+    "mean": "ngày mai"
+  },
+  {
+    "name": "能力_のうりょく",
+    "mean": "năng lực"
+  },
+  {
+    "name": "バザー",
+    "mean": "chợ bán hàng cũ"
+  },
+  {
+    "name": "マスク",
+    "mean": "khẩu trang, mặt nạ"
+  },
+  {
+    "name": "スーツケース",
+    "mean": "va li"
+  },
+  {
+    "name": "目が覚める_めがさめる",
+    "mean": "tỉnh giấc"
+  },
+  {
+    "name": "朝礼_ちょうれい",
+    "mean": "lễ tập trung buổi sáng, giao ban công việc buổi sáng"
+  },
+  {
+    "name": "校歌_こうか",
+    "mean": "bài hát truyền thống của trường"
+  },
+  {
+    "name": "敬語_けいご",
+    "mean": "kính ngữ"
+  },
+  {
+    "name": "感想文_かんそうぶん",
+    "mean": "bài văn trình bày cảm tưởng"
+  },
+  {
+    "name": "運動場_うんどうじょう",
+    "mean": "sân tập thể dục thể thao, sân vận động"
+  },
+  {
+    "name": "いたずら",
+    "mean": "nghịch ngợm"
+  },
+  {
+    "name": "美しい_うつくしい",
+    "mean": "đẹp"
+  },
+  {
+    "name": "世紀_せいき",
+    "mean": "thế kỷ"
+  },
+  {
+    "name": "平和[な]_へいわ [な]",
+    "mean": "hòa bình"
+  },
+  {
+    "name": "人々_ひとびと",
+    "mean": "mọi người"
+  },
+  {
+    "name": "願う_ねがう",
+    "mean": "mong muốn, cầu mong"
+  },
+  {
+    "name": "文_ぶん",
+    "mean": "câu, kiểu câu"
+  },
+  {
+    "name": "書き換える_かきかえる",
+    "mean": "viết lại thành"
+  },
+  {
+    "name": "合わせる_あわせる",
+    "mean": "kết hợp, ghép lại"
+  },
+  {
+    "name": "もともt",
+    "mean": "vốn, vốn dĩ"
+  },
+  {
+    "name": "若者_わかもの",
+    "mean": "người trẻ tuổi"
+  },
+  {
+    "name": "~湖_~こ",
+    "mean": "hồ~"
+  },
+  {
+    "name": "深い_ふかい",
+    "mean": "sâu"
+  },
+  {
+    "name": "さまざま [な]_さまざま [な]",
+    "mean": "nhiều, đa dạng"
+  },
+  {
+    "name": "苦しい [生活が~]_くるしい [せいかつが~]",
+    "mean": "vất vả [cuộc sống ~]"
+  },
+  {
+    "name": "性格_せいかく",
+    "mean": "tính cách"
+  },
+  {
+    "name": "人気者_にんきもの",
+    "mean": "người được yêu thích, người được hâm mộ"
+  },
+  {
+    "name": "多く_おおく",
+    "mean": "nhiều"
+  },
+  {
+    "name": "不安[な]_ふあん [な]",
+    "mean": "bất an, lo lắng"
+  },
+  {
+    "name": "出る [製品が~]_でる [せいひんが~]",
+    "mean": "[sản phẩm] ra thị trường, được bày bán"
+  },
+  {
+    "name": "雷_かみなり",
+    "mean": "sấm sét"
+  },
+  {
+    "name": "うち",
+    "mean": "chúng tôi"
+  },
+  {
+    "name": "残念 [な]_ざんねん [な]",
+    "mean": "tiếc"
+  },
+  {
+    "name": "認める_みとめる",
+    "mean": "thừa nhận, chấp nhận"
+  },
+  {
+    "name": "現実_げんじつ",
+    "mean": "thực tế"
+  },
+  {
+    "name": "愛する_あいする",
+    "mean": "yêu"
+  },
+  {
+    "name": "首都_しゅと",
+    "mean": "thủ đô"
+  },
+  {
+    "name": "伝言_でんごん",
+    "mean": "lời nhắn, tin nhắn để lại"
+  },
+  {
+    "name": "留守番電話_るすばんでんわ",
+    "mean": "hộp thư thoại"
+  },
+  {
+    "name": "メッセージ",
+    "mean": "tin nhắn"
+  },
+  {
+    "name": "受ける [伝言を~]_うける [でんごんを~]",
+    "mean": "nhận [một tin nhắn]"
+  },
+  {
+    "name": "入れる [メッセージを~]_いれる",
+    "mean": "để lại [một tin nhắn]"
+  },
+  {
+    "name": "差し上げる [電話を~]_さしあげる [でんわを~]",
+    "mean": "gọi [một cuộc gọi]"
+  },
+  {
+    "name": "そのように",
+    "mean": "như thế"
+  },
+  {
+    "name": "出る [電話に~]_でる [でんわに~]",
+    "mean": "trả lời [điện thoại]"
+  },
+  {
+    "name": "急[な]_きゅう [な]",
+    "mean": "gấp"
+  },
+  {
+    "name": "入る [仕事が~]_はいる [しごとが~]",
+    "mean": "có [công việc]"
+  },
+  {
+    "name": "取り消す_とりけす",
+    "mean": "hủy"
+  },
+  {
+    "name": "来客中_らいきゃくちゅう",
+    "mean": "đang có khách, đang tiếp khách"
+  },
+  {
+    "name": "食パン_しょくパン",
+    "mean": "bánh mì gối"
+  },
+  {
+    "name": "売り切れ_うりきれ",
+    "mean": "hết hàng"
+  },
+  {
+    "name": "バーゲンセール",
+    "mean": "bán giảm giá"
+  },
+  {
+    "name": "案内状_あんないじょう",
+    "mean": "giấy mời, thư mời"
+  },
+  {
+    "name": "~状 [招待~]_~じょう",
+    "mean": "thư, thiệp, giấy [mời]"
+  },
+  {
+    "name": "遠い [電話が~]_とおい [でんわが~]",
+    "mean": "nghe không rõ [tiếng trên điện thoại]"
+  },
+  {
+    "name": "~嫌い_~ぎらい",
+    "mean": "ghét, không thích"
+  },
+  {
+    "name": "時代_じだい",
+    "mean": "thời đại, thời kỳ"
+  },
+  {
+    "name": "順に_じゅんに",
+    "mean": "lần lượt, theo thứ tự"
+  },
+  {
+    "name": "失礼 [な]_しつれい [な]",
+    "mean": "thất lễ"
+  },
+  {
+    "name": "勧める_すすめる",
+    "mean": "tiến cử, giới thiệu"
+  },
+  {
+    "name": "腹を立てる_はらをたてる",
+    "mean": "nổi cáu, tức giận"
+  },
+  {
+    "name": "味わう_あじわう",
+    "mean": "thưởng thức"
+  },
+  {
+    "name": "つなぐ",
+    "mean": "nắm (tay), nối (dây)"
+  },
+  {
+    "name": "エピソード",
+    "mean": "câu chuyện, giai thoại"
+  },
+  {
+    "name": "大嫌い_だいきらい",
+    "mean": "rất ghét"
+  },
+  {
+    "name": "大~ [好き/嫌い]_だい〜 [すき/きらい]",
+    "mean": "rất, cực [thích/ghét]"
+  },
+  {
+    "name": "しつこい",
+    "mean": "cứng đầu, ngoan cố, bướng bỉnh"
+  },
+  {
+    "name": "全員_ぜんいん",
+    "mean": "tất cả mọi người"
+  },
+  {
+    "name": "数日_すうじつ",
+    "mean": "vài ngày"
+  },
+  {
+    "name": "親せき_しんせき",
+    "mean": "họ hàng, người họ hàng"
+  },
+  {
+    "name": "接続する_せつぞくする",
+    "mean": "kết nối"
+  },
+  {
+    "name": "申し出る_もうしでる",
+    "mean": "đề nghị"
+  },
+  {
+    "name": "結局_けっきょく",
+    "mean": "kết cục, cuối cùng"
+  },
+  {
+    "name": "早速_さっそく",
+    "mean": "ngay, lập tức"
+  },
+  {
+    "name": "そば",
+    "mean": "bên cạnh"
+  },
+  {
+    "name": "取り付ける_とりつける",
+    "mean": "lắp đặt"
+  },
+  {
+    "name": "出席者_しゅっせきしゃ",
+    "mean": "người tham dự"
+  },
+  {
+    "name": "料金_りょうきん",
+    "mean": "phí"
+  },
+  {
+    "name": "いつもお世話になっております。",
+    "mean": "Cám ơn anh/chị lúc nào cũng hỗ trợ chúng tôi."
+  },
+  {
+    "name": "あいにく･･････。",
+    "mean": "Chẳng may,"
+  },
+  {
+    "name": "恐れ入りますが、………………。",
+    "mean": "Tôi xin lỗi, nhưng"
+  },
+  {
+    "name": "このままでよろしければ・",
+    "mean": "Nếu y như thế này mà thấy ổn rồi thì"
+  },
+  {
+    "name": "ただいまのメッセージをお預かりしました。",
+    "mean": "Tin nhắn của bạn đã được lưu lại,"
+  },
+  {
+    "name": "ごめん。",
+    "mean": "Xin lỗi."
+  }
+]
