@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Từ Vựng Flashcard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-btn {
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border: 2px solid #007bff;
+            background: transparent;
+            color: #007bff;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+        .nav-btn.active, .nav-btn:hover {
+            background: #007bff;
+            color: #ffffff;
+        }
+        .view {
+            display: none;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .view.active-view {
+            display: block;
+        }
+        
+        /* Cấu trúc Flashcard */
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .card-container {
+            perspective: 1000px;
+            width: 350px;
+            height: 250px;
+            max-width: 90vw;
+            transition: transform 0.3s ease;
+        }
+        .card-container.dragging {
+            transition: none;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+            touch-action: pan-y; /* Cho phép cuộn dọc, chặn cuộn ngang khi vuốt trên mobile */
+        }
+        .card.is-flipped {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+            user-select: none;
+            word-break: break-word;
+        }
+        .card-back {
+            transform: rotateY(180deg);
+            background: #e3f2fd;
+            color: #0d47a1;
+            font-size: 1.3rem;
+        }
+        
+        /* Cấu trúc nút bấm */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .controls button {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.1s;
+        }
+        .controls button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn-danger { background-color: #ff5252; }
+        .btn-success { background-color: #4caf50; }
+        .tip-text {
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* Danh sách từ vựng */
+        .list-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            background: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            align-items: center;
+        }
+        .list-controls select {
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .btn-reset {
+            margin-left: auto;
+            padding: 0.6rem 1rem;
+            background: #ff5252;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-reset:hover {
+            background: #e04848;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            min-width: 600px;
+        }
+        th, td {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f3f5;
+            color: #333;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        /* Thư viện (Cây danh sách) */
+        .tree-container {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .tree-container ul { list-style: none; padding-left: 25px; }
+        .tree-container > ul { padding-left: 0; }
+        .tree-container li { margin: 0.8rem 0; }
+        .tree-container label { cursor: pointer; margin-left: 0.5rem; font-size: 1.1rem; }
+        .tree-container input[type="checkbox"] { transform: scale(1.2); cursor: pointer; }
+        
+        .btn-load {
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+            background-color: #007bff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.1s, background-color 0.2s;
+        }
+        .btn-load:active { transform: translateY(2px); box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .btn-load:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="btn-library" class="nav-btn active">Thư Viện</button>
+        <button id="btn-learn" class="nav-btn">Học Từ Vựng</button>
+        <button id="btn-list" class="nav-btn">Danh Sách</button>
+    </header>
+
+    <!-- Giao diện Thư Viện -->
+    <main id="view-library" class="view active-view">
+        <h2 style="text-align: center; color: #007bff;">Chọn Gói Từ Vựng</h2>
+        <div class="tree-container" id="library-tree">
+            <!-- Cây danh sách sẽ được tạo bằng Javascript -->
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <button id="btn-load" class="btn-load">Tải & Bắt Đầu Học</button>
+        </div>
+    </main>
+
+    <!-- Giao diện Học -->
+    <main id="view-learn" class="view">
+        <div class="card-wrapper">
+            <div class="card-container">
+                <div class="card" id="flashcard">
+                    <div class="card-front" id="card-front">Đang tải...</div>
+                    <div class="card-back" id="card-back">Đang tải...</div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="btn-forget" class="btn-danger">❮ Quên (-1)</button>
+            <button id="btn-remember" class="btn-success">Nhớ (+1) ❯</button>
+        </div>
+        <p class="tip-text">💡 Nhấn vào thẻ để lật. Vuốt/kéo thẻ sang trái để đánh dấu Quên, sang phải để đánh dấu Nhớ.</p>
+    </main>
+
+    <!-- Giao diện Danh sách -->
+    <main id="view-list" class="view">
+        <div class="list-controls">
+            <label>Sắp xếp:
+                <select id="sort-select">
+                    <option value="default">Thứ tự gốc</option>
+                    <option value="score-desc">Điểm giảm dần</option>
+                    <option value="score-asc">Điểm tăng dần</option>
+                </select>
+            </label>
+            <label>Lọc:
+                <select id="filter-select">
+                    <option value="all">Tất cả</option>
+                    <option value="positive">Điểm dương (> 0)</option>
+                    <option value="negative">Điểm âm (< 0)</option>
+                </select>
+            </label>
+            <button id="btn-reset" class="btn-reset">Đặt lại toàn bộ điểm</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 50px; text-align: center;">STT</th>
+                        <th>Từ vựng</th>
+                        <th>Nghĩa</th>
+                        <th>Nguồn</th>
+                        <th style="width: 80px; text-align: center;">Điểm</th>
+                    </tr>
+                </thead>
+                <tbody id="vocab-tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        let vocabData = [];
+        let queue = [];
+        let currentWord = null;
+        let isAnimating = false;
+
+        const viewLearn = document.getElementById('view-learn');
+        const viewList = document.getElementById('view-list');
+        const btnLearn = document.getElementById('btn-learn');
+        const btnList = document.getElementById('btn-list');
+        const flashcard = document.getElementById('flashcard');
+        const cardContainer = document.querySelector('.card-container');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.pywebview) {
+                initLibrary();
+            } else {
+                window.addEventListener('pywebviewready', initLibrary);
+                // Fallback nếu không chạy trong app Desktop
+                setTimeout(() => {
+                    if (!window.pywebview) initLibrary();
+                }, 1500); // Tăng thời gian chờ lên 1.5s
+            }
+        });
+
+        async function initLibrary() {
+            let dataManifest = [];
+            // Nếu mở trên phần mềm máy tính (Electron)
+            if (window.electronAPI) {
+                dataManifest = await window.electronAPI.getVocabManifest();
+            } else if (window.pywebview && window.pywebview.api) {
+                // Nếu mở bằng ứng dụng Python
+                dataManifest = await window.pywebview.api.getVocabManifest();
+            } else {
+                // Nếu mở trên điện thoại / trình duyệt web (GitHub Pages)
+                try {
+                    const response = await fetch('data/manifest.json');
+                    if (response.ok) {
+                        dataManifest = await response.json();
+                    }
+                } catch (error) {
+                    console.error("Lỗi khi tải manifest:", error);
+                }
+            }
+
+            const treeContainer = document.getElementById('library-tree');
+
+            // Cảnh báo nếu không tìm thấy dữ liệu
+            if (dataManifest.length === 0) {
+                treeContainer.innerHTML = `
+                    <div style="text-align: center; color: #ff5252; padding: 1rem;">
+                        <h3 style="margin-top: 0;">❌ Không tìm thấy dữ liệu!</h3>
+                        <p>Vui lòng đặt thư mục <strong>data</strong> cạnh file phần mềm (.exe), hoặc chạy file <strong>generate_manifest.py</strong> nếu dùng trên Web.</p>
+                    </div>`;
+                return;
+            }
+
+            let html = '<ul>';
+            dataManifest.forEach(folder => {
+                html += `
+                    <li>
+                        <input type="checkbox" id="folder-${folder.folder}" class="folder-checkbox" data-folder="${folder.folder}">
+                        <label for="folder-${folder.folder}"><strong>${folder.name}</strong></label>
+                        <ul>
+                `;
+                folder.files.forEach(file => {
+                    html += `
+                            <li>
+                                <input type="checkbox" id="file-${file.id}" class="file-checkbox" value="${file.path}" data-id="${file.id}" data-folder="${folder.folder}" data-name="${file.name}">
+                                <label for="file-${file.id}">${file.name}</label>
+                            </li>
+                    `;
+                });
+                html += `</ul></li>`;
+            });
+            html += '</ul>';
+            treeContainer.innerHTML = html;
+
+            // Tự động chọn/bỏ chọn checkbox con khi ấn checkbox thư mục
+            document.querySelectorAll('.folder-checkbox').forEach(cb => {
+                cb.addEventListener('change', (e) => {
+                    document.querySelectorAll(`.file-checkbox[data-folder="${e.target.dataset.folder}"]`).forEach(child => child.checked = e.target.checked);
+                });
+            });
+            
+            document.querySelectorAll('.file-checkbox').forEach(cb => {
+                cb.addEventListener('change', (e) => {
+                    const folder = e.target.dataset.folder;
+                    const all = document.querySelectorAll(`.file-checkbox[data-folder="${folder}"]`);
+                    const checked = document.querySelectorAll(`.file-checkbox[data-folder="${folder}"]:checked`);
+                    const folderCb = document.querySelector(`.folder-checkbox[data-folder="${folder}"]`);
+                    if (folderCb) {
+                        folderCb.checked = all.length === checked.length;
+                        folderCb.indeterminate = checked.length > 0 && checked.length < all.length;
+                    }
+                });
+            });
+
+            document.getElementById('btn-load').onclick = loadSelectedPacks;
+        }
+
+        async function loadSelectedPacks() {
+            const selected = Array.from(document.querySelectorAll('.file-checkbox:checked'));
+            if (selected.length === 0) return alert("Vui lòng chọn ít nhất 1 gói từ vựng!");
+
+            document.getElementById('btn-load').innerText = "Đang tải...";
+            vocabData = [];
+            
+            let fileDataMap = {};
+            const pathsToLoad = selected.map(cb => cb.value);
+
+            if (window.electronAPI) {
+                fileDataMap = await window.electronAPI.loadFiles(pathsToLoad);
+            } else if (window.pywebview && window.pywebview.api) {
+                fileDataMap = await window.pywebview.api.loadFiles(pathsToLoad);
+            }
+
+            for (let cb of selected) {
+                try {
+                    let data = null;
+
+                    if (window.electronAPI || (window.pywebview && window.pywebview.api)) {
+                        const content = fileDataMap[cb.value];
+                        if (content) data = JSON.parse(content);
+                    } else {
+                        const response = await fetch(cb.value);
+                        if (!response.ok) throw new Error('Network error');
+                        data = await response.json();
+                    }
+
+                    if (data) {
+                        const sourceId = cb.dataset.id;
+                        const saved = localStorage.getItem('vocabProgress_' + sourceId);
+                        const scores = saved ? JSON.parse(saved) : {};
+
+                        vocabData = vocabData.concat(data.map((item, index) => ({
+                            ...item,
+                            originalIndex: index,
+                            sourceId: sourceId,
+                            sourceName: cb.dataset.name,
+                            score: scores[index] !== undefined ? scores[index] : 0
+                        })));
+                    }
+                } catch (error) {
+                    console.error('Lỗi xử lý file ' + cb.value, error);
+                }
+            }
+            
+            document.getElementById('btn-load').innerText = "Tải & Bắt Đầu Học";
+            if (vocabData.length === 0) return alert("Không thể tải file! Vui lòng kiểm tra lại.");
+
+            initQueue();
+            showNextCard();
+            switchView('learn');
+        }
+
+        function saveProgress() {
+            const progress = {};
+            vocabData.forEach(w => {
+                if (!progress[w.sourceId]) progress[w.sourceId] = {};
+                progress[w.sourceId][w.originalIndex] = w.score;
+            });
+            for (let sourceId in progress) {
+                localStorage.setItem('vocabProgress_' + sourceId, JSON.stringify(progress[sourceId]));
+            }
+        }
+
+        function initQueue() {
+            queue = [...vocabData];
+            // Xáo trộn thứ tự mảng một cách ngẫu nhiên ở lượt học đầu
+            for (let i = queue.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [queue[i], queue[j]] = [queue[j], queue[i]];
+            }
+        }
+
+        function getNextWord() {
+            if (queue.length === 0) return null;
+            
+            let attempts = 0;
+            while (attempts < queue.length * 2) {
+                let word = queue.shift();
+                let show = false;
+
+                if (word.score < 0) {
+                    show = true; // Điểm âm luôn hiển thị ngay lập tức
+                } else if (word.score > 9) {
+                    show = Math.random() < 0.1; // Điểm 10 trở lên luôn có 10% xác suất xuất hiện
+                } else {
+                    // Từ 0 đến 9: Xác suất hiển thị là 100% - 10% * điểm
+                    show = Math.random() < (1 - 0.1 * word.score);
+                }
+
+                if (show) {
+                    return word;
+                } else {
+                    queue.push(word); // Chuyển về cuối hàng chờ
+                }
+                attempts++;
+            }
+            // Fallback (Tránh vòng lặp vô hạn), lấy thẻ tiếp theo
+            return queue.shift();
+        }
+
+        function showNextCard() {
+            currentWord = getNextWord();
+            if (!currentWord) return;
+            
+            flashcard.classList.remove('is-flipped'); // Loại bỏ trạng thái lật nếu đang lật
+            
+            // Render nội dung
+            document.getElementById('card-front').innerHTML = currentWord.name.split('_').join('<br>');
+            document.getElementById('card-back').innerText = currentWord.mean;
+            
+            saveProgress();
+            renderList();
+        }
+
+        // --- Xử lý sự kiện Giao diện --- //
+        document.getElementById('btn-library').addEventListener('click', () => switchView('library'));
+        btnLearn.addEventListener('click', () => switchView('learn'));
+        btnList.addEventListener('click', () => switchView('list'));
+
+        function switchView(viewName) {
+            if ((viewName === 'learn' || viewName === 'list') && vocabData.length === 0) {
+                return alert("Vui lòng chọn và tải ít nhất 1 gói từ vựng từ Thư Viện trước!");
+            }
+            document.querySelectorAll('.view').forEach(v => v.classList.remove('active-view'));
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            
+            document.getElementById('view-' + viewName).classList.add('active-view');
+            document.getElementById('btn-' + viewName).classList.add('active');
+            
+            if (viewName === 'list') renderList();
+        }
+
+        document.getElementById('btn-forget').addEventListener('click', (e) => {
+            e.stopPropagation();
+            animateAndHandleAction(-1);
+        });
+
+        document.getElementById('btn-remember').addEventListener('click', (e) => {
+            e.stopPropagation();
+            animateAndHandleAction(1);
+        });
+
+        function handleAction(scoreChange) {
+            if(!currentWord) return;
+            currentWord.score += scoreChange;
+            queue.push(currentWord); // Trả lời xong sẽ đưa thẻ về cuối hàng chờ
+            
+            // Đặt lại vị trí thẻ ngay lập tức không có hiệu ứng (ngăn thẻ trượt lùi về)
+            cardContainer.classList.add('dragging');
+            resetCardPosition();
+            void cardContainer.offsetWidth; // Ép trình duyệt cập nhật DOM
+            cardContainer.classList.remove('dragging');
+            
+            showNextCard();
+        }
+
+        async function animateAndHandleAction(scoreChange) {
+            if (!currentWord || isAnimating) return;
+            isAnimating = true; // Bắt đầu hoạt ảnh
+            
+            // Thêm hiệu ứng chuyển động và màu sắc mượt mà
+            cardContainer.classList.remove('dragging');
+            flashcard.style.transition = 'transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.2s ease';
+
+            if (scoreChange > 0) {
+                cardContainer.style.transform = `translateX(50px) rotate(5deg)`;
+                flashcard.style.boxShadow = `0 8px 16px rgba(0,0,0,0.1), 0 0 30px rgba(76, 175, 80, 0.8)`;
+            } else {
+                cardContainer.style.transform = `translateX(-50px) rotate(-5deg)`;
+                flashcard.style.boxShadow = `0 8px 16px rgba(0,0,0,0.1), 0 0 30px rgba(255, 82, 82, 0.8)`;
+            }
+
+            // Chờ 200ms để người dùng kịp nhìn thấy thẻ đổi màu và nhích đi
+            await new Promise(resolve => setTimeout(resolve, 200));
+
+            // Trả lại trạng thái transition gốc cho thẻ
+            flashcard.style.transition = '';
+            
+            handleAction(scoreChange);
+            isAnimating = false; // Kết thúc hoạt ảnh
+        }
+
+        // --- Xử lý Vuốt / Kéo chuột (Swipe) --- //
+        let startX = 0;
+        let isDragging = false;
+        let currentX = 0;
+
+        function startDrag(x) {
+            if (isAnimating) return; // Không cho phép kéo khi đang chạy animation của nút
+            startX = x;
+            isDragging = true;
+            cardContainer.classList.add('dragging');
+        }
+
+        function moveDrag(x) {
+            if (!isDragging) return;
+            currentX = x;
+            let deltaX = currentX - startX;
+            let rotate = deltaX * 0.05;
+            
+            cardContainer.style.transform = `translateX(${deltaX}px) rotate(${rotate}deg)`;
+            
+            // Hiệu ứng màu sắc: Kéo trái (Đỏ) - Kéo phải (Xanh)
+            if (deltaX > 0) {
+                let opacity = Math.min(deltaX / 100, 1);
+                flashcard.style.boxShadow = `0 8px 16px rgba(0,0,0,0.1), 0 0 30px rgba(76, 175, 80, ${opacity})`;
+            } else if (deltaX < 0) {
+                let opacity = Math.min(Math.abs(deltaX) / 100, 1);
+                flashcard.style.boxShadow = `0 8px 16px rgba(0,0,0,0.1), 0 0 30px rgba(255, 82, 82, ${opacity})`;
+            } else {
+                flashcard.style.boxShadow = '';
+            }
+        }
+
+        function endDrag(x) {
+            if (!isDragging) return;
+            isDragging = false;
+            cardContainer.classList.remove('dragging');
+            
+            let deltaX = x !== undefined ? x - startX : currentX - startX;
+            const threshold = 80; // Quãng đường kéo (px) tối thiểu để kích hoạt
+            
+            if (deltaX < -threshold) {
+                handleAction(-1); // Vuốt trái
+            } else if (deltaX > threshold) {
+                handleAction(1); // Vuốt phải
+            } else {
+                if (Math.abs(deltaX) < 10) {
+                    flashcard.classList.toggle('is-flipped'); // Chạm/Click bình thường
+                }
+                resetCardPosition(); // Trượt về vị trí cũ
+            }
+        }
+
+        function resetCardPosition() {
+            cardContainer.style.transform = '';
+            flashcard.style.boxShadow = '';
+        }
+
+        // Sự kiện hỗ trợ cảm ứng (Mobile)
+        flashcard.addEventListener('touchstart', e => {
+            startDrag(e.touches[0].clientX);
+        }, {passive: true});
+        flashcard.addEventListener('touchmove', e => {
+            moveDrag(e.touches[0].clientX);
+        }, {passive: true});
+        flashcard.addEventListener('touchend', e => {
+            endDrag(e.changedTouches[0].clientX);
+        });
+
+        // Sự kiện kéo (Desktop)
+        flashcard.addEventListener('mousedown', e => {
+            startDrag(e.clientX);
+        });
+        document.addEventListener('mousemove', e => {
+            if (isDragging) moveDrag(e.clientX);
+        });
+        document.addEventListener('mouseup', e => {
+            if (isDragging) endDrag(e.clientX);
+        });
+        // --- Phím tắt Bàn phím --- //
+        document.addEventListener('keydown', (e) => {
+            // Chỉ kích hoạt phím tắt khi đang ở màn hình học từ vựng
+            if (!viewLearn.classList.contains('active-view')) return;
+            
+            if (e.key === 'ArrowLeft') {
+                animateAndHandleAction(-1);
+            } else if (e.key === 'ArrowRight') {
+                animateAndHandleAction(1);
+            } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === ' ') {
+                e.preventDefault(); // Tránh cuộn trang
+                flashcard.classList.toggle('is-flipped');
+            }
+        });
+
+        // --- Chức năng Danh Sách Từ Vựng --- //
+        document.getElementById('sort-select').addEventListener('change', renderList);
+        document.getElementById('filter-select').addEventListener('change', renderList);
+
+        document.getElementById('btn-reset').addEventListener('click', () => {
+            if(confirm('Bạn có chắc chắn muốn đặt lại toàn bộ điểm số về 0?')) {
+                vocabData.forEach(w => w.score = 0);
+                saveProgress();
+                initQueue();
+                showNextCard();
+                renderList();
+            }
+        });
+
+        function renderList() {
+            const tbody = document.getElementById('vocab-tbody');
+            const sortVal = document.getElementById('sort-select').value;
+            const filterVal = document.getElementById('filter-select').value;
+
+            // Bộ Lọc
+            let filtered = vocabData.filter(word => {
+                if (filterVal === 'positive') return word.score > 0;
+                if (filterVal === 'negative') return word.score < 0;
+                return true;
+            });
+
+            // Sắp xếp
+            filtered.sort((a, b) => {
+                if (sortVal === 'score-asc') return a.score - b.score;
+                if (sortVal === 'score-desc') return b.score - a.score;
+                return a.originalIndex - b.originalIndex; 
+            });
+
+            // Hiển thị ra bảng
+            tbody.innerHTML = '';
+            filtered.forEach((word) => {
+                let scoreColor = word.score < 0 ? '#ff5252' : (word.score > 0 ? '#4caf50' : '#333');
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td style="text-align:center;">${word.originalIndex + 1}</td>
+                    <td style="font-weight: bold;">${word.name.split('_').join('<br>')}</td>
+                    <td>${word.mean}</td>
+                    <td><span style="background: #e9ecef; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem;">${word.sourceName}</span></td>
+                    <td style="text-align:center; font-weight:bold; color:${scoreColor}">${word.score}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+    </script>
+</body>
+</html>

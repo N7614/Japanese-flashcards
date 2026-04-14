@@ -1,0 +1,18 @@
+[
+    {
+        "folder": "Trung cấp_Ngữ Pháp",
+        "name": "Thư mục: Trung cấp / Ngữ Pháp",
+        "files": [
+            {
+                "id": "Trung cấp_Ngữ Pháp_NPTC_1",
+                "name": "NPTC 1",
+                "path": "data/Trung cấp/Ngữ Pháp/NPTC_1.json"
+            },
+            {
+                "id": "Trung cấp_Ngữ Pháp_NPTC_2",
+                "name": "NPTC 2",
+                "path": "data/Trung cấp/Ngữ Pháp/NPTC_2.json"
+            }
+        ]
+    }
+]
