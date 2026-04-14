@@ -502,12 +502,18 @@
             currentWord = getNextWord();
             if (!currentWord) return;
             
-            flashcard.classList.remove('is-flipped'); // Loại bỏ trạng thái lật nếu đang lật
+            // Tắt hiệu ứng lật tạm thời để thẻ úp lại ngay lập tức (không bị lộ chữ)
+            flashcard.style.transition = 'none';
+            flashcard.classList.remove('is-flipped');flashcard.classList.remove('is-flipped'); // Loại bỏ trạng thái lật nếu đang lật
             
             // Render nội dung
             document.getElementById('card-front').innerHTML = currentWord.name.split('_').join('<br>');
             document.getElementById('card-back').innerText = currentWord.mean;
             
+            // Ép trình duyệt cập nhật thay đổi ngay lập tức, sau đó khôi phục hiệu ứng lật
+            void flashcard.offsetWidth;
+            flashcard.style.transition = '';
+
             saveProgress();
             renderList();
         }
