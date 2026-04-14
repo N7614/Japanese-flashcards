@@ -1,3 +1,6 @@
+#pyinstaller --noconsole --onefile --add-data "index.html;." app.py
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -579,11 +582,14 @@
         let startX = 0;
         let isDragging = false;
         let currentX = 0;
+        let isSwiping = false; // Thêm cờ để phân biệt chạm và vuốt
 
         function startDrag(x) {
             if (isAnimating) return; // Không cho phép kéo khi đang chạy animation của nút
             startX = x;
+            currentX = x; // Reset lại vị trí
             isDragging = true;
+            isSwiping = false; // Mặc định là đang chạm (chưa vuốt)
             cardContainer.classList.add('dragging');
         }
 
@@ -591,6 +597,11 @@
             if (!isDragging) return;
             currentX = x;
             let deltaX = currentX - startX;
+            
+            if (Math.abs(deltaX) > 15) {
+                isSwiping = true; // Nếu trượt tay quá 15px thì tính là đang vuốt
+            }
+
             let rotate = deltaX * 0.05;
             
             cardContainer.style.transform = `translateX(${deltaX}px) rotate(${rotate}deg)`;
@@ -620,7 +631,7 @@
             } else if (deltaX > threshold) {
                 handleAction(1); // Vuốt phải
             } else {
-                if (Math.abs(deltaX) < 10) {
+                if (!isSwiping) {
                     flashcard.classList.toggle('is-flipped'); // Chạm/Click bình thường
                 }
                 resetCardPosition(); // Trượt về vị trí cũ
