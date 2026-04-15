@@ -154,6 +154,18 @@
             border-radius: 4px;
             border: 1px solid #ccc;
         }
+        .btn-sort {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            border: 1px solid #007bff;
+            background: #fff;
+            color: #007bff;
+            cursor: pointer;
+            font-weight: bold;
+            min-width: 200px;
+            text-align: left;
+        }
+        .btn-sort:hover { background: #e3f2fd; }
         .btn-reset {
             margin-left: auto;
             padding: 0.6rem 1rem;
@@ -256,18 +268,15 @@
             <button id="btn-remember" class="btn-success">Nhớ ❯</button>
         </div>
         <p class="tip-text">💡 Nhấn vào thẻ để lật. Vuốt/kéo thẻ sang trái để đánh dấu Quên, sang phải để đánh dấu Nhớ.</p>
-    </main>
+        <div style="text-align: center; margin-top: 1rem;">
+            <button id="btn-counter" style="padding: 0.5rem 1.5rem; border-radius: 20px; border: 1px solid #ccc; background: transparent; cursor: pointer; color: #666; font-size: 0.9rem; transition: background 0.2s;">Số thẻ đã học</button>
+        </div>
+    </main> 
 
     <!-- Giao diện Danh sách -->
     <main id="view-list" class="view">
         <div class="list-controls">
-            <label>Sắp xếp:
-                <select id="sort-select">
-                    <option value="default">Thứ tự gốc</option>
-                    <option value="score-desc">Điểm giảm dần</option>
-                    <option value="score-asc">Điểm tăng dần</option>
-                </select>
-            </label>
+            <button id="btn-sort" class="btn-sort">Sắp xếp: Thứ tự gốc</button>
             <label>Lọc:
                 <select id="filter-select">
                     <option value="all">Tất cả</option>
@@ -299,6 +308,11 @@
         let queue = [];
         let currentWord = null;
         let isAnimating = false;
+        let studiedCount = 0;
+        let isCounterRevealed = false;
+        let currentSortState = 'default';
+        const sortStates = ['default', 'score-desc', 'score-asc'];
+        const sortLabels = ['Sắp xếp: Thứ tự gốc', 'Sắp xếp: Điểm giảm dần', 'Sắp xếp: Điểm tăng dần'];
 
         const viewLearn = document.getElementById('view-learn');
         const viewList = document.getElementById('view-list');
@@ -404,6 +418,11 @@
             
             let fileDataMap = {};
             const pathsToLoad = selected.map(cb => cb.value);
+            
+            studiedCount = 0;
+            isCounterRevealed = false;
+            document.getElementById('btn-counter').innerText = "Số thẻ đã học";
+            let globalIndexCount = 0; // Biến đánh số thứ tự liên tục
 
             if (window.electronAPI) {
                 fileDataMap = await window.electronAPI.loadFiles(pathsToLoad);
@@ -432,6 +451,7 @@
                         vocabData = vocabData.concat(data.map((item, index) => ({
                             ...item,
                             originalIndex: index,
+                            displayIndex: globalIndexCount++,
                             sourceId: sourceId,
                             sourceName: cb.dataset.name,
                             score: scores[index] !== undefined ? scores[index] : 0
@@ -549,6 +569,10 @@
         function handleAction(scoreChange) {
             if(!currentWord) return;
             currentWord.score += scoreChange;
+            studiedCount++;
+            if (isCounterRevealed) {
+                document.getElementById('btn-counter').innerText = `Đã học: ${studiedCount} thẻ`;
+            }
             queue.push(currentWord); // Trả lời xong sẽ đưa thẻ về cuối hàng chờ
             
             // Đặt lại vị trí thẻ ngay lập tức không có hiệu ứng (ngăn thẻ trượt lùi về)
@@ -692,7 +716,19 @@
         });
 
         // --- Chức năng Danh Sách Từ Vựng --- //
-        document.getElementById('sort-select').addEventListener('change', renderList);
+        document.getElementById('btn-counter').addEventListener('click', (e) => {
+            isCounterRevealed = true;
+            e.target.innerText = `Đã học: ${studiedCount} thẻ`;
+            e.target.style.background = '#e3f2fd';
+        });
+
+        document.getElementById('btn-sort').addEventListener('click', (e) => {
+            let idx = sortStates.indexOf(currentSortState);
+            idx = (idx + 1) % sortStates.length;
+            currentSortState = sortStates[idx];
+            e.target.innerText = sortLabels[idx];
+            renderList();
+        });
         document.getElementById('filter-select').addEventListener('change', renderList);
 
         document.getElementById('btn-reset').addEventListener('click', () => {
@@ -707,7 +743,6 @@
 
         function renderList() {
             const tbody = document.getElementById('vocab-tbody');
-            const sortVal = document.getElementById('sort-select').value;
             const filterVal = document.getElementById('filter-select').value;
 
             // Bộ Lọc
@@ -719,22 +754,35 @@
 
             // Sắp xếp
             filtered.sort((a, b) => {
-                if (sortVal === 'score-asc') return a.score - b.score;
-                if (sortVal === 'score-desc') return b.score - a.score;
-                return a.originalIndex - b.originalIndex; 
+                if (currentSortState === 'score-asc') return a.score - b.score;
+                if (currentSortState === 'score-desc') return b.score - a.score;
+                return a.displayIndex - b.displayIndex; 
             });
 
             // Hiển thị ra bảng
             tbody.innerHTML = '';
             filtered.forEach((word) => {
-                let scoreColor = word.score < 0 ? '#ff5252' : (word.score > 0 ? '#4caf50' : '#333');
+                let scoreColor = '#333';
+                let bgColor = 'transparent';
+                
+                // Cường độ màu tăng dần từ điểm 1 đến điểm 10 (tối đa độ đậm ở mức điểm 10)
+                if (word.score > 0) {
+                    let alpha = Math.min(word.score * 0.1, 1);
+                    bgColor = `rgba(46, 125, 50, ${alpha})`;
+                    scoreColor = alpha >= 0.5 ? '#fff' : '#1b5e20'; // Đổi màu chữ trắng nếu nền quá đậm
+                } else if (word.score < 0) {
+                    let alpha = Math.min(Math.abs(word.score) * 0.1, 1);
+                    bgColor = `rgba(211, 47, 47, ${alpha})`;
+                    scoreColor = alpha >= 0.5 ? '#fff' : '#b71c1c';
+                }
+
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td style="text-align:center;">${word.originalIndex + 1}</td>
+                    <td style="text-align:center;">${word.displayIndex + 1}</td>
                     <td style="font-weight: bold;">${word.name.split('_').join('<br>')}</td>
                     <td>${word.mean}</td>
                     <td><span style="background: #e9ecef; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem;">${word.sourceName}</span></td>
-                    <td style="text-align:center; font-weight:bold; color:${scoreColor}">${word.score}</td>
+                    <td style="text-align:center; font-weight:bold; color:${scoreColor}; background-color:${bgColor}; transition: background-color 0.3s;">${word.score}</td>
                 `;
                 tbody.appendChild(tr);
             });
