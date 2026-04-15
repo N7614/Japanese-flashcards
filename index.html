@@ -248,7 +248,15 @@
         <div class="tree-container" id="library-tree">
             <!-- Cây danh sách sẽ được tạo bằng Javascript -->
         </div>
-        <div style="text-align: center; margin-top: 2rem;">
+        <div style="text-align: center; margin-top: 1.5rem;">
+            <label style="font-size: 1.1rem; cursor: pointer; margin-right: 1.5rem;">
+                <input type="radio" name="learn-mode" value="random" checked> Ngẫu nhiên
+            </label>
+            <label style="font-size: 1.1rem; cursor: pointer;">
+                <input type="radio" name="learn-mode" value="sequential"> Theo thứ tự
+            </label>
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem;">
             <button id="btn-load" class="btn-load">Tải & Bắt Đầu Học</button>
         </div>
     </main>
@@ -485,10 +493,13 @@
 
         function initQueue() {
             queue = [...vocabData];
-            // Xáo trộn thứ tự mảng một cách ngẫu nhiên ở lượt học đầu
-            for (let i = queue.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [queue[i], queue[j]] = [queue[j], queue[i]];
+            const learnMode = document.querySelector('input[name="learn-mode"]:checked').value;
+            if (learnMode === 'random') {
+                // Xáo trộn thứ tự mảng một cách ngẫu nhiên ở lượt học đầu
+                for (let i = queue.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [queue[i], queue[j]] = [queue[j], queue[i]];
+                }
             }
         }
 
