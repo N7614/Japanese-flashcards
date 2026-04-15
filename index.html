@@ -524,7 +524,7 @@
             
             // Tắt hiệu ứng lật tạm thời để thẻ úp lại ngay lập tức (không bị lộ chữ)
             flashcard.style.transition = 'none';
-            flashcard.classList.remove('is-flipped');flashcard.classList.remove('is-flipped'); // Loại bỏ trạng thái lật nếu đang lật
+            flashcard.classList.remove('is-flipped'); // Loại bỏ trạng thái lật nếu đang lật
             
             // Render nội dung
             document.getElementById('card-front').innerHTML = currentWord.name.split('_').join('<br>');
@@ -717,9 +717,14 @@
 
         // --- Chức năng Danh Sách Từ Vựng --- //
         document.getElementById('btn-counter').addEventListener('click', (e) => {
-            isCounterRevealed = true;
-            e.target.innerText = `Đã học: ${studiedCount} thẻ`;
-            e.target.style.background = '#e3f2fd';
+            isCounterRevealed = !isCounterRevealed;
+            if (isCounterRevealed) {
+                e.target.innerText = `Đã học: ${studiedCount} thẻ`;
+                e.target.style.background = '#e3f2fd';
+            } else {
+                e.target.innerText = 'Số thẻ đã học';
+                e.target.style.background = 'transparent';
+            }
         });
 
         document.getElementById('btn-sort').addEventListener('click', (e) => {
@@ -732,11 +737,18 @@
         document.getElementById('filter-select').addEventListener('change', renderList);
 
         document.getElementById('btn-reset').addEventListener('click', () => {
-            if(confirm('Bạn có chắc chắn muốn đặt lại toàn bộ điểm số về 0?')) {
-                vocabData.forEach(w => w.score = 0);
+            const filterVal = document.getElementById('filter-select').value;
+            let targetWords = vocabData.filter(word => {
+                if (filterVal === 'positive') return word.score > 0;
+                if (filterVal === 'negative') return word.score < 0;
+                return true;
+            });
+
+            if (targetWords.length === 0) return alert("Không có thẻ nào để đặt lại điểm!");
+
+            if(confirm(`Bạn có chắc chắn muốn đặt lại điểm của ${targetWords.length} thẻ đang hiển thị về 0?`)) {
+                targetWords.forEach(w => w.score = 0);
                 saveProgress();
-                initQueue();
-                showNextCard();
                 renderList();
             }
         });
