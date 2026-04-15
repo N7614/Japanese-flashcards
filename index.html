@@ -244,7 +244,7 @@
 
     <!-- Giao diện Thư Viện -->
     <main id="view-library" class="view active-view">
-        <h2 style="text-align: center; color: #007bff;">Gói Từ Vựng</h2>
+        <h2 style="text-align: center; color: #007bff;">Chọn Gói Từ Vựng</h2>
         <div class="tree-container" id="library-tree">
             <!-- Cây danh sách sẽ được tạo bằng Javascript -->
         </div>
@@ -344,7 +344,8 @@
             } else {
                 // Nếu mở trên điện thoại / trình duyệt web (GitHub Pages)
                 try {
-                    const response = await fetch('data/manifest.json');
+                    // Thêm tham số thời gian để tránh trình duyệt lưu cache file cũ
+                    const response = await fetch('data/manifest.json?v=' + new Date().getTime());
                     if (response.ok) {
                         dataManifest = await response.json();
                     }
@@ -438,7 +439,8 @@
                         const content = fileDataMap[cb.value];
                         if (content) data = JSON.parse(content);
                     } else {
-                        const response = await fetch(cb.value);
+                        // Thêm tham số thời gian để luôn tải nội dung bài học mới nhất
+                        const response = await fetch(cb.value + '?v=' + new Date().getTime());
                         if (!response.ok) throw new Error('Network error');
                         data = await response.json();
                     }
