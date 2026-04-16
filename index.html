@@ -276,8 +276,9 @@
             <button id="btn-remember" class="btn-success">Nhớ ❯</button>
         </div>
         <p class="tip-text">💡 Nhấn vào thẻ để lật. Vuốt/kéo thẻ sang trái để đánh dấu Quên, sang phải để đánh dấu Nhớ.</p>
-        <div style="text-align: center; margin-top: 1rem;">
+        <div style="text-align: center; margin-top: 1rem; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
             <button id="btn-counter" style="padding: 0.5rem 1.5rem; border-radius: 20px; border: 1px solid #ccc; background: transparent; cursor: pointer; color: #666; font-size: 0.9rem; transition: background 0.2s; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent;">Số thẻ đã học</button>
+            <button id="btn-find-list" style="padding: 0.5rem 1.5rem; border-radius: 20px; border: 1px solid #ccc; background: transparent; cursor: pointer; color: #666; font-size: 0.9rem; transition: background 0.2s; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent;">🔍 Tìm trong danh sách</button>
         </div>
     </main> 
 
@@ -740,6 +741,29 @@
             }
         });
 
+        document.getElementById('btn-find-list').addEventListener('click', () => {
+            if (!currentWord) return;
+            
+            // Tự động bỏ bộ lọc nếu từ hiện tại không khớp (để chắc chắn từ này hiện ra trong bảng)
+            const filterVal = document.getElementById('filter-select').value;
+            if ((filterVal === 'positive' && currentWord.score <= 0) || 
+                (filterVal === 'negative' && currentWord.score >= 0)) {
+                document.getElementById('filter-select').value = 'all';
+            }
+            
+            switchView('list');
+            
+            setTimeout(() => {
+                const row = document.getElementById(`row-word-${currentWord.displayIndex}`);
+                if (row) {
+                    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    row.style.transition = 'background-color 0.5s';
+                    row.style.backgroundColor = '#fff3cd'; // Nhấp nháy màu vàng
+                    setTimeout(() => row.style.backgroundColor = '', 2000);
+                }
+            }, 100);
+        });
+
         document.getElementById('btn-sort').addEventListener('click', (e) => {
             let idx = sortStates.indexOf(currentSortState);
             idx = (idx + 1) % sortStates.length;
@@ -802,6 +826,7 @@
                 }
 
                 const tr = document.createElement('tr');
+                tr.id = `row-word-${word.displayIndex}`;
                 tr.innerHTML = `
                     <td style="text-align:center;">${word.displayIndex + 1}</td>
                     <td style="font-weight: bold;">${word.name.split('_').join('<br>')}</td>
