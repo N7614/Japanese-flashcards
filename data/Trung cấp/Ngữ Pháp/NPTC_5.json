@@ -1,258 +1,258 @@
 [
   {
     "name": "教科書_きょうかしょ",
-    "mean": "giáo trình, sách giáo khoa [cite: 347]"
+    "mean": "giáo trình, sách giáo khoa"
   },
   {
     "name": "居酒屋_いざかや",
-    "mean": "quán nhậu [cite: 347]"
+    "mean": "quán nhậu"
   },
   {
     "name": "やきとり",
-    "mean": "thịt gà nướng xiên [cite: 347]"
+    "mean": "thịt gà nướng xiên"
   },
   {
     "name": "画面_がめん",
-    "mean": "màn hình [cite: 347]"
+    "mean": "màn hình"
   },
   {
     "name": "俳優_はいゆう",
-    "mean": "nam diễn viên [cite: 347]"
+    "mean": "nam diễn viên"
   },
   {
     "name": "そっくり",
-    "mean": "giống y đúc, giống hệt [cite: 347]"
+    "mean": "giống y đúc, giống hệt"
   },
   {
     "name": "コンビニ",
-    "mean": "cửa hàng tiện lợi [cite: 347]"
+    "mean": "cửa hàng tiện lợi"
   },
   {
     "name": "改札[口]_かいさつ [ぐち]",
-    "mean": "[cửa] soát vé [cite: 347]"
+    "mean": "[cửa] soát vé"
   },
   {
     "name": "運転手_うんてんしゅ",
-    "mean": "tài xế [cite: 347]"
+    "mean": "tài xế"
   },
   {
-    "name": "かかってくる [電話が~]",
-    "mean": "[điện thoại] đổ chuông, gọi đến [cite: 347]"
+    "name": "かかってくる [電話が~]_かかってくる [でんわが~]",
+    "mean": "[điện thoại] đổ chuông, gọi đến"
   },
   {
     "name": "切れる [電話が~]_きれる [でんわが~]",
-    "mean": "[điện thoại] ngừng đổ chuông, tắt [cite: 347]"
+    "mean": "[điện thoại] ngừng đổ chuông, tắt"
   },
   {
     "name": "挙げる [例を~]_あげる [れいを~]",
-    "mean": "đưa ra, cho [ví dụ] [cite: 347]"
+    "mean": "đưa ra, cho [ví dụ]"
   },
   {
     "name": "未来_みらい",
-    "mean": "tương lai [cite: 347]"
+    "mean": "tương lai"
   },
   {
-    "name": "なくす[戦争を~]",
-    "mean": "xóa bỏ, loại bỏ [chiến tranh] [cite: 347]"
+    "name": "なくす [戦争を~]_なくす [せんそうを~]",
+    "mean": "xóa bỏ, loại bỏ [chiến tranh]"
   },
   {
     "name": "不思議 [な]_ふしぎ [な]",
-    "mean": "kỳ lạ [cite: 347]"
+    "mean": "kỳ lạ"
   },
   {
     "name": "増やす_ふやす",
-    "mean": "tăng [cite: 347]"
+    "mean": "tăng"
   },
   {
     "name": "今ごろ_いまごろ",
-    "mean": "tầm này, giờ này [cite: 347]"
+    "mean": "tầm này, giờ này"
   },
   {
     "name": "観光客_かんこうきゃく",
-    "mean": "du khách, khách du lịch [cite: 347]"
+    "mean": "du khách, khách du lịch"
   },
   {
     "name": "沿う [川に~]_そう [かわに~]",
-    "mean": "dọc theo [con sông] [cite: 347]"
+    "mean": "dọc theo [con sông]"
   },
   {
     "name": "大通り_おおどおり",
-    "mean": "phố chính, đường lớn, đại lộ [cite: 347]"
+    "mean": "phố chính, đường lớn, đại lộ"
   },
   {
-    "name": "出る[大通りに~]_でる [おおどおりに~]",
-    "mean": "ra đến [phố chính] [cite: 347]"
+    "name": "出る [大通りに~]_でる [おおどおりに~]",
+    "mean": "ra đến [phố chính]"
   },
   {
-    "name": "横断歩道_おう단ほどう",
-    "mean": "đường dành cho người đi bộ [cite: 347]"
+    "name": "横断歩道_おうだんほどう",
+    "mean": "đường dành cho người đi bộ"
   },
   {
     "name": "突き当たり_つきあたり",
-    "mean": "cuối (đường) [cite: 347]"
+    "mean": "cuối (đường)"
   },
   {
     "name": "線路_せんろ",
-    "mean": "đường ray [cite: 347]"
+    "mean": "đường ray"
   },
   {
     "name": "向こう側_むこうがわ",
-    "mean": "phía đối diện [cite: 347]"
+    "mean": "phía đối diện"
   },
   {
     "name": "踏切_ふみきり",
-    "mean": "đường ngang (điểm giao cắt giữa đường sắt và đường bộ) [cite: 347]"
+    "mean": "đường ngang (điểm giao cắt giữa đường sắt và đường bộ)"
   },
   {
     "name": "分かれる [道が~]_わかれる [みちが~]",
-    "mean": "[đường] tách ra, phân ra [cite: 349, 350, 351, 408]"
+    "mean": "[đường] tách ra, phân ra"
   },
   {
     "name": "芸術_げいじゅつ",
-    "mean": "nghệ thuật [cite: 352, 360, 409]"
+    "mean": "nghệ thuật"
   },
   {
     "name": "道順_みちじゅん",
-    "mean": "cách đi, lộ trình đi [cite: 353, 361, 410]"
+    "mean": "cách đi, lộ trình đi"
   },
   {
     "name": "通行人_つうこうにん",
-    "mean": "người qua đường [cite: 354, 362, 411]"
+    "mean": "người qua đường"
   },
   {
     "name": "通り_とおり",
-    "mean": "đường, phố [cite: 355, 363, 412]"
+    "mean": "đường, phố"
   },
   {
     "name": "川沿い_かわぞい",
-    "mean": "dọc theo sông [cite: 356, 364, 413]"
+    "mean": "dọc theo sông"
   },
   {
     "name": "~沿い_~ぞい",
-    "mean": "dọc theo ~ [cite: 357, 364, 414]"
+    "mean": "dọc theo ~"
   },
   {
     "name": "流れる_ながれる",
-    "mean": "chảy [cite: 358, 365, 415]"
+    "mean": "chảy"
   },
   {
-    "name": "~先 [100メートル~]_~さき",
-    "mean": "[100 m] ở phía trước [cite: 359, 365, 366, 416]"
+    "name": "~先 [100メートル~]_~さき [100メートル~]",
+    "mean": "[100 m] ở phía trước"
   },
   {
-    "name": "~方[右の~]_~ほう  みぎの~]",
-    "mean": "phía bên [phải] [cite: 367, 368, 417]"
+    "name": "~方 [右の~]_~ほう [みぎの~]",
+    "mean": "phía bên [phải]"
   },
   {
     "name": "南北_なんぼく",
-    "mean": "nam bắc [cite: 369, 370, 418]"
+    "mean": "nam bắc"
   },
   {
     "name": "逆_ぎゃく",
-    "mean": "ngược lại [cite: 371, 390, 419]"
+    "mean": "ngược lại"
   },
   {
     "name": "南半球_みなみはんきゅう",
-    "mean": "nam bán cầu [cite: 372, 391, 420]"
+    "mean": "nam bán cầu"
   },
   {
     "name": "北半球_きたはんきゅう",
-    "mean": "bắc bán cầu [cite: 373, 392, 421]"
+    "mean": "bắc bán cầu"
   },
   {
     "name": "常識_じょうしき",
-    "mean": "thường thức, ứng xử thông thường [cite: 374, 393, 422]"
+    "mean": "thường thức, ứng xử thông thường"
   },
   {
     "name": "差別_さべつ",
-    "mean": "sự phân biệt đối xử [cite: 375, 394, 423]"
+    "mean": "sự phân biệt đối xử"
   },
   {
     "name": "平等 [な]_ぴょうどう [な]",
-    "mean": "bình đẳng [cite: 376, 395, 424]"
+    "mean": "bình đẳng"
   },
   {
     "name": "位置_いち",
-    "mean": "vị trí [cite: 377, 396, 425]"
+    "mean": "vị trí"
   },
   {
     "name": "人間_にんげん",
-    "mean": "con người [cite: 378, 397, 426]"
+    "mean": "con người"
   },
   {
     "name": "観察する_かんさつする",
-    "mean": "quan sát [cite: 379, 398, 427]"
+    "mean": "quan sát"
   },
   {
     "name": "面_めん",
-    "mean": "mặt, bề mặt [cite: 380, 399, 428]"
+    "mean": "mặt, bề mặt"
   },
   {
     "name": "中央_ちゅうおう",
-    "mean": "trung tâm [cite: 381, 400, 429]"
+    "mean": "trung tâm"
   },
   {
     "name": "自然に_しぜんに",
-    "mean": "một cách tự nhiên, bất giác [cite: 382, 401, 430]"
+    "mean": "một cách tự nhiên, bất giác"
   },
   {
     "name": "努力する_どりょくする",
-    "mean": "nỗ lực, cố gắng [cite: 383, 402, 431]"
+    "mean": "nỗ lực, cố gắng"
   },
   {
     "name": "そこで",
-    "mean": "vì thế, vì vậy [cite: 384, 432]"
+    "mean": "vì thế, vì vậy"
   },
   {
     "name": "普通_ふつう",
-    "mean": "bình thường, thông thường [cite: 385, 403, 433]"
+    "mean": "bình thường, thông thường"
   },
   {
     "name": "経緯度_けいいど",
-    "mean": "kinh độ và vĩ độ [cite: 386, 404, 434]"
+    "mean": "kinh độ và vĩ độ"
   },
   {
     "name": "無意識に_むいしきに",
-    "mean": "vô thức, không chủ ý [cite: 387, 435]"
+    "mean": "vô thức, không chủ ý"
   },
   {
     "name": "表れ_あらわれ",
-    "mean": "biểu hiện [cite: 388, 406, 436]"
+    "mean": "biểu hiện"
   },
   {
     "name": "上下_じょうげ",
-    "mean": "trên dưới [cite: 389, 407, 437]"
+    "mean": "trên dưới"
   },
   {
     "name": "左右_さゆう",
-    "mean": "trái phải [cite: 439]"
+    "mean": "trái phải"
   },
   {
     "name": "少なくとも_すくなくとも",
-    "mean": "ít nhất thì [cite: 439]"
+    "mean": "ít nhất thì"
   },
   {
     "name": "文句_もんく",
-    "mean": "phàn nàn, than phiền [cite: 439]"
+    "mean": "phàn nàn, than phiền"
   },
   {
-    "name": "わざと",
-    "mean": "chủ ý, cố tình [cite: 439]"
+    "name": "わざto",
+    "mean": "chủ ý, cố tình"
   },
   {
     "name": "経度_けいど",
-    "mean": "kinh độ [cite: 439]"
+    "mean": "kinh độ"
   },
   {
     "name": "緯度_いど",
-    "mean": "vĩ độ [cite: 439]"
+    "mean": "vĩ độ"
   },
   {
-    "name": "使用する_しょうする",
-    "mean": "sử dụng [cite: 439]"
+    "name": "使用する_しよする",
+    "mean": "sử dụng"
   },
   {
     "name": "東西_とうざい",
-    "mean": "đông tây [cite: 439]"
+    "mean": "đông tây"
   }
 ]
