@@ -43,6 +43,26 @@
                 "id": "Trung cấp_Ngữ Pháp_NPTC_4",
                 "name": "NPTC 4",
                 "path": "data/Trung cấp/Ngữ Pháp/NPTC_4.json"
+            },
+            {
+                "id": "Trung cấp_Ngữ Pháp_NPTC_5",
+                "name": "NPTC 5",
+                "path": "data/Trung cấp/Ngữ Pháp/NPTC_5.json"
+            },
+            {
+                "id": "Trung cấp_Ngữ Pháp_NPTC_6",
+                "name": "NPTC 6",
+                "path": "data/Trung cấp/Ngữ Pháp/NPTC_6.json"
+            },
+            {
+                "id": "Trung cấp_Ngữ Pháp_NPTC_7",
+                "name": "NPTC 7",
+                "path": "data/Trung cấp/Ngữ Pháp/NPTC_7.json"
+            },
+            {
+                "id": "Trung cấp_Ngữ Pháp_NPTC_8",
+                "name": "NPTC 8",
+                "path": "data/Trung cấp/Ngữ Pháp/NPTC_8.json"
             }
         ]
     }
