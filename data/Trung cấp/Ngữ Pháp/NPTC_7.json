@@ -1,0 +1,322 @@
+[
+  {
+    "name": "出す [料理を~]_だす [りょうりを~]",
+    "mean": "đưa ra, dọn ra [thức ăn]"
+  },
+  {
+    "name": "歓迎会_かんげいかい",
+    "mean": "tiệc chào đón"
+  },
+  {
+    "name": "招待状_しょうたいじょう",
+    "mean": "thư mời"
+  },
+  {
+    "name": "ラーメン",
+    "mean": "ramen (kiểu mì Tàu ăn với súp)"
+  },
+  {
+    "name": "折り紙_おり가み",
+    "mean": "origami (nghệ thuật gấp giấy)"
+  },
+  {
+    "name": "ピンク",
+    "mean": "màu hồng"
+  },
+  {
+    "name": "送別会_そうべつかい",
+    "mean": "tiệc chia tay"
+  },
+  {
+    "name": "中華レストラン_ちゅうかレストラン",
+    "mean": "nhà hàng món ăn Tàu, nhà hàng Trung Hoa"
+  },
+  {
+    "name": "留学生会_りゅうがくせいかい",
+    "mean": "hội lưu học sinh"
+  },
+  {
+    "name": "~会 [留学生~]_~かい [りゅうがくせい~]",
+    "mean": "hội ~ [~ lưu học sinh]"
+  },
+  {
+    "name": "会長_かいちょう",
+    "mean": "chủ tịch"
+  },
+  {
+    "name": "点数_てんすう",
+    "mean": "điểm số"
+  },
+  {
+    "name": "たいした",
+    "mean": "[không/chẳng] quan trọng, ghê gớm"
+  },
+  {
+    "name": "悪口_わるぐち",
+    "mean": "sự nói xấu"
+  },
+  {
+    "name": "夫婦_ふうふ",
+    "mean": "vợ chồng"
+  },
+  {
+    "name": "~げんか [夫婦~]_[ふうふ~]",
+    "mean": "cãi nhau, tranh cãi [giữa vợ chồng]"
+  },
+  {
+    "name": "医学部_いがくぶ",
+    "mean": "khoa y"
+  },
+  {
+    "name": "~部 [医学~]_~ぶ [いがく~]",
+    "mean": "khoa [y]"
+  },
+  {
+    "name": "ライオン",
+    "mean": "sư tử"
+  },
+  {
+    "name": "喜ぶ_よろこぶ",
+    "mean": "vui, vui sướng"
+  },
+  {
+    "name": "冗談_じょうだん",
+    "mean": "đùa, bông đùa"
+  },
+  {
+    "name": "~たち [子ども~]_[こども~]",
+    "mean": "(hậu tố chỉ số nhiều)"
+  },
+  {
+    "name": "お化け_おばけ",
+    "mean": "ma"
+  },
+  {
+    "name": "いじめる",
+    "mean": "bắt nạt, ăn hiếp, chọc ghẹo"
+  },
+  {
+    "name": "感心する_かんしんする",
+    "mean": "quan tâm, ấn tượng"
+  },
+  {
+    "name": "親_おや",
+    "mean": "bố mẹ"
+  },
+  {
+    "name": "あらためて",
+    "mean": "lần nữa, một lần nữa"
+  },
+  {
+    "name": "一周_いっしゅう",
+    "mean": "một vòng"
+  },
+  {
+    "name": "~山_~さん",
+    "mean": "núi, ngọn (như núi/ ngọn Phú Sĩ)"
+  },
+  {
+    "name": "芝居_しばい",
+    "mean": "kịch"
+  },
+  {
+    "name": "せりふ",
+    "mean": "lời thoại (trong một vở kịch)"
+  },
+  {
+    "name": "泣く_なく",
+    "mean": "khóc"
+  },
+  {
+    "name": "アニメ",
+    "mean": "phim hoạt hình"
+  },
+  {
+    "name": "感動する_かんどうする",
+    "mean": "cảm động"
+  },
+  {
+    "name": "講演_こうえん",
+    "mean": "bài nói chuyện, bài giảng"
+  },
+  {
+    "name": "譲る_ゆずる",
+    "mean": "để lại"
+  },
+  {
+    "name": "ツアー",
+    "mean": "tour, tua"
+  },
+  {
+    "name": "きつい [スケジュールが~]_きつい [スケジュールが~]",
+    "mean": "kín, chặt chẽ [lịch trình, v.v.]"
+  },
+  {
+    "name": "フリーマーケット",
+    "mean": "chợ trời"
+  },
+  {
+    "name": "遠慮する_えんりょする",
+    "mean": "xin từ chối"
+  },
+  {
+    "name": "失礼_しつれい",
+    "mean": "thất lễ"
+  },
+  {
+    "name": "表す_あらわす",
+    "mean": "bày tỏ"
+  },
+  {
+    "name": "受ける [誘いを~]_うける [さそいを~]",
+    "mean": "nhận lời, chấp nhận [lời mời]"
+  },
+  {
+    "name": "着付け教室_きつけきょうしつ",
+    "mean": "lớp học cách mặc kimono"
+  },
+  {
+    "name": "待ち合わせる_まちあわせる",
+    "mean": "gặp nhau (tại nơi và thời gian đã sắp xếp trước)"
+  },
+  {
+    "name": "空く [時間が~]_あく [じかんが~]",
+    "mean": "rỗi, rảnh [thời gian]"
+  },
+  {
+    "name": "交流会_こうりゅうかい",
+    "mean": "buổi giao lưu"
+  },
+  {
+    "name": "いろんな",
+    "mean": "nhiều, nhiều loại"
+  },
+  {
+    "name": "ゼミ",
+    "mean": "giờ thảo luận"
+  },
+  {
+    "name": "せっかく",
+    "mean": "cất công, chủ ý"
+  },
+  {
+    "name": "今回_こんかい",
+    "mean": "lần này, dịp này"
+  },
+  {
+    "name": "同僚_どうりょう",
+    "mean": "đồng nghiệp"
+  },
+  {
+    "name": "登山_とざん",
+    "mean": "leo núi"
+  },
+  {
+    "name": "紅葉_こうよう",
+    "mean": "lá phong đỏ"
+  },
+  {
+    "name": "見物_けんぶつ",
+    "mean": "tham quan"
+  },
+  {
+    "name": "音楽会_おんがくかい",
+    "mean": "buổi biểu diễn âm nhạc"
+  },
+  {
+    "name": "まんじゅう",
+    "mean": "bánh ngọt nhân đậu đỏ"
+  },
+  {
+    "name": "ヘビ",
+    "mean": "rắn"
+  },
+  {
+    "name": "毛虫_けむし",
+    "mean": "sâu róm, sâu bướm"
+  },
+  {
+    "name": "いばる",
+    "mean": "kiêu ngạo, kiêu căng"
+  },
+  {
+    "name": "震える_ふるえる",
+    "mean": "run"
+  },
+  {
+    "name": "すると",
+    "mean": "lập tức, thế là"
+  },
+  {
+    "name": "おれ",
+    "mean": "tao, tớ (dùng bởi nam giới)"
+  },
+  {
+    "name": "~ぐらい",
+    "mean": "chí ít thì, ít nhất thì"
+  },
+  {
+    "name": "お前_おまえ",
+    "mean": "mày, cậu (dùng bởi nam giới)"
+  },
+  {
+    "name": "丸い_まるい",
+    "mean": "tròn"
+  },
+  {
+    "name": "いや",
+    "mean": "không"
+  },
+  {
+    "name": "震えだす_ふるえだす",
+    "mean": "bắt đầu run rẩy"
+  },
+  {
+    "name": "助ける_たすける",
+    "mean": "giúp, cứu"
+  },
+  {
+    "name": "次々に_つぎつぎに",
+    "mean": "liên tục, liên tù tì"
+  },
+  {
+    "name": "目の前_めのまえ",
+    "mean": "trước mắt"
+  },
+  {
+    "name": "ポツリと",
+    "mean": "(nói) lẩm bẩm"
+  },
+  {
+    "name": "ホームページ",
+    "mean": "Website, trang web"
+  },
+  {
+    "name": "笑い話_わらいぱなし",
+    "mean": "chuyện cười"
+  },
+  {
+    "name": "落語_らくご",
+    "mean": "Rakugo (hình thức kể chuyện gây cười truyền thống của Nhật Bản)"
+  },
+  {
+    "name": "本当ですか。_ほんとうですか。",
+    "mean": "Thật không?"
+  },
+  {
+    "name": "ぜひお願いします。_ぜひおねがいします。",
+    "mean": "Nhất định nhờ anh/ chị. (Vui lòng chấp nhận một lời mời)"
+  },
+  {
+    "name": "せっかく誘っていただいたのに、申し訳ありません。今回は遠慮させてください。_せっかくさそっていただいたのに、もうしわけありません。こんかいはえんりょさせてください。",
+    "mean": "Anh/ chị đã cất công rủ tôi vậy mà cho tôi xin lỗi. Lần này cho tôi xin phép không tham gia."
+  },
+  {
+    "name": "……………………かい?",
+    "mean": "(hậu tố biểu thị nghi vấn)"
+  },
+  {
+    "name": "助けてくれ!_たすけてくれ!",
+    "mean": "Cứu tôi với!"
+  }
+]

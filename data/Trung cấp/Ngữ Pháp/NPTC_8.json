@@ -1,0 +1,286 @@
+[
+  {
+    "name": "眠る_ねむる",
+    "mean": "ngủ"
+  },
+  {
+    "name": "黙る_だまる",
+    "mean": "im lặng"
+  },
+  {
+    "name": "取る [ノートを~]_とる",
+    "mean": "viết [ghi chú]"
+  },
+  {
+    "name": "盗む_ぬすむ",
+    "mean": "trộm, ăn trộm"
+  },
+  {
+    "name": "焦げる_こげる",
+    "mean": "cháy, cháy xém"
+  },
+  {
+    "name": "枯れる_かれる",
+    "mean": "héo, khô héo"
+  },
+  {
+    "name": "平凡[な]_へいぽん [な]",
+    "mean": "bình thường, bình dị"
+  },
+  {
+    "name": "人生_じんせい",
+    "mean": "cuộc đời"
+  },
+  {
+    "name": "免許_めんきょ",
+    "mean": "giấy phép"
+  },
+  {
+    "name": "取る [免許を~]_とる [めんきょを~]",
+    "mean": "lấy [giấy phép]"
+  },
+  {
+    "name": "退職する_たいしょくする",
+    "mean": "về hưu, nghỉ việc"
+  },
+  {
+    "name": "もったいない",
+    "mean": "lãng phí"
+  },
+  {
+    "name": "鍋_なべ",
+    "mean": "nồi"
+  },
+  {
+    "name": "ことば遣い_ことばづかい",
+    "mean": "cách dùng từ ngữ, cách sử dụng ngôn ngữ"
+  },
+  {
+    "name": "生_なま",
+    "mean": "sống, tươi"
+  },
+  {
+    "name": "専門的[な]_せんもんてき [な]",
+    "mean": "mang tính chuyên môn"
+  },
+  {
+    "name": "社会勉強_しゃかいべんきょう",
+    "mean": "học hỏi về xã hội xung quanh"
+  },
+  {
+    "name": "高校生_こうこうせい",
+    "mean": "học sinh cấp 3"
+  },
+  {
+    "name": "迷子_まいご",
+    "mean": "trẻ lạc"
+  },
+  {
+    "name": "しま",
+    "mean": "SỌC"
+  },
+  {
+    "name": "花柄_はながら",
+    "mean": "họa tiết hoa"
+  },
+  {
+    "name": "チェック",
+    "mean": "kẻ ca-rô"
+  },
+  {
+    "name": "スカート",
+    "mean": "váy"
+  },
+  {
+    "name": "無地_むじ",
+    "mean": "không có họa tiết, trơn"
+  },
+  {
+    "name": "水玉_みずたま",
+    "mean": "chấm bi"
+  },
+  {
+    "name": "リュック",
+    "mean": "ba lô"
+  },
+  {
+    "name": "背負う_せおう",
+    "mean": "đeo"
+  },
+  {
+    "name": "サービスカウンター",
+    "mean": "quầy dịch vụ"
+  },
+  {
+    "name": "姪_めい",
+    "mean": "cháu gái"
+  },
+  {
+    "name": "特徴_とくちょう",
+    "mean": "đặc trưng, đặc điểm"
+  },
+  {
+    "name": "身長_しんちょう",
+    "mean": "chiều cao"
+  },
+  {
+    "name": "ジーンズ",
+    "mean": "quần jean, quần bò"
+  },
+  {
+    "name": "髪型_かみがた",
+    "mean": "kiểu tóc"
+  },
+  {
+    "name": "肩_かた",
+    "mean": "vai"
+  },
+  {
+    "name": "持ち物_もちもの",
+    "mean": "đồ dùng cá nhân, đồ mang theo"
+  },
+  {
+    "name": "水色_みずいろ",
+    "mean": "màu xanh nhạt"
+  },
+  {
+    "name": "折りたたみ_おりたたみ",
+    "mean": "gập, gấp"
+  },
+  {
+    "name": "青地_あおじ",
+    "mean": "nền màu xanh"
+  },
+  {
+    "name": "~地_〜じ",
+    "mean": "nền"
+  },
+  {
+    "name": "持つところ_もつところ",
+    "mean": "cán, tay cầm"
+  },
+  {
+    "name": "プラスチック",
+    "mean": "nhựa"
+  },
+  {
+    "name": "途上国_とじょうこく",
+    "mean": "quốc gia đang phát triển"
+  },
+  {
+    "name": "先進国_せんしんこく",
+    "mean": "quốc gia phát triển"
+  },
+  {
+    "name": "プラス",
+    "mean": "mặt được, điểm cộng"
+  },
+  {
+    "name": "マイナス",
+    "mean": "mặt không được, điểm trừ"
+  },
+  {
+    "name": "共通_きょうつう",
+    "mean": "chung"
+  },
+  {
+    "name": "関心_かんしん",
+    "mean": "sự quan tâm"
+  },
+  {
+    "name": "多様化_たようか",
+    "mean": "đa dạng hóa"
+  },
+  {
+    "name": "タイトル",
+    "mean": "tiêu đề"
+  },
+  {
+    "name": "反対に_はんたいに",
+    "mean": "ngược lại, trái ngược"
+  },
+  {
+    "name": "前後_ぜんご",
+    "mean": "trước sau"
+  },
+  {
+    "name": "対象_たいしょう",
+    "mean": "đối tượng"
+  },
+  {
+    "name": "少女_しょうじょ",
+    "mean": "bé gái"
+  },
+  {
+    "name": "アイディア",
+    "mean": "ý tưởng"
+  },
+  {
+    "name": "輝く_かがやく",
+    "mean": "tỏa sáng, rực rỡ"
+  },
+  {
+    "name": "浮力_ふりょく",
+    "mean": "lực nổi, lực đẩy Acsimet"
+  },
+  {
+    "name": "少年_しょうねん",
+    "mean": "thiếu niên"
+  },
+  {
+    "name": "キノコ雲_キノコぐも",
+    "mean": "đám mây hình nấm được tạo ra do các vụ thử nghiệm vũ khí hạt nhân"
+  },
+  {
+    "name": "時に_ときに",
+    "mean": "đôi khi, thi thoảng"
+  },
+  {
+    "name": "ダメージ",
+    "mean": "tổn thất, thiệt hại"
+  },
+  {
+    "name": "与える [ダメージを〜]_あたえる",
+    "mean": "đem đến [tổn thất/ thiệt hại]"
+  },
+  {
+    "name": "ひげ",
+    "mean": "râu, ria mép"
+  },
+  {
+    "name": "伸びる_のびる",
+    "mean": "để dài, dài"
+  },
+  {
+    "name": "発展する_はってんする",
+    "mean": "phát triển"
+  },
+  {
+    "name": "ページ",
+    "mean": "trang"
+  },
+  {
+    "name": "魅力_みりょく",
+    "mean": "sự hấp dẫn, sự quyến rũ"
+  },
+  {
+    "name": "豊か [な]_ゆたか [な]",
+    "mean": "giàu có, đầy đủ"
+  },
+  {
+    "name": "受ける [ダメージを~]_うける",
+    "mean": "chịu [tổn thất/ thiệt hại]"
+  },
+  {
+    "name": "テーマ",
+    "mean": "chủ đề, đề tài"
+  },
+  {
+    "name": "述べる_のべる",
+    "mean": "bày tỏ, nói ra"
+  },
+  {
+    "name": "確か、〜たと思います。_たしか、〜たとおもいます。",
+    "mean": "Tôi nghĩ chắc là"
+  }
+]
