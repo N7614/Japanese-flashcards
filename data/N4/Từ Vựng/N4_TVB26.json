@@ -1,0 +1,237 @@
+[
+    {
+        "name": "みます",
+        "kanji": "見ます、診ます",
+        "mean": "kiểm tra, khám bệnh"
+    },
+    {
+        "name": "さがします",
+        "kanji": "探します、捜します",
+        "mean": "tìm, tìm kiếm"
+    },
+    {
+        "name": "おくれます [じかんに~]",
+        "kanji": "遅れます [時間に~]",
+        "mean": "chậm, muộn [giờ]"
+    },
+    {
+        "name": "まにあいます [じかんに~]",
+        "kanji": "間に合います [時間に~]",
+        "mean": "kịp [giờ]"
+    },
+    {
+        "name": "やります",
+        "kanji": "",
+        "mean": "làm"
+    },
+    {
+        "name": "ひろいます",
+        "kanji": "拾います",
+        "mean": "nhặt, lượm"
+    },
+    {
+        "name": "れんらくします",
+        "kanji": "連絡します",
+        "mean": "liên lạc"
+    },
+    {
+        "name": "きぶんがいい",
+        "kanji": "気分がいい",
+        "mean": "cảm thấy thoải mái, cảm thấy khỏe"
+    },
+    {
+        "name": "きぶんがわるい",
+        "kanji": "気分が悪い",
+        "mean": "cảm thấy không thoải mái, cảm thấy mệt"
+    },
+    {
+        "name": "うんどうかい",
+        "kanji": "運動会",
+        "mean": "hội thi thể thao"
+    },
+    {
+        "name": "ぼんおどり",
+        "kanji": "盆踊り",
+        "mean": "múa Bon"
+    },
+    {
+        "name": "フリーマーケット",
+        "kanji": "",
+        "mean": "chợ đồ cũ, chợ trời"
+    },
+    {
+        "name": "ばしょ",
+        "kanji": "場所",
+        "mean": "địa điểm, nơi"
+    },
+    {
+        "name": "ボランティア",
+        "kanji": "",
+        "mean": "tình nguyện viên"
+    },
+    {
+        "name": "さいふ",
+        "kanji": "財布",
+        "mean": "ví"
+    },
+    {
+        "name": "ごみ",
+        "kanji": "",
+        "mean": "rác"
+    },
+    {
+        "name": "こっかいぎじどう",
+        "kanji": "国会議事堂",
+        "mean": "tòa nhà quốc hội"
+    },
+    {
+        "name": "へいじつ",
+        "kanji": "平日",
+        "mean": "ngày thường"
+    },
+    {
+        "name": "~べん",
+        "kanji": "~弁",
+        "mean": "phương ngữ ~, tiếng ~, giọng ~"
+    },
+    {
+        "name": "こんど",
+        "kanji": "今度",
+        "mean": "lần tới"
+    },
+    {
+        "name": "ずいぶん",
+        "kanji": "",
+        "mean": "khá, tương đối"
+    },
+    {
+        "name": "ちょくせつ",
+        "kanji": "直接",
+        "mean": "trực tiếp"
+    },
+    {
+        "name": "いつでも",
+        "kanji": "",
+        "mean": "lúc nào cũng"
+    },
+    {
+        "name": "どこでも",
+        "kanji": "",
+        "mean": "ở đâu cũng"
+    },
+    {
+        "name": "だれでも",
+        "kanji": "",
+        "mean": "ai cũng"
+    },
+    {
+        "name": "なんでも",
+        "kanji": "何でも",
+        "mean": "cái gì cũng"
+    },
+    {
+        "name": "こんな~",
+        "kanji": "",
+        "mean": "~ như thế này"
+    },
+    {
+        "name": "そんな~",
+        "kanji": "",
+        "mean": "như thế đó (gần người nghe)"
+    },
+    {
+        "name": "あんな~",
+        "kanji": "",
+        "mean": "như thế kia (xa cả người nói và người nghe)"
+    },
+    {
+        "name": "エドヤストア",
+        "kanji": "",
+        "mean": "tên một cửa hàng giả định"
+    },
+    {
+        "name": "かたづきます [にもつが~]",
+        "kanji": "片づきます [荷物が〜]",
+        "mean": "được dọn dẹp ngăn nắp, gọn gàng [đồ đạc ~]"
+    },
+    {
+        "name": "だします [ごみを~]",
+        "kanji": "出します [ごみを~]",
+        "mean": "đổ, để [rác]"
+    },
+    {
+        "name": "もえるごみ",
+        "kanji": "燃えるごみ",
+        "mean": "rác cháy được"
+    },
+    {
+        "name": "おきば",
+        "kanji": "置き場",
+        "mean": "nơi để"
+    },
+    {
+        "name": "よこ",
+        "kanji": "横",
+        "mean": "bên cạnh"
+    },
+    {
+        "name": "びん",
+        "kanji": "瓶",
+        "mean": "chai"
+    },
+    {
+        "name": "かん",
+        "kanji": "缶",
+        "mean": "lon"
+    },
+    {
+        "name": "ガス",
+        "kanji": "",
+        "mean": "ga"
+    },
+    {
+        "name": "~がいしゃ",
+        "kanji": "~会社",
+        "mean": "công ty ~"
+    },
+    {
+        "name": "うちゅう",
+        "kanji": "宇宙",
+        "mean": "vũ trụ"
+    },
+    {
+        "name": "~さま",
+        "kanji": "~様",
+        "mean": "ông/bà/ngài (kính ngữ của ~さん)"
+    },
+    {
+        "name": "うちゅうせん",
+        "kanji": "宇宙船",
+        "mean": "tàu vũ trụ"
+    },
+    {
+        "name": "こわい",
+        "kanji": "怖い",
+        "mean": "sợ"
+    },
+    {
+        "name": "うちゅうステーション",
+        "kanji": "宇宙ステーション",
+        "mean": "trạm vũ trụ"
+    },
+    {
+        "name": "ちがいます",
+        "kanji": "違います",
+        "mean": "khác"
+    },
+    {
+        "name": "うちゅうひこうし",
+        "kanji": "宇宙飛行士",
+        "mean": "nhà du hành vũ trụ"
+    },
+    {
+        "name": "ほしであきひこ",
+        "kanji": "星出彰彦",
+        "mean": "nhà du hành vũ trụ người Nhật Bản (1968 - )"
+    }
+]

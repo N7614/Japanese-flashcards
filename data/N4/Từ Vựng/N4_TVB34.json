@@ -1,0 +1,467 @@
+[
+    {
+        "name": "みがきます [はを~]",
+        "kanji": "磨きます [歯を~]",
+        "mean": "đánh [răng], đánh (giày)"
+    },
+    {
+        "name": "くみたてます",
+        "kanji": "組み立てます",
+        "mean": "lắp ráp"
+    },
+    {
+        "name": "おります",
+        "kanji": "折ります",
+        "mean": "gập, bẻ"
+    },
+    {
+        "name": "きがつきます [わすれものに~]",
+        "kanji": "気がつきます [忘れ物に~]",
+        "mean": "để ý đến, chú ý đến [đồ để quên]"
+    },
+    {
+        "name": "つけます [しょうゆを~]",
+        "kanji": "",
+        "mean": "chấm [xì dầu]"
+    },
+    {
+        "name": "みつかります [かぎが~]",
+        "kanji": "見つかります",
+        "mean": "tìm thấy [chìa khóa]"
+    },
+    {
+        "name": "しつもんします",
+        "kanji": "質問します",
+        "mean": "hỏi"
+    },
+    {
+        "name": "さします [かさを~]",
+        "kanji": "[傘を~]",
+        "mean": "che [ô/dù]"
+    },
+    {
+        "name": "スポーツクラブ",
+        "kanji": "",
+        "mean": "câu lạc bộ thể thao"
+    },
+    {
+        "name": "[お]しろ",
+        "kanji": "[お]城",
+        "mean": "thành"
+    },
+    {
+        "name": "せつめいしょ",
+        "kanji": "説明書",
+        "mean": "sách hướng dẫn"
+    },
+    {
+        "name": "ず",
+        "kanji": "図",
+        "mean": "hình vẽ minh họa"
+    },
+    {
+        "name": "せん",
+        "kanji": "線",
+        "mean": "đường kẻ"
+    },
+    {
+        "name": "やじるし",
+        "kanji": "矢印",
+        "mean": "mũi tên (ký hiệu)"
+    },
+    {
+        "name": "くろ",
+        "kanji": "黒",
+        "mean": "màu đen (danh từ)"
+    },
+    {
+        "name": "しろ",
+        "kanji": "白",
+        "mean": "màu trắng (danh từ)"
+    },
+    {
+        "name": "あか",
+        "kanji": "赤",
+        "mean": "màu đỏ (danh từ)"
+    },
+    {
+        "name": "あお",
+        "kanji": "青",
+        "mean": "màu xanh (danh từ)"
+    },
+    {
+        "name": "こん",
+        "kanji": "紺",
+        "mean": "màu xanh sẫm (danh từ)"
+    },
+    {
+        "name": "きいろ",
+        "kanji": "黄色",
+        "mean": "màu vàng (danh từ)"
+    },
+    {
+        "name": "ちゃいろ",
+        "kanji": "茶色",
+        "mean": "màu nâu (danh từ)"
+    },
+    {
+        "name": "しょうゆ",
+        "kanji": "",
+        "mean": "xì dầu"
+    },
+    {
+        "name": "ソース",
+        "kanji": "",
+        "mean": "nước sốt"
+    },
+    {
+        "name": "おきゃく [さん]",
+        "kanji": "お客 [さん]",
+        "mean": "[vị] khách"
+    },
+    {
+        "name": "~か~",
+        "kanji": "",
+        "mean": "hay là"
+    },
+    {
+        "name": "ゆうべ",
+        "kanji": "",
+        "mean": "tối qua"
+    },
+    {
+        "name": "さっき",
+        "kanji": "",
+        "mean": "lúc nãy"
+    },
+    {
+        "name": "さどう",
+        "kanji": "茶道",
+        "mean": "trà đạo"
+    },
+    {
+        "name": "おちゃをたてます",
+        "kanji": "お茶をたてます",
+        "mean": "đánh trà (trong trà đạo)"
+    },
+    {
+        "name": "さきに",
+        "kanji": "先に",
+        "mean": "trước"
+    },
+    {
+        "name": "のせます",
+        "kanji": "載せます",
+        "mean": "để lên"
+    },
+    {
+        "name": "これでいいですか。",
+        "kanji": "",
+        "mean": "Như thế này có được không?"
+    },
+    {
+        "name": "いかがですか。",
+        "kanji": "",
+        "mean": "Như thế nào ạ?"
+    },
+    {
+        "name": "にがい",
+        "kanji": "苦い",
+        "mean": "đắng"
+    },
+    {
+        "name": "おやこどんぶり",
+        "kanji": "親子どんぶり",
+        "mean": "Oyakodonburi (món cơm gồm có thịt gà và trứng để trong tô lớn)"
+    },
+    {
+        "name": "ざいりょう",
+        "kanji": "材料",
+        "mean": "nguyên liệu"
+    },
+    {
+        "name": "~ぶん",
+        "kanji": "~分",
+        "mean": "phần - (biểu thị lượng)"
+    },
+    {
+        "name": "ーグラム",
+        "kanji": "",
+        "mean": "gram"
+    },
+    {
+        "name": "いっこ",
+        "kanji": "一個",
+        "mean": "cái (trợ số từ dùng để đếm vật nhỏ)"
+    },
+    {
+        "name": "たまねぎ",
+        "kanji": "",
+        "mean": "hành tây"
+    },
+    {
+        "name": "4ぶんの1",
+        "kanji": "4分の1",
+        "mean": "một phần tư (1/4)"
+    },
+    {
+        "name": "ちょうみりょう",
+        "kanji": "調味料",
+        "mean": "gia vị"
+    },
+    {
+        "name": "てきとうなおおきさに",
+        "kanji": "適当な大きさに",
+        "mean": "độ lớn thích hợp"
+    },
+    {
+        "name": "なべ",
+        "kanji": "",
+        "mean": "nồi"
+    },
+    {
+        "name": "ひ",
+        "kanji": "火",
+        "mean": "lửa"
+    },
+    {
+        "name": "ひにかけます",
+        "kanji": "火にかけます",
+        "mean": "bắc lên bếp"
+    },
+    {
+        "name": "にます",
+        "kanji": "煮ます",
+        "mean": "nấu"
+    },
+    {
+        "name": "にえます",
+        "kanji": "煮えます",
+        "mean": "chín"
+    },
+    {
+        "name": "どんぶり",
+        "kanji": "",
+        "mean": "bát tô lớn"
+    },
+    {
+        "name": "たちます",
+        "kanji": "",
+        "mean": "trôi qua (thời gian)"
+    },
+    {
+        "name": "りょうり",
+        "kanji": "料理",
+        "mean": "nấu ăn"
+    },
+    {
+        "name": "にる",
+        "kanji": "煮る",
+        "mean": "nấu"
+    },
+    {
+        "name": "やく",
+        "kanji": "焼く",
+        "mean": "nướng, rán"
+    },
+    {
+        "name": "あげる",
+        "kanji": "揚げる",
+        "mean": "chiên"
+    },
+    {
+        "name": "いためる",
+        "kanji": "",
+        "mean": "xào"
+    },
+    {
+        "name": "ゆでる",
+        "kanji": "",
+        "mean": "luộc"
+    },
+    {
+        "name": "むす",
+        "kanji": "蒸す",
+        "mean": "hấp"
+    },
+    {
+        "name": "たく",
+        "kanji": "炊く",
+        "mean": "nấu cơm"
+    },
+    {
+        "name": "むく",
+        "kanji": "",
+        "mean": "gọt, bóc"
+    },
+    {
+        "name": "きざむ",
+        "kanji": "刻む",
+        "mean": "thái"
+    },
+    {
+        "name": "かきまぜる",
+        "kanji": "かき混ぜる",
+        "mean": "khuấy"
+    },
+    {
+        "name": "さとう",
+        "kanji": "砂糖",
+        "mean": "đường"
+    },
+    {
+        "name": "しお",
+        "kanji": "塩",
+        "mean": "muối"
+    },
+    {
+        "name": "す",
+        "kanji": "酢",
+        "mean": "giấm"
+    },
+    {
+        "name": "みそ",
+        "kanji": "",
+        "mean": "miso (tương Nhật)"
+    },
+    {
+        "name": "あぶら",
+        "kanji": "油",
+        "mean": "dầu ăn, mỡ"
+    },
+    {
+        "name": "マヨネーズ",
+        "kanji": "",
+        "mean": "ma-yo-nê (mayonnaise)"
+    },
+    {
+        "name": "ケチャップ",
+        "kanji": "",
+        "mean": "tương cà chua (ketchup)"
+    },
+    {
+        "name": "からし",
+        "kanji": "",
+        "mean": "mù tạt, mù tạc (マスタード)"
+    },
+    {
+        "name": "こしょう",
+        "kanji": "",
+        "mean": "hạt tiêu"
+    },
+    {
+        "name": "とうがらし",
+        "kanji": "",
+        "mean": "ớt"
+    },
+    {
+        "name": "しょうが",
+        "kanji": "",
+        "mean": "gừng"
+    },
+    {
+        "name": "わさび",
+        "kanji": "",
+        "mean": "wasabi"
+    },
+    {
+        "name": "カレーこ",
+        "kanji": "カレー粉",
+        "mean": "bột ca-ri"
+    },
+    {
+        "name": "だいどころようひん",
+        "kanji": "台所用品",
+        "mean": "đồ dùng trong bếp"
+    },
+    {
+        "name": "しゃもじ",
+        "kanji": "",
+        "mean": "thìa dẹt xới cơm"
+    },
+    {
+        "name": "やかん",
+        "kanji": "",
+        "mean": "cái ấm nước"
+    },
+    {
+        "name": "ふた",
+        "kanji": "",
+        "mean": "cái nắp"
+    },
+    {
+        "name": "おたま",
+        "kanji": "",
+        "mean": "cái muỗng"
+    },
+    {
+        "name": "まないた",
+        "kanji": "まな板",
+        "mean": "cái thớt"
+    },
+    {
+        "name": "ほうちょう",
+        "kanji": "包丁",
+        "mean": "dao phay, dao thái thịt"
+    },
+    {
+        "name": "ふきん",
+        "kanji": "",
+        "mean": "khăn lau, giấy lau"
+    },
+    {
+        "name": "フライパン",
+        "kanji": "",
+        "mean": "cái chảo để rán"
+    },
+    {
+        "name": "でんしオーブンレンジ",
+        "kanji": "電子オーブンレンジ",
+        "mean": "lò vi sóng"
+    },
+    {
+        "name": "すいはんき",
+        "kanji": "炊飯器",
+        "mean": "nồi cơm điện"
+    },
+    {
+        "name": "しゃもじ",
+        "kanji": "",
+        "mean": "thìa dẹt xới cơm"
+    },
+    {
+        "name": "かんきり",
+        "kanji": "缶切り",
+        "mean": "cái mở đồ hộp"
+    },
+    {
+        "name": "せんぬき",
+        "kanji": "栓抜き",
+        "mean": "cái mở nắp chai"
+    },
+    {
+        "name": "ざる",
+        "kanji": "",
+        "mean": "cái rá"
+    },
+    {
+        "name": "ポット",
+        "kanji": "",
+        "mean": "cái ấm điện (đun và chứa nước nóng)"
+    },
+    {
+        "name": "ながし [だい]",
+        "kanji": "流し [台]",
+        "mean": "chậu rửa, bồn rửa"
+    },
+    {
+        "name": "かんきせん",
+        "kanji": "換気扇",
+        "mean": "quạt hút khí"
+    },
+    {
+        "name": "ガスだい",
+        "kanji": "ガス台",
+        "mean": "chỗ để bếp ga"
+    }
+]
