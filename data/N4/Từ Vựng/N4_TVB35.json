@@ -1,0 +1,222 @@
+[
+  {
+    "name": "咲きます [花が~]_さきます [はなが~]",
+    "mean": "nở [hoa ~]"
+  },
+  {
+    "name": "変わります [色が~]_かわります [いろが~]",
+    "mean": "đổi, thay đổi [màu ~]"
+  },
+  {
+    "name": "困ります_こまります",
+    "mean": "khó khăn"
+  },
+  {
+    "name": "付けます [丸を~]_つけます [まるを~]",
+    "mean": "đánh [dấu tròn]"
+  },
+  {
+    "name": "治ります、直ります [病気が~ / 故障が~]_なおります [びょうきが〜 / こしょうが〜]",
+    "mean": "khỏi [bệnh] / được sửa xong [hỏng hóc ~]"
+  },
+  {
+    "name": "クリックします",
+    "mean": "click chuột"
+  },
+  {
+    "name": "入力します_にゅうりょくします",
+    "mean": "nhập vào"
+  },
+  {
+    "name": "正しい_ただしい",
+    "mean": "đúng"
+  },
+  {
+    "name": "向こう_むこう",
+    "mean": "đằng ấy, phía đối diện"
+  },
+  {
+    "name": "島_しま",
+    "mean": "đảo"
+  },
+  {
+    "name": "港_みなと",
+    "mean": "cảng"
+  },
+  {
+    "name": "近所_きんじょ",
+    "mean": "hàng xóm"
+  },
+  {
+    "name": "屋上_おくじょう",
+    "mean": "tầng thượng"
+  },
+  {
+    "name": "海外_かいがい",
+    "mean": "nước ngoài"
+  },
+  {
+    "name": "山登り_やまのぼり",
+    "mean": "leo núi"
+  },
+  {
+    "name": "歷史_れきし",
+    "mean": "lịch sử"
+  },
+  {
+    "name": "機会_きかい",
+    "mean": "cơ hội"
+  },
+  {
+    "name": "許可_きょか",
+    "mean": "sự cho phép"
+  },
+  {
+    "name": "丸_まる",
+    "mean": "dấu tròn"
+  },
+  {
+    "name": "ふりがな",
+    "mean": "Furigana (chữ Kana biểu thị cách đọc của chữ Hán)"
+  },
+  {
+    "name": "設備_せつび",
+    "mean": "thiết bị"
+  },
+  {
+    "name": "レバー",
+    "mean": "cần, cần gạt"
+  },
+  {
+    "name": "キー",
+    "mean": "phím"
+  },
+  {
+    "name": "カーテン",
+    "mean": "rèm cửa"
+  },
+  {
+    "name": "ひも",
+    "mean": "sợi dây"
+  },
+  {
+    "name": "炊飯器_すいはんき",
+    "mean": "nồi cơm điện"
+  },
+  {
+    "name": "葉_は",
+    "mean": "lá"
+  },
+  {
+    "name": "昔_むかし",
+    "mean": "ngày xưa"
+  },
+  {
+    "name": "もっと",
+    "mean": "hơn nữa"
+  },
+  {
+    "name": "これで終わりましょう。_これでおわりましょう。",
+    "mean": "Chúng ta dừng ở đây nhé."
+  },
+  {
+    "name": "箱根_はこね",
+    "mean": "khu nghỉ dưỡng, tham quan ở tỉnh Kanagawa"
+  },
+  {
+    "name": "日光_にっこう",
+    "mean": "địa điểm tham quan ở tỉnh Tochigi"
+  },
+  {
+    "name": "アフリカ",
+    "mean": "châu Phi"
+  },
+  {
+    "name": "マンガミュージアム",
+    "mean": "Bảo tàng truyện tranh quốc tế Kyoto"
+  },
+  {
+    "name": "みんなの学校_みんなのがっこう",
+    "mean": "tên trường tiếng Nhật giả định"
+  },
+  {
+    "name": "大黒ずし_だいこくずし",
+    "mean": "tên quán sushi giả định"
+  },
+  {
+    "name": "IMCパソコン教室_IMCパソコンきょうしつ",
+    "mean": "tên trường đào tạo chuyên môn máy tính giả định"
+  },
+  {
+    "name": "母の味_ははのあじ",
+    "mean": "tiêu đề của cuốn sách giả định"
+  },
+  {
+    "name": "はる",
+    "mean": "hiệu làm đẹp giả định"
+  },
+  {
+    "name": "佐藤歯科_さとうしか",
+    "mean": "phòng nha giả định"
+  },
+  {
+    "name": "毎日クッキング_まいにちクッキング",
+    "mean": "trường dạy nấu ăn giả định"
+  },
+  {
+    "name": "それなら",
+    "mean": "nếu thế thì, nếu vậy thì"
+  },
+  {
+    "name": "夜行バス_やこうバス",
+    "mean": "xe buýt đêm"
+  },
+  {
+    "name": "さあ",
+    "mean": "ờ, à (dùng ở đầu câu nói khi không nắm rõ một việc gì)"
+  },
+  {
+    "name": "旅行社_りょこうしゃ",
+    "mean": "công ty du lịch"
+  },
+  {
+    "name": "詳しい_くわしい",
+    "mean": "cụ thể, chi tiết"
+  },
+  {
+    "name": "スキー場_スキーじょう",
+    "mean": "khu trượt tuyết"
+  },
+  {
+    "name": "草津_くさつ",
+    "mean": "khu nghỉ dưỡng ở tỉnh Gunma"
+  },
+  {
+    "name": "志賀高原_しがこうげん",
+    "mean": "cao nguyên nằm trong công viên quốc gia thuộc tỉnh Nagano"
+  },
+  {
+    "name": "朱_しゅ",
+    "mean": "màu đỏ tươi"
+  },
+  {
+    "name": "交わります_まじわります",
+    "mean": "chơi với, quen với"
+  },
+  {
+    "name": "ことわざ",
+    "mean": "thành ngữ, tục ngữ"
+  },
+  {
+    "name": "関係_かんけい",
+    "mean": "quan hệ"
+  },
+  {
+    "name": "仲よくします_なかよくします",
+    "mean": "chơi thân với"
+  },
+  {
+    "name": "必要 [な]_ひつよう [な]",
+    "mean": "cần thiết"
+  }
+]
