@@ -11,7 +11,65 @@
         <button id="btn-library" class="nav-btn active">Thư Viện</button>
         <button id="btn-learn" class="nav-btn">Học Từ Vựng</button>
         <button id="btn-list" class="nav-btn">Danh Sách</button>
+        <button id="btn-open-sync" class="nav-btn nav-btn-sync" title="Đồng bộ Cloud & Sao lưu tiến độ">☁️ Đồng Bộ</button>
     </header>
+
+    <!-- Modal Đồng Bộ Cloud & Sao Lưu -->
+    <div id="modal-sync" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>☁️ Đồng Bộ & Sao Lưu Tiến Độ</h3>
+                <button id="btn-close-sync" class="btn-close-modal" aria-label="Đóng">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="sync-section">
+                    <label class="sync-label" for="sync-key-input">🔑 Mã đồng bộ cá nhân (Sync Key):</label>
+                    <div class="sync-input-group">
+                        <input type="text" id="sync-key-input" placeholder="Ví dụ: nghia_japanese_99" maxlength="40">
+                        <button id="btn-random-key" class="btn-sub" title="Tạo mã ngẫu nhiên">🎲 Tạo mã</button>
+                    </div>
+                    <p class="sync-hint">💡 Nhập <strong>cùng một mã này</strong> trên cả Điện thoại và Máy tính để đồng bộ điểm số với nhau.</p>
+                </div>
+
+                <div class="sync-actions-grid">
+                    <button id="btn-cloud-upload" class="btn-sync-action btn-upload">
+                        <span class="icon">☁️ ⬆️</span>
+                        <div class="text-group">
+                            <strong>Tải lên Cloud</strong>
+                            <small>Lưu điểm từ máy này lên đám mây</small>
+                        </div>
+                    </button>
+                    <button id="btn-cloud-download" class="btn-sync-action btn-download">
+                        <span class="icon">☁️ ⬇️</span>
+                        <div class="text-group">
+                            <strong>Tải về từ Cloud</strong>
+                            <small>Lấy điểm từ đám mây về máy này</small>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="sync-auto-option">
+                    <label>
+                        <input type="checkbox" id="chk-auto-sync" checked>
+                        <span>Tự động đồng bộ lên Cloud khi trả lời thẻ</span>
+                    </label>
+                </div>
+
+                <div id="sync-status-msg" class="sync-status-msg"></div>
+
+                <hr class="sync-divider">
+
+                <div class="sync-backup-section">
+                    <div class="sync-backup-title">📁 Sao lưu thủ công bằng file (Dự phòng offline):</div>
+                    <div class="backup-buttons">
+                        <button id="btn-export-file" class="btn-sub">📤 Xuất file (.json)</button>
+                        <button id="btn-import-file-trigger" class="btn-sub">📥 Nhập file (.json)</button>
+                        <input type="file" id="input-import-file" accept=".json" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Giao diện Thư Viện -->
     <main id="view-library" class="view active-view">
@@ -38,9 +96,11 @@
             <button id="btn-forget" class="btn-danger">❮ Quên</button>
             <button id="btn-remember" class="btn-success">Nhớ ❯</button>
         </div>
-        <p class="tip-text">💡 Nhấn thẻ để lật (hoặc Phím cách/Mũi tên lên-xuống). Vuốt trái (hoặc Mũi tên trái) = Quên, Vuốt phải (hoặc Mũi tên phải) = Nhớ. Phím <strong>S</strong> để nghe phát âm 🔊.</p>
+        <p class="tip-text">💡 Nhấn thẻ để lật (hoặc Phím cách/Mũi tên lên-xuống). Vuốt trái (hoặc Mũi tên trái) = Quên, Vuốt phải (hoặc Mũi tên phải) = Nhớ. Phím <strong>S</strong> để nghe 🔊. Phím <strong>R</strong> để xáo trộn 🔀.</p>
         <div style="text-align: center; margin-top: 1rem; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
             <button id="btn-counter" class="btn-sub">Số thẻ đã học</button>
+            <button id="btn-shuffle-queue" class="btn-sub" title="Xáo trộn ngẫu nhiên các từ đang học (Phím R)">🔀 Xáo trộn từ</button>
+            <button id="btn-report-flag" class="btn-sub btn-flag-report" title="Đánh dấu từ này cần sửa lỗi">🚩 Báo lỗi từ này</button>
             <button id="btn-find-list" class="btn-sub">🔍 Tìm trong danh sách</button>
         </div>
 
@@ -62,8 +122,8 @@
                 <div class="setting-item">
                     <label for="select-order-mode">Thứ tự:</label>
                     <select id="select-order-mode">
-                        <option value="random" selected>Ngẫu nhiên</option>
-                        <option value="sequential">Theo thứ tự</option>
+                        <option value="sequential" selected>Theo thứ tự</option>
+                        <option value="random">Ngẫu nhiên</option>
                     </select>
                 </div>
 
@@ -120,6 +180,7 @@
                     <option value="all">Tất cả</option>
                     <option value="positive">Điểm dương (> 0)</option>
                     <option value="negative">Điểm âm (< 0)</option>
+                    <option value="flagged">🚩 Cần sửa / Báo lỗi</option>
                 </select>
             </label>
             <button id="btn-reset" class="btn-reset">Đặt lại toàn bộ điểm</button>

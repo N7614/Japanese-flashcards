@@ -233,6 +233,8 @@ async function loadSelectedPacks() {
                 const sourceId = cb.dataset.id;
                 const saved = localStorage.getItem('vocabProgress_' + sourceId);
                 const scores = saved ? JSON.parse(saved) : {};
+                const savedFlags = localStorage.getItem('vocabFlags_' + sourceId);
+                const flags = savedFlags ? JSON.parse(savedFlags) : {};
 
                 vocabData = vocabData.concat(data.map((item, index) => ({
                     ...item,
@@ -240,7 +242,8 @@ async function loadSelectedPacks() {
                     displayIndex: globalIndexCount++,
                     sourceId: sourceId,
                     sourceName: cb.dataset.name,
-                    score: scores[index] !== undefined ? scores[index] : 0
+                    score: scores[index] !== undefined ? scores[index] : 0,
+                    flagged: flags[index] === true
                 })));
             }
         } catch (error) {
@@ -258,13 +261,22 @@ async function loadSelectedPacks() {
 
 function saveProgress() {
     const progress = {};
+    const flags = {};
     vocabData.forEach(w => {
         if (!progress[w.sourceId]) progress[w.sourceId] = {};
+        if (!flags[w.sourceId]) flags[w.sourceId] = {};
         progress[w.sourceId][w.originalIndex] = w.score;
+        if (w.flagged) {
+            flags[w.sourceId][w.originalIndex] = true;
+        }
     });
     for (let sourceId in progress) {
         localStorage.setItem('vocabProgress_' + sourceId, JSON.stringify(progress[sourceId]));
     }
+    for (let sourceId in flags) {
+        localStorage.setItem('vocabFlags_' + sourceId, JSON.stringify(flags[sourceId]));
+    }
+    triggerAutoSync();
 }
 
 function initQueue() {
@@ -278,7 +290,7 @@ function initQueue() {
     const filterModeEl = document.getElementById('select-filter-mode');
 
     const countVal = wordCountEl ? wordCountEl.value : 'all';
-    const orderMode = orderModeEl ? orderModeEl.value : 'random';
+    const orderMode = orderModeEl ? orderModeEl.value : 'sequential';
     const filterMode = filterModeEl ? filterModeEl.value : 'all';
 
     // 1. Lọc theo điểm / trạng thái học
@@ -322,7 +334,7 @@ function updateSessionBadge() {
     const badgeEl = document.getElementById('session-info-badge');
     if (!badgeEl) return;
     const countVal = document.getElementById('select-word-count') ? document.getElementById('select-word-count').value : 'all';
-    const orderMode = document.getElementById('select-order-mode') ? document.getElementById('select-order-mode').value : 'random';
+    const orderMode = document.getElementById('select-order-mode') ? document.getElementById('select-order-mode').value : 'sequential';
     const countText = countVal === 'all' ? `Tất cả (${queue.length} từ)` : `${queue.length} từ`;
     const orderText = orderMode === 'random' ? 'Ngẫu nhiên' : 'Thứ tự gốc';
     badgeEl.innerText = `Đang học: ${countText} • ${orderText}`;
@@ -420,7 +432,7 @@ function showNextCard() {
     const hasKanji = currentWord.kanji && currentWord.kanji.trim() !== '';
     const mainJaText = hasKanji ? currentWord.kanji : currentWord.name;
     const kanaReading = currentWord.name; // Cách đọc Hiragana
-    const ttsBtnHtml = `<button class="btn-tts" title="Nghe phát âm (Phím S)" onclick="event.stopPropagation(); speakCurrentWord();">🔊 Nghe</button>`;
+    const ttsBtnHtml = `<button class="btn-tts" title="Nghe phát âm (Phím S)" onclick="event.stopPropagation(); speakCurrentWord();" onmousedown="event.stopPropagation();" ontouchstart="event.stopPropagation();">🔊 Nghe</button>`;
 
     // Xây dựng khối Tiếng Nhật
     let jaHtmlParts = [];
@@ -477,8 +489,84 @@ function showNextCard() {
         speakCurrentWord();
     }
 
+    // Cập nhật trạng thái nút cờ báo lỗi trên giao diện học
+    const btnFlag = document.getElementById('btn-report-flag');
+    if (btnFlag) {
+        if (currentWord.flagged) {
+            btnFlag.classList.add('flagged-active');
+            btnFlag.innerHTML = '🚩 Đã báo lỗi';
+            btnFlag.title = 'Nhấn để bỏ báo lỗi từ này';
+        } else {
+            btnFlag.classList.remove('flagged-active');
+            btnFlag.innerHTML = '🚩 Báo lỗi từ này';
+            btnFlag.title = 'Đánh dấu từ này cần sửa lỗi';
+        }
+    }
+
     saveProgress();
     renderList();
+}
+
+// Xử lý nút Báo lỗi từ vựng
+const btnReportFlag = document.getElementById('btn-report-flag');
+if (btnReportFlag) {
+    btnReportFlag.addEventListener('click', () => {
+        if (!currentWord) return;
+        currentWord.flagged = !currentWord.flagged;
+        saveProgress();
+        if (currentWord.flagged) {
+            btnReportFlag.classList.add('flagged-active');
+            btnReportFlag.innerHTML = '🚩 Đã báo lỗi';
+            btnReportFlag.title = 'Nhấn để bỏ báo lỗi từ này';
+        } else {
+            btnReportFlag.classList.remove('flagged-active');
+            btnReportFlag.innerHTML = '🚩 Báo lỗi từ này';
+            btnReportFlag.title = 'Đánh dấu từ này cần sửa lỗi';
+        }
+        if (viewList.classList.contains('active-view')) {
+            renderList();
+        }
+    });
+}
+
+// Xử lý Xáo trộn các từ đang học trong phiên
+function shuffleCurrentQueue() {
+    if (vocabData.length === 0) return;
+    
+    let allCurrentWords = [...queue];
+    if (currentWord) {
+        allCurrentWords.push(currentWord);
+    }
+    
+    if (allCurrentWords.length === 0) return;
+    
+    // Thuật toán xáo trộn Fisher-Yates
+    for (let i = allCurrentWords.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [allCurrentWords[i], allCurrentWords[j]] = [allCurrentWords[j], allCurrentWords[i]];
+    }
+    
+    queue = allCurrentWords;
+    showNextCard();
+    
+    const btnShuffle = document.getElementById('btn-shuffle-queue');
+    if (btnShuffle) {
+        btnShuffle.innerText = '🔀 Đã xáo trộn!';
+        btnShuffle.style.background = '#e8f5e9';
+        btnShuffle.style.borderColor = '#4caf50';
+        btnShuffle.style.color = '#2e7d32';
+        setTimeout(() => {
+            btnShuffle.innerText = '🔀 Xáo trộn từ';
+            btnShuffle.style.background = '';
+            btnShuffle.style.borderColor = '';
+            btnShuffle.style.color = '';
+        }, 1200);
+    }
+}
+
+const btnShuffleQueue = document.getElementById('btn-shuffle-queue');
+if (btnShuffleQueue) {
+    btnShuffleQueue.addEventListener('click', shuffleCurrentQueue);
 }
 
 // --- Xử lý sự kiện Giao diện --- //
@@ -638,18 +726,22 @@ let lastTouchTime = 0;
 
 // Sự kiện hỗ trợ cảm ứng (Mobile)
 flashcard.addEventListener('touchstart', e => {
+    if (e.target.closest('.btn-tts') || e.target.closest('button')) return;
     lastTouchTime = Date.now();
     startDrag(e.touches[0].clientX);
 }, {passive: true});
 flashcard.addEventListener('touchmove', e => {
+    if (!isDragging) return;
     moveDrag(e.touches[0].clientX);
 }, {passive: true});
 flashcard.addEventListener('touchend', e => {
+    if (!isDragging) return;
     endDrag(e.changedTouches[0].clientX);
 });
 
 // Sự kiện kéo (Desktop)
 flashcard.addEventListener('mousedown', e => {
+    if (e.target.closest('.btn-tts') || e.target.closest('button')) return;
     if (Date.now() - lastTouchTime < 500) return; // Chặn "click ảo" của chuột khi vừa chạm ngón tay
     startDrag(e.clientX);
 });
@@ -673,6 +765,8 @@ document.addEventListener('keydown', (e) => {
         flashcard.classList.toggle('is-flipped');
     } else if (e.key.toLowerCase() === 's' || e.key.toLowerCase() === 'v') {
         speakCurrentWord();
+    } else if (e.key.toLowerCase() === 'r') {
+        shuffleCurrentQueue();
     }
 });
 
@@ -745,6 +839,7 @@ function renderList() {
     let filtered = vocabData.filter(word => {
         if (filterVal === 'positive') return word.score > 0;
         if (filterVal === 'negative') return word.score < 0;
+        if (filterVal === 'flagged') return word.flagged === true;
         return true;
     });
 
@@ -758,40 +853,433 @@ function renderList() {
     // Hiển thị ra bảng
     tbody.innerHTML = '';
     filtered.forEach((word) => {
-        let scoreColor = '#333';
-        let bgColor = 'transparent';
-        
-        // Cường độ màu tăng dần từ điểm 1 đến điểm 10 (tối đa độ đậm ở mức điểm 10)
-        if (word.score > 0) {
-            let alpha = Math.min(word.score * 0.1, 1);
-            bgColor = `rgba(46, 125, 50, ${alpha})`;
-            scoreColor = alpha >= 0.5 ? '#fff' : '#1b5e20'; // Đổi màu chữ trắng nếu nền quá đậm
-        } else if (word.score < 0) {
-            let alpha = Math.min(Math.abs(word.score) * 0.1, 1);
-            bgColor = `rgba(211, 47, 47, ${alpha})`;
-            scoreColor = alpha >= 0.5 ? '#fff' : '#b71c1c';
-        }
-
         const hasKanji = word.kanji && word.kanji.trim() !== '';
         const mainJa = hasKanji ? word.kanji : word.name;
         const subKana = hasKanji ? `<div style="color: #007bff; font-size: 0.88rem; margin-top: 2px;">${word.name.split('_').join(' ')}</div>` : '';
         const speechText = (word.kanji || word.name).replace(/'/g, "\\'");
+
+        let scoreClass = 'neutral';
+        if (word.score > 0) scoreClass = 'positive';
+        else if (word.score < 0) scoreClass = 'negative';
 
         const tr = document.createElement('tr');
         tr.id = `row-word-${word.displayIndex}`;
         tr.innerHTML = `
             <td style="text-align:center;">${word.displayIndex + 1}</td>
             <td>
-                <div style="font-weight: bold; font-size: 1.05rem; display: flex; align-items: center; gap: 6px;">
+                <div style="font-weight: bold; font-size: 1.05rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
                     <span>${mainJa.split('_').join('<br>')}</span>
-                    <button style="border:none; background:transparent; cursor:pointer; font-size:1.05rem; padding:0 4px; border-radius:4px;" title="Nghe phát âm" onclick="speakJapanese('${speechText}')">🔊</button>
+                    <button style="border:none; background:transparent; cursor:pointer; font-size:1.05rem; padding:0 2px; border-radius:4px;" title="Nghe phát âm" onclick="speakJapanese('${speechText}')">🔊</button>
+                    <button class="btn-flag-row ${word.flagged ? 'is-flagged' : ''}" title="${word.flagged ? 'Bỏ đánh dấu cần sửa' : 'Đánh dấu từ này cần sửa'}" onclick="toggleWordFlag(${word.displayIndex})">🚩</button>
                 </div>
                 ${subKana}
             </td>
             <td>${word.mean}</td>
             <td><span style="background: #e9ecef; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem;">${word.sourceName}</span></td>
-            <td style="text-align:center; font-weight:bold; color:${scoreColor}; background-color:${bgColor}; transition: background-color 0.3s;">${word.score}</td>
+            <td style="text-align:center; padding: 4px;">
+                <input type="number" 
+                       class="score-input ${scoreClass}" 
+                       value="${word.score}" 
+                       data-index="${word.displayIndex}" 
+                       onchange="handleScoreInputChange(this, ${word.displayIndex})" 
+                       onfocus="this.select()" 
+                       title="Nhấp vào để sửa điểm số" />
+            </td>
         `;
         tbody.appendChild(tr);
     });
 }
+
+// Hàm Bật/Tắt cờ Báo lỗi trong bảng danh sách
+window.toggleWordFlag = function(displayIndex) {
+    const word = vocabData.find(w => w.displayIndex === displayIndex);
+    if (!word) return;
+    word.flagged = !word.flagged;
+    saveProgress();
+
+    // Cập nhật nút cờ trên màn hình học nếu đang học chính từ này
+    if (currentWord && currentWord.displayIndex === displayIndex) {
+        const btnFlag = document.getElementById('btn-report-flag');
+        if (btnFlag) {
+            if (word.flagged) {
+                btnFlag.classList.add('flagged-active');
+                btnFlag.innerHTML = '🚩 Đã báo lỗi';
+                btnFlag.title = 'Nhấn để bỏ báo lỗi từ này';
+            } else {
+                btnFlag.classList.remove('flagged-active');
+                btnFlag.innerHTML = '🚩 Báo lỗi từ này';
+                btnFlag.title = 'Đánh dấu từ này cần sửa lỗi';
+            }
+        }
+    }
+
+    const filterVal = document.getElementById('filter-select').value;
+    if (filterVal === 'flagged') {
+        renderList();
+    } else {
+        const row = document.getElementById(`row-word-${displayIndex}`);
+        if (row) {
+            const flagBtn = row.querySelector('.btn-flag-row');
+            if (flagBtn) {
+                flagBtn.classList.toggle('is-flagged', word.flagged);
+                flagBtn.title = word.flagged ? 'Bỏ đánh dấu cần sửa' : 'Đánh dấu từ này cần sửa';
+            }
+        }
+    }
+};
+
+// Hàm Xử lý khi người dùng chỉnh sửa điểm trực tiếp trong ô nhập liệu
+window.handleScoreInputChange = function(inputEl, displayIndex) {
+    const word = vocabData.find(w => w.displayIndex === displayIndex);
+    if (!word) return;
+
+    let newScore = parseInt(inputEl.value, 10);
+    if (isNaN(newScore)) newScore = 0;
+
+    word.score = newScore;
+    inputEl.value = newScore;
+
+    inputEl.classList.remove('positive', 'negative', 'neutral');
+    if (newScore > 0) inputEl.classList.add('positive');
+    else if (newScore < 0) inputEl.classList.add('negative');
+    else inputEl.classList.add('neutral');
+
+    saveProgress();
+};
+
+// ========================================== //
+// --- HỆ THỐNG ĐỒNG BỘ CLOUD & SAO LƯU TIẾN ĐỘ --- //
+// ========================================== //
+
+const CLOUD_SYNC_ENDPOINT = 'https://japanese-flashcard-sync-default-rtdb.asia-southeast1.firebasedatabase.app/sync';
+let autoSyncTimer = null;
+
+function getAllProgressData() {
+    const progress = {};
+    const flags = {};
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key) {
+            if (key.startsWith('vocabProgress_')) {
+                try {
+                    progress[key] = JSON.parse(localStorage.getItem(key));
+                } catch (e) {
+                    console.warn("Lỗi đọc key:", key, e);
+                }
+            } else if (key.startsWith('vocabFlags_')) {
+                try {
+                    flags[key] = JSON.parse(localStorage.getItem(key));
+                } catch (e) {
+                    console.warn("Lỗi đọc flag key:", key, e);
+                }
+            }
+        }
+    }
+    return {
+        version: 1,
+        appName: 'JapaneseVocabApp',
+        updatedAt: new Date().toISOString(),
+        totalPacks: Object.keys(progress).length,
+        progress: progress,
+        flags: flags
+    };
+}
+
+function restoreAllProgressData(remoteData) {
+    if (!remoteData || !remoteData.progress || typeof remoteData.progress !== 'object') {
+        return false;
+    }
+
+    const progress = remoteData.progress;
+    for (const key in progress) {
+        if (key.startsWith('vocabProgress_')) {
+            localStorage.setItem(key, JSON.stringify(progress[key]));
+        }
+    }
+
+    if (remoteData.flags && typeof remoteData.flags === 'object') {
+        for (const key in remoteData.flags) {
+            if (key.startsWith('vocabFlags_')) {
+                localStorage.setItem(key, JSON.stringify(remoteData.flags[key]));
+            }
+        }
+    }
+
+    // Cập nhật lại điểm số & flag trong vocabData nếu đang mở bài học
+    if (vocabData && vocabData.length > 0) {
+        vocabData.forEach(w => {
+            const saved = localStorage.getItem('vocabProgress_' + w.sourceId);
+            if (saved) {
+                try {
+                    const scores = JSON.parse(saved);
+                    if (scores[w.originalIndex] !== undefined) {
+                        w.score = scores[w.originalIndex];
+                    }
+                } catch (e) {}
+            }
+            const savedFlags = localStorage.getItem('vocabFlags_' + w.sourceId);
+            if (savedFlags) {
+                try {
+                    const flags = JSON.parse(savedFlags);
+                    w.flagged = flags[w.originalIndex] === true;
+                } catch (e) {}
+            }
+        });
+        if (viewList.classList.contains('active-view')) {
+            renderList();
+        }
+    }
+
+    return true;
+}
+
+function updateSyncStatusUI(message, type = 'success') {
+    const statusEl = document.getElementById('sync-status-msg');
+    if (!statusEl) return;
+    statusEl.className = `sync-status-msg active ${type}`;
+    statusEl.innerText = message;
+}
+
+async function uploadToCloud(showToast = true) {
+    const syncKeyInput = document.getElementById('sync-key-input');
+    let syncKey = (syncKeyInput ? syncKeyInput.value : localStorage.getItem('user_sync_key') || '').trim();
+    
+    if (!syncKey) {
+        if (showToast) {
+            updateSyncStatusUI("⚠️ Vui lòng nhập hoặc tạo Mã đồng bộ cá nhân trước!", "warning");
+        }
+        return false;
+    }
+
+    localStorage.setItem('user_sync_key', syncKey);
+    updateSyncStatusUI("⏳ Đang tải điểm lên Cloud...", "loading");
+
+    const payload = getAllProgressData();
+    payload.syncKey = syncKey;
+
+    try {
+        const cleanKey = encodeURIComponent(syncKey.replace(/[^a-zA-Z0-9_\-]/g, '_'));
+        const response = await fetch(`${CLOUD_SYNC_ENDPOINT}/${cleanKey}.json`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const nowStr = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        localStorage.setItem('last_synced_time', new Date().toISOString());
+        updateSyncStatusUI(`✅ Đã tải lên Cloud thành công lúc ${nowStr}! (${payload.totalPacks} gói bài)`, "success");
+        return true;
+    } catch (err) {
+        console.error("Lỗi tải lên Cloud:", err);
+        updateSyncStatusUI("❌ Không thể kết nối Cloud. Vui lòng kiểm tra kết nối mạng!", "error");
+        return false;
+    }
+}
+
+async function downloadFromCloud(showToast = true) {
+    const syncKeyInput = document.getElementById('sync-key-input');
+    let syncKey = (syncKeyInput ? syncKeyInput.value : localStorage.getItem('user_sync_key') || '').trim();
+
+    if (!syncKey) {
+        if (showToast) {
+            updateSyncStatusUI("⚠️ Vui lòng nhập Mã đồng bộ cá nhân đã dùng trên thiết bị khác!", "warning");
+        }
+        return false;
+    }
+
+    localStorage.setItem('user_sync_key', syncKey);
+    updateSyncStatusUI("⏳ Đang tải điểm từ Cloud về...", "loading");
+
+    try {
+        const cleanKey = encodeURIComponent(syncKey.replace(/[^a-zA-Z0-9_\-]/g, '_'));
+        const response = await fetch(`${CLOUD_SYNC_ENDPOINT}/${cleanKey}.json?v=${Date.now()}`);
+        
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const remoteData = await response.json();
+        if (!remoteData || !remoteData.progress || Object.keys(remoteData.progress).length === 0) {
+            updateSyncStatusUI("⚠️ Không tìm thấy dữ liệu trên Cloud với mã này. Hãy chắc chắn bạn đã bấm 'Tải lên Cloud' từ thiết bị kia!", "warning");
+            return false;
+        }
+
+        const success = restoreAllProgressData(remoteData);
+        if (success) {
+            const dateStr = remoteData.updatedAt ? new Date(remoteData.updatedAt).toLocaleString('vi-VN') : 'vừa rồi';
+            localStorage.setItem('last_synced_time', new Date().toISOString());
+            updateSyncStatusUI(`✅ Đã đồng bộ điểm về máy thành công! (Bản lưu từ: ${dateStr})`, "success");
+            return true;
+        } else {
+            updateSyncStatusUI("❌ Dữ liệu trên Cloud không đúng định dạng!", "error");
+            return false;
+        }
+    } catch (err) {
+        console.error("Lỗi tải về từ Cloud:", err);
+        updateSyncStatusUI("❌ Không thể kết nối Cloud. Vui lòng kiểm tra kết nối mạng!", "error");
+        return false;
+    }
+}
+
+function triggerAutoSync() {
+    const chkAuto = document.getElementById('chk-auto-sync');
+    const isAutoSync = chkAuto ? chkAuto.checked : (localStorage.getItem('auto_sync_enabled') !== 'false');
+    const syncKey = (localStorage.getItem('user_sync_key') || '').trim();
+    if (!isAutoSync || !syncKey) return;
+
+    if (autoSyncTimer) clearTimeout(autoSyncTimer);
+    autoSyncTimer = setTimeout(() => {
+        uploadToCloud(false);
+    }, 3500); // Tự động đồng bộ sau 3.5s kể từ lần trả lời cuối
+}
+
+function exportProgressFile() {
+    const data = getAllProgressData();
+    const jsonStr = JSON.stringify(data, null, 2);
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    
+    const now = new Date();
+    const dateStr = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}_${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}`;
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `tiengnhat_tien_do_${dateStr}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    updateSyncStatusUI("✅ Đã xuất file sao lưu thành công!", "success");
+}
+
+function importProgressFile(file) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        try {
+            const data = JSON.parse(e.target.result);
+            if (!data.progress) {
+                throw new Error("File không đúng cấu trúc điểm số!");
+            }
+            restoreAllProgressData(data);
+            updateSyncStatusUI(`✅ Đã khôi phục thành công điểm từ file: ${file.name}`, "success");
+        } catch (err) {
+            console.error("Lỗi đọc file:", err);
+            updateSyncStatusUI("❌ File sao lưu không hợp lệ hoặc bị lỗi!", "error");
+        }
+    };
+    reader.readAsText(file);
+}
+
+function generateRandomSyncKey() {
+    const chars = 'abcdefghjkmnpqrstuvwxyz23456789';
+    let code = 'jp_';
+    for (let i = 0; i < 6; i++) {
+        code += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return code;
+}
+
+function initSyncSystem() {
+    const modalSync = document.getElementById('modal-sync');
+    const btnOpenSync = document.getElementById('btn-open-sync');
+    const btnCloseSync = document.getElementById('btn-close-sync');
+    const syncKeyInput = document.getElementById('sync-key-input');
+    const btnRandomKey = document.getElementById('btn-random-key');
+    const btnCloudUpload = document.getElementById('btn-cloud-upload');
+    const btnCloudDownload = document.getElementById('btn-cloud-download');
+    const chkAutoSync = document.getElementById('chk-auto-sync');
+    const btnExportFile = document.getElementById('btn-export-file');
+    const btnImportTrigger = document.getElementById('btn-import-file-trigger');
+    const inputImportFile = document.getElementById('input-import-file');
+
+    // Nạp mã đã lưu
+    const savedKey = localStorage.getItem('user_sync_key') || '';
+    if (syncKeyInput && savedKey) {
+        syncKeyInput.value = savedKey;
+    }
+
+    // Nạp cài đặt Auto Sync
+    const savedAutoSync = localStorage.getItem('auto_sync_enabled');
+    if (chkAutoSync) {
+        chkAutoSync.checked = savedAutoSync !== 'false';
+        chkAutoSync.addEventListener('change', () => {
+            localStorage.setItem('auto_sync_enabled', chkAutoSync.checked);
+        });
+    }
+
+    // Sự kiện mở/đóng Modal
+    if (btnOpenSync && modalSync) {
+        btnOpenSync.addEventListener('click', () => {
+            modalSync.classList.add('active');
+            const lastSync = localStorage.getItem('last_synced_time');
+            if (lastSync) {
+                const dateStr = new Date(lastSync).toLocaleString('vi-VN');
+                updateSyncStatusUI(`ℹ️ Lần đồng bộ gần nhất: ${dateStr}`, "loading");
+            }
+        });
+    }
+
+    if (btnCloseSync && modalSync) {
+        btnCloseSync.addEventListener('click', () => modalSync.classList.remove('active'));
+    }
+
+    if (modalSync) {
+        modalSync.addEventListener('click', (e) => {
+            if (e.target === modalSync) modalSync.classList.remove('active');
+        });
+    }
+
+    // Sự kiện thay đổi Sync Key
+    if (syncKeyInput) {
+        syncKeyInput.addEventListener('input', () => {
+            localStorage.setItem('user_sync_key', syncKeyInput.value.trim());
+        });
+    }
+
+    // Tạo mã ngẫu nhiên
+    if (btnRandomKey && syncKeyInput) {
+        btnRandomKey.addEventListener('click', () => {
+            const newKey = generateRandomSyncKey();
+            syncKeyInput.value = newKey;
+            localStorage.setItem('user_sync_key', newKey);
+            updateSyncStatusUI(`🔑 Đã tạo mã mới: ${newKey}. Nhớ lưu lại mã này!`, "warning");
+        });
+    }
+
+    // Nút Upload / Download Cloud
+    if (btnCloudUpload) {
+        btnCloudUpload.addEventListener('click', () => uploadToCloud(true));
+    }
+    if (btnCloudDownload) {
+        btnCloudDownload.addEventListener('click', () => downloadFromCloud(true));
+    }
+
+    // Nút Export / Import File
+    if (btnExportFile) {
+        btnExportFile.addEventListener('click', exportProgressFile);
+    }
+    if (btnImportTrigger && inputImportFile) {
+        btnImportTrigger.addEventListener('click', () => inputImportFile.click());
+        inputImportFile.addEventListener('change', (e) => {
+            if (e.target.files && e.target.files.length > 0) {
+                importProgressFile(e.target.files[0]);
+                inputImportFile.value = ''; // Reset input để có thể chọn lại cùng 1 file
+            }
+        });
+    }
+
+    // Tự động tải điểm mới nhất từ Cloud khi khởi động (nếu đã có mã)
+    if (savedKey) {
+        downloadFromCloud(false);
+    }
+}
+
+// Khởi chạy hệ thống đồng bộ khi nạp trang
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSyncSystem);
+} else {
+    initSyncSystem();
+}
+
