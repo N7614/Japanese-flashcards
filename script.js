@@ -635,26 +635,31 @@ async function animateAndHandleAction(scoreChange) {
     if (!currentWord || isAnimating) return;
     isAnimating = true; // Bắt đầu hoạt ảnh
     
-    // Thêm hiệu ứng chuyển động và màu sắc mượt mà
-    cardContainer.classList.remove('dragging');
-    flashcard.style.transition = 'transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.2s ease';
+    try {
+        // Thêm hiệu ứng chuyển động và màu sắc mượt mà
+        cardContainer.classList.remove('dragging');
+        flashcard.style.transition = 'transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.2s ease';
 
-    if (scoreChange > 0) {
-        cardContainer.style.transform = `translateX(50px) rotate(5deg)`;
-        flashcard.style.boxShadow = `0 8px 16px rgba(0,0,0,0.1), 0 0 30px rgba(76, 175, 80, 0.8)`;
-    } else {
-        cardContainer.style.transform = `translateX(-50px) rotate(-5deg)`;
-        flashcard.style.boxShadow = `0 8px 16px rgba(0,0,0,0.1), 0 0 30px rgba(255, 82, 82, 0.8)`;
+        if (scoreChange > 0) {
+            cardContainer.style.transform = `translateX(50px) rotate(5deg)`;
+            flashcard.style.boxShadow = `0 8px 16px rgba(0,0,0,0.1), 0 0 30px rgba(76, 175, 80, 0.8)`;
+        } else {
+            cardContainer.style.transform = `translateX(-50px) rotate(-5deg)`;
+            flashcard.style.boxShadow = `0 8px 16px rgba(0,0,0,0.1), 0 0 30px rgba(255, 82, 82, 0.8)`;
+        }
+
+        // Chờ 200ms để người dùng kịp nhìn thấy thẻ đổi màu và nhích đi
+        await new Promise(resolve => setTimeout(resolve, 200));
+
+        // Trả lại trạng thái transition gốc cho thẻ
+        flashcard.style.transition = '';
+        
+        handleAction(scoreChange);
+    } catch (err) {
+        console.error("Lỗi trong animateAndHandleAction:", err);
+    } finally {
+        isAnimating = false; // Luôn đảm bảo kết thúc hoạt ảnh
     }
-
-    // Chờ 200ms để người dùng kịp nhìn thấy thẻ đổi màu và nhích đi
-    await new Promise(resolve => setTimeout(resolve, 200));
-
-    // Trả lại trạng thái transition gốc cho thẻ
-    flashcard.style.transition = '';
-    
-    handleAction(scoreChange);
-    isAnimating = false; // Kết thúc hoạt ảnh
 }
 
 // --- Xử lý Vuốt / Kéo chuột (Swipe) --- //
@@ -759,18 +764,29 @@ document.addEventListener('keydown', (e) => {
     // Chỉ kích hoạt phím tắt khi đang ở màn hình học từ vựng
     if (!viewLearn.classList.contains('active-view')) return;
     
-    const key = e.key.toLowerCase();
+    const code = e.code;
+    const key = e.key ? e.key.toLowerCase() : '';
 
-    if (e.key === 'ArrowLeft' || key === 'a') {
+    const isLeft = code === 'ArrowLeft' || code === 'KeyA' || key === 'arrowleft' || key === 'a' || key === 'à' || key === 'á' || key === 'ả' || key === 'ã' || key === 'ạ' || key === 'â' || key === 'ă';
+    const isRight = code === 'ArrowRight' || code === 'KeyD' || key === 'arrowright' || key === 'd' || key === 'đ';
+    const isFlip = code === 'ArrowUp' || code === 'ArrowDown' || code === 'Space' || code === 'KeyW' || key === 'arrowup' || key === 'arrowdown' || key === ' ' || key === 'spacebar' || key === 'w';
+    const isSound = code === 'KeyS' || code === 'KeyV' || key === 's' || key === 'v';
+    const isShuffle = code === 'KeyR' || key === 'r';
+
+    if (isLeft) {
+        e.preventDefault();
         animateAndHandleAction(-1);
-    } else if (e.key === 'ArrowRight' || key === 'd') {
+    } else if (isRight) {
+        e.preventDefault();
         animateAndHandleAction(1);
-    } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === ' ' || key === 'w') {
+    } else if (isFlip) {
         e.preventDefault(); // Tránh cuộn trang
         flashcard.classList.toggle('is-flipped');
-    } else if (key === 's' || key === 'v') {
+    } else if (isSound) {
+        e.preventDefault();
         speakCurrentWord();
-    } else if (key === 'r') {
+    } else if (isShuffle) {
+        e.preventDefault();
         shuffleCurrentQueue();
     }
 });
