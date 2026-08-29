@@ -55,15 +55,15 @@ async function fetchManifestFromGitHub(owner, repo) {
             res = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/trees/master?recursive=1`);
         }
         if (!res.ok) return null;
-        
+
         const data = await res.json();
         if (!data.tree || !Array.isArray(data.tree)) return null;
 
         // Lọc các file .json bên trong thư mục data/ (bỏ qua manifest.json nếu có)
-        const jsonFiles = data.tree.filter(item => 
-            item.type === 'blob' && 
-            item.path.startsWith('data/') && 
-            item.path.endsWith('.json') && 
+        const jsonFiles = data.tree.filter(item =>
+            item.type === 'blob' &&
+            item.path.startsWith('data/') &&
+            item.path.endsWith('.json') &&
             !item.path.endsWith('manifest.json')
         );
 
@@ -177,7 +177,7 @@ async function initLibrary() {
             document.querySelectorAll(`.file-checkbox[data-folder="${e.target.dataset.folder}"]`).forEach(child => child.checked = e.target.checked);
         });
     });
-    
+
     document.querySelectorAll('.file-checkbox').forEach(cb => {
         cb.addEventListener('change', (e) => {
             const folder = e.target.dataset.folder;
@@ -200,10 +200,10 @@ async function loadSelectedPacks() {
 
     document.getElementById('btn-load').innerText = "Đang tải...";
     vocabData = [];
-    
+
     let fileDataMap = {};
     const pathsToLoad = selected.map(cb => cb.value);
-    
+
     studiedCount = 0;
     isCounterRevealed = false;
     document.getElementById('btn-counter').innerText = "Số thẻ đã học";
@@ -250,7 +250,7 @@ async function loadSelectedPacks() {
             console.error('Lỗi xử lý file ' + cb.value, error);
         }
     }
-    
+
     document.getElementById('btn-load').innerText = "Tải & Bắt Đầu Học";
     if (vocabData.length === 0) return alert("Không thể tải file! Vui lòng kiểm tra lại.");
 
@@ -342,7 +342,7 @@ function updateSessionBadge() {
 
 function getNextWord() {
     if (queue.length === 0) return null;
-    
+
     let attempts = 0;
     while (attempts < queue.length * 2) {
         let word = queue.shift();
@@ -379,7 +379,7 @@ function speakJapanese(text) {
         const utterance = new SpeechSynthesisUtterance(cleanText);
         utterance.lang = 'ja-JP';
         utterance.rate = 0.85; // Tốc độ vừa phải, rõ ràng cho người học
-        
+
         const voices = window.speechSynthesis.getVoices();
         const jaVoice = voices.find(v => v.lang.startsWith('ja') || v.lang === 'ja_JP');
         if (jaVoice) {
@@ -414,11 +414,11 @@ function showNextCard() {
         document.getElementById('card-back').innerHTML = '<div class="card-kana">Nhấn <strong>Làm mới phiên học</strong> để tiếp tục ôn tập</div>';
         return;
     }
-    
+
     // Tắt hiệu ứng lật tạm thời để thẻ úp lại ngay lập tức (không bị lộ chữ)
     flashcard.style.transition = 'none';
     flashcard.classList.remove('is-flipped'); // Loại bỏ trạng thái lật nếu đang lật
-    
+
     const displayMode = document.getElementById('select-display-mode') ? document.getElementById('select-display-mode').value : 'ja-vi';
     const furiganaMode = document.getElementById('select-furigana-mode') ? document.getElementById('select-furigana-mode').value : 'always';
 
@@ -458,7 +458,7 @@ function showNextCard() {
     // Xây dựng khối Tiếng Việt
     let viHtmlParts = [];
     viHtmlParts.push(`<div class="card-mean">${currentWord.mean}</div>`);
-    
+
     // Nếu chọn 'Chỉ hiện khi lật thẻ' trong chiều Nhật -> Việt, hiển thị Hiragana ở mặt sau
     if (hasKanji && furiganaMode === 'back-only' && !isReverse) {
         viHtmlParts.push(`<div class="card-sub-kana" style="margin-top: 0.8rem;">💡 Cách đọc: <strong>${kanaReading.split('_').join(' ')}</strong></div>`);
@@ -478,7 +478,7 @@ function showNextCard() {
         document.getElementById('card-front').innerHTML = japaneseBlock;
         document.getElementById('card-back').innerHTML = vietnameseBlock;
     }
-    
+
     // Ép trình duyệt cập nhật thay đổi ngay lập tức, sau đó khôi phục hiệu ứng lật
     void flashcard.offsetWidth;
     flashcard.style.transition = '';
@@ -532,23 +532,23 @@ if (btnReportFlag) {
 // Xử lý Xáo trộn các từ đang học trong phiên
 function shuffleCurrentQueue() {
     if (vocabData.length === 0) return;
-    
+
     let allCurrentWords = [...queue];
     if (currentWord) {
         allCurrentWords.push(currentWord);
     }
-    
+
     if (allCurrentWords.length === 0) return;
-    
+
     // Thuật toán xáo trộn Fisher-Yates
     for (let i = allCurrentWords.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [allCurrentWords[i], allCurrentWords[j]] = [allCurrentWords[j], allCurrentWords[i]];
     }
-    
+
     queue = allCurrentWords;
     showNextCard();
-    
+
     const btnShuffle = document.getElementById('btn-shuffle-queue');
     if (btnShuffle) {
         btnShuffle.innerText = '🔀 Đã xáo trộn!';
@@ -596,10 +596,10 @@ function switchView(viewName) {
     }
     document.querySelectorAll('.view').forEach(v => v.classList.remove('active-view'));
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-    
+
     document.getElementById('view-' + viewName).classList.add('active-view');
     document.getElementById('btn-' + viewName).classList.add('active');
-    
+
     if (viewName === 'list') renderList();
 }
 
@@ -614,27 +614,27 @@ document.getElementById('btn-remember').addEventListener('click', (e) => {
 });
 
 function handleAction(scoreChange) {
-    if(!currentWord) return;
+    if (!currentWord) return;
     currentWord.score += scoreChange;
     studiedCount++;
     if (isCounterRevealed) {
         document.getElementById('btn-counter').innerText = `Đã học: ${studiedCount} thẻ`;
     }
     queue.push(currentWord); // Trả lời xong sẽ đưa thẻ về cuối hàng chờ
-    
+
     // Đặt lại vị trí thẻ ngay lập tức không có hiệu ứng (ngăn thẻ trượt lùi về)
     cardContainer.classList.add('dragging');
     resetCardPosition();
     void cardContainer.offsetWidth; // Ép trình duyệt cập nhật DOM
     cardContainer.classList.remove('dragging');
-    
+
     showNextCard();
 }
 
 async function animateAndHandleAction(scoreChange) {
     if (!currentWord || isAnimating) return;
     isAnimating = true; // Bắt đầu hoạt ảnh
-    
+
     try {
         // Thêm hiệu ứng chuyển động và màu sắc mượt mà
         cardContainer.classList.remove('dragging');
@@ -653,7 +653,7 @@ async function animateAndHandleAction(scoreChange) {
 
         // Trả lại trạng thái transition gốc cho thẻ
         flashcard.style.transition = '';
-        
+
         handleAction(scoreChange);
     } catch (err) {
         console.error("Lỗi trong animateAndHandleAction:", err);
@@ -681,15 +681,15 @@ function moveDrag(x) {
     if (!isDragging) return;
     currentX = x;
     let deltaX = currentX - startX;
-    
+
     if (Math.abs(deltaX) > 15) {
         isSwiping = true; // Nếu trượt tay quá 15px thì tính là đang vuốt
     }
 
     let rotate = deltaX * 0.05;
-    
+
     cardContainer.style.transform = `translateX(${deltaX}px) rotate(${rotate}deg)`;
-    
+
     // Hiệu ứng màu sắc: Kéo trái (Đỏ) - Kéo phải (Xanh)
     if (deltaX > 0) {
         let opacity = Math.min(deltaX / 100, 1);
@@ -706,10 +706,10 @@ function endDrag(x) {
     if (!isDragging) return;
     isDragging = false;
     cardContainer.classList.remove('dragging');
-    
+
     let deltaX = x !== undefined ? x - startX : currentX - startX;
     const threshold = 80; // Quãng đường kéo (px) tối thiểu để kích hoạt
-    
+
     if (deltaX < -threshold) {
         handleAction(-1); // Vuốt trái
     } else if (deltaX > threshold) {
@@ -734,11 +734,11 @@ flashcard.addEventListener('touchstart', e => {
     if (e.target.closest('.btn-tts') || e.target.closest('button')) return;
     lastTouchTime = Date.now();
     startDrag(e.touches[0].clientX);
-}, {passive: true});
+}, { passive: true });
 flashcard.addEventListener('touchmove', e => {
     if (!isDragging) return;
     moveDrag(e.touches[0].clientX);
-}, {passive: true});
+}, { passive: true });
 flashcard.addEventListener('touchend', e => {
     if (!isDragging) return;
     endDrag(e.changedTouches[0].clientX);
@@ -763,7 +763,7 @@ document.addEventListener('keydown', (e) => {
 
     // Chỉ kích hoạt phím tắt khi đang ở màn hình học từ vựng
     if (!viewLearn.classList.contains('active-view')) return;
-    
+
     const code = e.code;
     const key = e.key ? e.key.toLowerCase() : '';
 
@@ -805,16 +805,16 @@ document.getElementById('btn-counter').addEventListener('click', (e) => {
 
 document.getElementById('btn-find-list').addEventListener('click', () => {
     if (!currentWord) return;
-    
+
     // Tự động bỏ bộ lọc nếu từ hiện tại không khớp (để chắc chắn từ này hiện ra trong bảng)
     const filterVal = document.getElementById('filter-select').value;
-    if ((filterVal === 'positive' && currentWord.score <= 0) || 
+    if ((filterVal === 'positive' && currentWord.score <= 0) ||
         (filterVal === 'negative' && currentWord.score >= 0)) {
         document.getElementById('filter-select').value = 'all';
     }
-    
+
     switchView('list');
-    
+
     setTimeout(() => {
         const row = document.getElementById(`row-word-${currentWord.displayIndex}`);
         if (row) {
@@ -845,7 +845,7 @@ document.getElementById('btn-reset').addEventListener('click', () => {
 
     if (targetWords.length === 0) return alert("Không có thẻ nào để đặt lại điểm!");
 
-    if(confirm(`Bạn có chắc chắn muốn đặt lại điểm của ${targetWords.length} thẻ đang hiển thị về 0?`)) {
+    if (confirm(`Bạn có chắc chắn muốn đặt lại điểm của ${targetWords.length} thẻ đang hiển thị về 0?`)) {
         targetWords.forEach(w => w.score = 0);
         saveProgress();
         renderList();
@@ -868,7 +868,7 @@ function renderList() {
     filtered.sort((a, b) => {
         if (currentSortState === 'score-asc') return a.score - b.score;
         if (currentSortState === 'score-desc') return b.score - a.score;
-        return a.displayIndex - b.displayIndex; 
+        return a.displayIndex - b.displayIndex;
     });
 
     // Hiển thị ra bảng
@@ -912,7 +912,7 @@ function renderList() {
 }
 
 // Hàm Bật/Tắt cờ Báo lỗi trong bảng danh sách
-window.toggleWordFlag = function(displayIndex) {
+window.toggleWordFlag = function (displayIndex) {
     const word = vocabData.find(w => w.displayIndex === displayIndex);
     if (!word) return;
     word.flagged = !word.flagged;
@@ -950,7 +950,7 @@ window.toggleWordFlag = function(displayIndex) {
 };
 
 // Hàm Xử lý khi người dùng chỉnh sửa điểm trực tiếp trong ô nhập liệu
-window.handleScoreInputChange = function(inputEl, displayIndex) {
+window.handleScoreInputChange = function (inputEl, displayIndex) {
     const word = vocabData.find(w => w.displayIndex === displayIndex);
     if (!word) return;
 
@@ -969,10 +969,11 @@ window.handleScoreInputChange = function(inputEl, displayIndex) {
 };
 
 // ========================================== //
-// --- HỆ THỐNG ĐỒNG BỘ CLOUD & SAO LƯU TIẾN ĐỘ --- //
+// --- HỆ THỐNG ĐỒNG BỘ GITHUB GIST & SAO LƯU TIẾN ĐỘ --- //
 // ========================================== //
 
-const CLOUD_SYNC_ENDPOINT = 'https://japanese-flashcard-5ae87-default-rtdb.firebaseio.com/sync';
+const GIST_FILENAME = 'japanese_flashcard_progress.json';
+const GIST_DESCRIPTION = 'Tiến độ học tiếng Nhật (Japanese Flashcard App)';
 let autoSyncTimer = null;
 
 function getAllProgressData() {
@@ -997,7 +998,7 @@ function getAllProgressData() {
         }
     }
     return {
-        version: 1,
+        version: 2,
         appName: 'JapaneseVocabApp',
         updatedAt: new Date().toISOString(),
         totalPacks: Object.keys(progress).length,
@@ -1036,14 +1037,14 @@ function restoreAllProgressData(remoteData) {
                     if (scores[w.originalIndex] !== undefined) {
                         w.score = scores[w.originalIndex];
                     }
-                } catch (e) {}
+                } catch (e) { }
             }
             const savedFlags = localStorage.getItem('vocabFlags_' + w.sourceId);
             if (savedFlags) {
                 try {
                     const flags = JSON.parse(savedFlags);
                     w.flagged = flags[w.originalIndex] === true;
-                } catch (e) {}
+                } catch (e) { }
             }
         });
         if (viewList.classList.contains('active-view')) {
@@ -1061,95 +1062,199 @@ function updateSyncStatusUI(message, type = 'success') {
     statusEl.innerText = message;
 }
 
-async function uploadToCloud(showToast = true) {
-    const syncKeyInput = document.getElementById('sync-key-input');
-    let syncKey = (syncKeyInput ? syncKeyInput.value : localStorage.getItem('user_sync_key') || '').trim();
-    
-    if (!syncKey) {
+async function uploadToGist(showToast = true) {
+    const tokenInput = document.getElementById('github-token-input');
+    const gistIdInput = document.getElementById('github-gist-id-input');
+
+    let token = (tokenInput ? tokenInput.value : localStorage.getItem('github_sync_token') || '').trim();
+    let gistId = (gistIdInput ? gistIdInput.value : localStorage.getItem('github_sync_gist_id') || '').trim();
+
+    if (!token) {
         if (showToast) {
-            updateSyncStatusUI("⚠️ Vui lòng nhập hoặc tạo Mã đồng bộ cá nhân trước!", "warning");
+            updateSyncStatusUI("⚠️ Vui lòng nhập GitHub Token (PAT có quyền 'gist') trước!", "warning");
         }
         return false;
     }
 
-    localStorage.setItem('user_sync_key', syncKey);
-    updateSyncStatusUI("⏳ Đang tải điểm lên Cloud...", "loading");
+    localStorage.setItem('github_sync_token', token);
+    updateSyncStatusUI("⏳ Đang tải điểm lên GitHub Gist...", "loading");
 
     const payload = getAllProgressData();
-    payload.syncKey = syncKey;
 
     try {
-        const cleanKey = encodeURIComponent(syncKey.replace(/[^a-zA-Z0-9_\-]/g, '_'));
-        const response = await fetch(`${CLOUD_SYNC_ENDPOINT}/${cleanKey}.json`, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-        });
+        const headers = {
+            'Accept': 'application/vnd.github+json',
+            'Authorization': `Bearer ${token}`,
+            'X-GitHub-Api-Version': '2022-11-28'
+        };
+
+        // Nếu chưa có Gist ID, thử tự động tìm Gist tiến độ đã có trên GitHub
+        if (!gistId) {
+            try {
+                const listRes = await fetch('https://api.github.com/gists?per_page=50', { headers });
+                if (listRes.ok) {
+                    const gists = await listRes.json();
+                    const existingGist = gists.find(g => g.files && (g.files[GIST_FILENAME] || g.description === GIST_DESCRIPTION));
+                    if (existingGist) {
+                        gistId = existingGist.id;
+                        localStorage.setItem('github_sync_gist_id', gistId);
+                        if (gistIdInput) gistIdInput.value = gistId;
+                    }
+                }
+            } catch (e) {
+                console.warn("Không thể tìm danh sách Gist cũ:", e);
+            }
+        }
+
+        let response;
+        if (gistId) {
+            response = await fetch(`https://api.github.com/gists/${gistId}`, {
+                method: 'PATCH',
+                headers,
+                body: JSON.stringify({
+                    description: GIST_DESCRIPTION,
+                    files: {
+                        [GIST_FILENAME]: {
+                            content: JSON.stringify(payload, null, 2)
+                        }
+                    }
+                })
+            });
+        } else {
+            response = await fetch('https://api.github.com/gists', {
+                method: 'POST',
+                headers,
+                body: JSON.stringify({
+                    description: GIST_DESCRIPTION,
+                    public: false,
+                    files: {
+                        [GIST_FILENAME]: {
+                            content: JSON.stringify(payload, null, 2)
+                        }
+                    }
+                })
+            });
+        }
 
         if (!response.ok) {
-            if (response.status === 401 || response.status === 403) {
-                throw new Error("Quyền truy cập bị chặn (Vui lòng kiểm tra Rules trên Firebase Console)");
+            if (response.status === 401) {
+                throw new Error("Token GitHub không hợp lệ hoặc đã hết hạn");
+            } else if (response.status === 403) {
+                throw new Error("Token bị thiếu quyền 'gist' hoặc đã vượt giới hạn API GitHub");
+            } else if (response.status === 404) {
+                localStorage.removeItem('github_sync_gist_id');
+                if (gistIdInput) gistIdInput.value = '';
+                throw new Error("Không tìm thấy Gist ID này trên GitHub (đã đặt lại để tạo mới)");
             }
             throw new Error(`Mã phản hồi HTTP ${response.status}`);
         }
 
+        const data = await response.json();
+        gistId = data.id;
+        localStorage.setItem('github_sync_gist_id', gistId);
+        if (gistIdInput) gistIdInput.value = gistId;
+
         const nowStr = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
         localStorage.setItem('last_synced_time', new Date().toISOString());
-        updateSyncStatusUI(`✅ Đã tải lên Cloud thành công lúc ${nowStr}! (${payload.totalPacks} gói bài)`, "success");
+        updateSyncStatusUI(`✅ Đã lưu lên GitHub Gist thành công lúc ${nowStr}! (${payload.totalPacks} gói bài)`, "success");
         return true;
     } catch (err) {
-        console.error("Lỗi tải lên Cloud:", err);
-        const detailMsg = err.message ? ` (${err.message})` : '';
-        updateSyncStatusUI(`❌ Không thể kết nối Cloud${detailMsg}. Vui lòng kiểm tra lại!`, "error");
+        console.error("Lỗi tải lên Gist:", err);
+        updateSyncStatusUI(`❌ ${err.message || "Không thể kết nối GitHub Gist"}. Vui lòng kiểm tra lại!`, "error");
         return false;
     }
 }
 
-async function downloadFromCloud(showToast = true) {
-    const syncKeyInput = document.getElementById('sync-key-input');
-    let syncKey = (syncKeyInput ? syncKeyInput.value : localStorage.getItem('user_sync_key') || '').trim();
+async function downloadFromGist(showToast = true) {
+    const tokenInput = document.getElementById('github-token-input');
+    const gistIdInput = document.getElementById('github-gist-id-input');
 
-    if (!syncKey) {
+    let token = (tokenInput ? tokenInput.value : localStorage.getItem('github_sync_token') || '').trim();
+    let gistId = (gistIdInput ? gistIdInput.value : localStorage.getItem('github_sync_gist_id') || '').trim();
+
+    if (!token && !gistId) {
         if (showToast) {
-            updateSyncStatusUI("⚠️ Vui lòng nhập Mã đồng bộ cá nhân đã dùng trên thiết bị khác!", "warning");
+            updateSyncStatusUI("⚠️ Vui lòng nhập GitHub Token hoặc Gist ID để tải điểm về!", "warning");
         }
         return false;
     }
 
-    localStorage.setItem('user_sync_key', syncKey);
-    updateSyncStatusUI("⏳ Đang tải điểm từ Cloud về...", "loading");
+    if (token) localStorage.setItem('github_sync_token', token);
+    if (gistId) localStorage.setItem('github_sync_gist_id', gistId);
+
+    updateSyncStatusUI("⏳ Đang tải điểm từ GitHub Gist về...", "loading");
 
     try {
-        const cleanKey = encodeURIComponent(syncKey.replace(/[^a-zA-Z0-9_\-]/g, '_'));
-        const response = await fetch(`${CLOUD_SYNC_ENDPOINT}/${cleanKey}.json?v=${Date.now()}`);
-        
+        const headers = {
+            'Accept': 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28'
+        };
+        if (token) {
+            headers['Authorization'] = `Bearer ${token}`;
+        }
+
+        // Nếu chưa có Gist ID nhưng có Token, tìm Gist tự động
+        if (!gistId && token) {
+            const listRes = await fetch('https://api.github.com/gists?per_page=50', { headers });
+            if (listRes.ok) {
+                const gists = await listRes.json();
+                const existingGist = gists.find(g => g.files && (g.files[GIST_FILENAME] || g.description === GIST_DESCRIPTION));
+                if (existingGist) {
+                    gistId = existingGist.id;
+                    localStorage.setItem('github_sync_gist_id', gistId);
+                    if (gistIdInput) gistIdInput.value = gistId;
+                }
+            }
+        }
+
+        if (!gistId) {
+            updateSyncStatusUI("⚠️ Không tìm thấy Gist ID. Hãy bấm 'Tải lên Gist' từ thiết bị trước!", "warning");
+            return false;
+        }
+
+        const response = await fetch(`https://api.github.com/gists/${gistId}?v=${Date.now()}`, { headers });
+
         if (!response.ok) {
-            if (response.status === 401 || response.status === 403) {
-                throw new Error("Quyền truy cập bị chặn (Vui lòng kiểm tra Rules trên Firebase Console)");
+            if (response.status === 401) {
+                throw new Error("Token GitHub không hợp lệ");
+            } else if (response.status === 404) {
+                throw new Error("Không tìm thấy Gist ID này trên GitHub");
             }
             throw new Error(`Mã phản hồi HTTP ${response.status}`);
         }
 
-        const remoteData = await response.json();
-        if (!remoteData || !remoteData.progress || Object.keys(remoteData.progress).length === 0) {
-            updateSyncStatusUI("⚠️ Không tìm thấy dữ liệu trên Cloud với mã này. Hãy chắc chắn bạn đã bấm 'Tải lên Cloud' từ thiết bị kia!", "warning");
+        const data = await response.json();
+        let contentStr = null;
+        if (data.files && data.files[GIST_FILENAME] && data.files[GIST_FILENAME].content) {
+            contentStr = data.files[GIST_FILENAME].content;
+        } else if (data.files) {
+            for (let f in data.files) {
+                if (f.endsWith('.json') && data.files[f].content) {
+                    contentStr = data.files[f].content;
+                    break;
+                }
+            }
+        }
+
+        if (!contentStr) {
+            updateSyncStatusUI("⚠️ File dữ liệu trên Gist trống hoặc không tìm thấy!", "warning");
             return false;
         }
 
+        const remoteData = JSON.parse(contentStr);
         const success = restoreAllProgressData(remoteData);
         if (success) {
             const dateStr = remoteData.updatedAt ? new Date(remoteData.updatedAt).toLocaleString('vi-VN') : 'vừa rồi';
             localStorage.setItem('last_synced_time', new Date().toISOString());
-            updateSyncStatusUI(`✅ Đã đồng bộ điểm về máy thành công! (Bản lưu từ: ${dateStr})`, "success");
+            updateSyncStatusUI(`✅ Đã đồng bộ điểm từ GitHub Gist về máy thành công! (Bản lưu từ: ${dateStr})`, "success");
             return true;
         } else {
-            updateSyncStatusUI("❌ Dữ liệu trên Cloud không đúng định dạng!", "error");
+            updateSyncStatusUI("❌ Dữ liệu trên Gist không đúng định dạng!", "error");
             return false;
         }
     } catch (err) {
-        console.error("Lỗi tải về từ Cloud:", err);
-        const detailMsg = err.message ? ` (${err.message})` : '';
-        updateSyncStatusUI(`❌ Không thể kết nối Cloud${detailMsg}. Vui lòng kiểm tra lại!`, "error");
+        console.error("Lỗi tải về từ Gist:", err);
+        updateSyncStatusUI(`❌ ${err.message || "Không thể kết nối GitHub Gist"}. Vui lòng kiểm tra lại!`, "error");
         return false;
     }
 }
@@ -1157,13 +1262,13 @@ async function downloadFromCloud(showToast = true) {
 function triggerAutoSync() {
     const chkAuto = document.getElementById('chk-auto-sync');
     const isAutoSync = chkAuto ? chkAuto.checked : (localStorage.getItem('auto_sync_enabled') !== 'false');
-    const syncKey = (localStorage.getItem('user_sync_key') || '').trim();
-    if (!isAutoSync || !syncKey) return;
+    const token = (localStorage.getItem('github_sync_token') || '').trim();
+    if (!isAutoSync || !token) return;
 
     if (autoSyncTimer) clearTimeout(autoSyncTimer);
     autoSyncTimer = setTimeout(() => {
-        uploadToCloud(false);
-    }, 3500); // Tự động đồng bộ sau 3.5s kể từ lần trả lời cuối
+        uploadToGist(false);
+    }, 4500); // Tự động đồng bộ lên Gist sau 4.5s
 }
 
 function exportProgressFile() {
@@ -1171,10 +1276,10 @@ function exportProgressFile() {
     const jsonStr = JSON.stringify(data, null, 2);
     const blob = new Blob([jsonStr], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
-    
+
     const now = new Date();
     const dateStr = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}_${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}`;
-    
+
     const a = document.createElement('a');
     a.href = url;
     a.download = `tiengnhat_tien_do_${dateStr}.json`;
@@ -1182,7 +1287,7 @@ function exportProgressFile() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    
+
     updateSyncStatusUI("✅ Đã xuất file sao lưu thành công!", "success");
 }
 
@@ -1205,33 +1310,26 @@ function importProgressFile(file) {
     reader.readAsText(file);
 }
 
-function generateRandomSyncKey() {
-    const chars = 'abcdefghjkmnpqrstuvwxyz23456789';
-    let code = 'jp_';
-    for (let i = 0; i < 6; i++) {
-        code += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
-    return code;
-}
-
 function initSyncSystem() {
     const modalSync = document.getElementById('modal-sync');
     const btnOpenSync = document.getElementById('btn-open-sync');
     const btnCloseSync = document.getElementById('btn-close-sync');
-    const syncKeyInput = document.getElementById('sync-key-input');
-    const btnRandomKey = document.getElementById('btn-random-key');
-    const btnCloudUpload = document.getElementById('btn-cloud-upload');
-    const btnCloudDownload = document.getElementById('btn-cloud-download');
+    const tokenInput = document.getElementById('github-token-input');
+    const btnToggleToken = document.getElementById('btn-toggle-token');
+    const gistIdInput = document.getElementById('github-gist-id-input');
+    const btnCopyGistId = document.getElementById('btn-copy-gist-id');
+    const btnGistUpload = document.getElementById('btn-gist-upload');
+    const btnGistDownload = document.getElementById('btn-gist-download');
     const chkAutoSync = document.getElementById('chk-auto-sync');
     const btnExportFile = document.getElementById('btn-export-file');
     const btnImportTrigger = document.getElementById('btn-import-file-trigger');
     const inputImportFile = document.getElementById('input-import-file');
 
-    // Nạp mã đã lưu
-    const savedKey = localStorage.getItem('user_sync_key') || '';
-    if (syncKeyInput && savedKey) {
-        syncKeyInput.value = savedKey;
-    }
+    // Nạp dữ liệu Token & Gist ID đã lưu
+    const savedToken = localStorage.getItem('github_sync_token') || '';
+    const savedGistId = localStorage.getItem('github_sync_gist_id') || '';
+    if (tokenInput && savedToken) tokenInput.value = savedToken;
+    if (gistIdInput && savedGistId) gistIdInput.value = savedGistId;
 
     // Nạp cài đặt Auto Sync
     const savedAutoSync = localStorage.getItem('auto_sync_enabled');
@@ -1264,29 +1362,60 @@ function initSyncSystem() {
         });
     }
 
-    // Sự kiện thay đổi Sync Key
-    if (syncKeyInput) {
-        syncKeyInput.addEventListener('input', () => {
-            localStorage.setItem('user_sync_key', syncKeyInput.value.trim());
+    // Ẩn/Hiện Token
+    if (btnToggleToken && tokenInput) {
+        btnToggleToken.addEventListener('click', () => {
+            if (tokenInput.type === 'password') {
+                tokenInput.type = 'text';
+                btnToggleToken.innerText = '🙈';
+            } else {
+                tokenInput.type = 'password';
+                btnToggleToken.innerText = '👁️';
+            }
         });
     }
 
-    // Tạo mã ngẫu nhiên
-    if (btnRandomKey && syncKeyInput) {
-        btnRandomKey.addEventListener('click', () => {
-            const newKey = generateRandomSyncKey();
-            syncKeyInput.value = newKey;
-            localStorage.setItem('user_sync_key', newKey);
-            updateSyncStatusUI(`🔑 Đã tạo mã mới: ${newKey}. Nhớ lưu lại mã này!`, "warning");
+    // Lưu Token khi thay đổi
+    if (tokenInput) {
+        tokenInput.addEventListener('input', () => {
+            localStorage.setItem('github_sync_token', tokenInput.value.trim());
         });
     }
 
-    // Nút Upload / Download Cloud
-    if (btnCloudUpload) {
-        btnCloudUpload.addEventListener('click', () => uploadToCloud(true));
+    // Lưu Gist ID khi thay đổi
+    if (gistIdInput) {
+        gistIdInput.addEventListener('input', () => {
+            localStorage.setItem('github_sync_gist_id', gistIdInput.value.trim());
+        });
     }
-    if (btnCloudDownload) {
-        btnCloudDownload.addEventListener('click', () => downloadFromCloud(true));
+
+    // Sao chép Gist ID
+    if (btnCopyGistId && gistIdInput) {
+        btnCopyGistId.addEventListener('click', () => {
+            const val = gistIdInput.value.trim();
+            if (!val) {
+                updateSyncStatusUI("⚠️ Chưa có Gist ID để sao chép!", "warning");
+                return;
+            }
+            navigator.clipboard.writeText(val).then(() => {
+                const originalText = btnCopyGistId.innerText;
+                btnCopyGistId.innerText = '✅ Đã chép!';
+                setTimeout(() => { btnCopyGistId.innerText = originalText; }, 2000);
+            }).catch(() => {
+                gistIdInput.select();
+                document.execCommand('copy');
+                btnCopyGistId.innerText = '✅ Đã chép!';
+                setTimeout(() => { btnCopyGistId.innerText = '📋 Sao chép'; }, 2000);
+            });
+        });
+    }
+
+    // Nút Upload / Download Gist
+    if (btnGistUpload) {
+        btnGistUpload.addEventListener('click', () => uploadToGist(true));
+    }
+    if (btnGistDownload) {
+        btnGistDownload.addEventListener('click', () => downloadFromGist(true));
     }
 
     // Nút Export / Import File
@@ -1298,14 +1427,14 @@ function initSyncSystem() {
         inputImportFile.addEventListener('change', (e) => {
             if (e.target.files && e.target.files.length > 0) {
                 importProgressFile(e.target.files[0]);
-                inputImportFile.value = ''; // Reset input để có thể chọn lại cùng 1 file
+                inputImportFile.value = '';
             }
         });
     }
 
-    // Tự động tải điểm mới nhất từ Cloud khi khởi động (nếu đã có mã)
-    if (savedKey) {
-        downloadFromCloud(false);
+    // Tự động tải điểm mới nhất từ Gist khi khởi động (nếu đã có Token và Gist ID)
+    if (savedToken && savedGistId) {
+        downloadFromGist(false);
     }
 }
 

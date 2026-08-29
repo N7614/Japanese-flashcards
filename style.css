@@ -581,6 +581,17 @@ tr:hover {
     color: #64748b;
     line-height: 1.4;
 }
+.sync-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 4px;
+}
+.sync-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
 .sync-actions-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

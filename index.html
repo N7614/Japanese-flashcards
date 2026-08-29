@@ -11,39 +11,54 @@
         <button id="btn-library" class="nav-btn active">Thư Viện</button>
         <button id="btn-learn" class="nav-btn">Học Từ Vựng</button>
         <button id="btn-list" class="nav-btn">Danh Sách</button>
-        <button id="btn-open-sync" class="nav-btn nav-btn-sync" title="Đồng bộ Cloud & Sao lưu tiến độ">☁️ Đồng Bộ</button>
+        <button id="btn-open-sync" class="nav-btn nav-btn-sync" title="Đồng bộ GitHub Gist & Sao lưu tiến độ">🐙 Đồng Bộ</button>
     </header>
 
-    <!-- Modal Đồng Bộ Cloud & Sao Lưu -->
+    <!-- Modal Đồng Bộ GitHub Gist & Sao Lưu -->
     <div id="modal-sync" class="modal-overlay">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>☁️ Đồng Bộ & Sao Lưu Tiến Độ</h3>
+                <h3>🐙 Đồng Bộ Dữ Liệu Qua GitHub Gist</h3>
                 <button id="btn-close-sync" class="btn-close-modal" aria-label="Đóng">&times;</button>
             </div>
             <div class="modal-body">
+                <!-- GitHub Token -->
                 <div class="sync-section">
-                    <label class="sync-label" for="sync-key-input">🔑 Mã đồng bộ cá nhân (Sync Key):</label>
+                    <label class="sync-label" for="github-token-input">🔑 GitHub Personal Access Token (PAT):</label>
                     <div class="sync-input-group">
-                        <input type="text" id="sync-key-input" placeholder="Ví dụ: nghia_japanese_99" maxlength="40">
-                        <button id="btn-random-key" class="btn-sub" title="Tạo mã ngẫu nhiên">🎲 Tạo mã</button>
+                        <input type="password" id="github-token-input" placeholder="ghp_... hoặc github_pat_..." autocomplete="off">
+                        <button id="btn-toggle-token" class="btn-sub" title="Hiện/Ẩn Token">👁️</button>
                     </div>
-                    <p class="sync-hint">💡 Nhập <strong>cùng một mã này</strong> trên cả Điện thoại và Máy tính để đồng bộ điểm số với nhau.</p>
+                    <div class="sync-hint">
+                        <a href="https://github.com/settings/tokens/new?scopes=gist&description=Japanese_Flashcard_Sync" target="_blank" class="sync-link" rel="noopener noreferrer">
+                            👉 Nhấn vào đây để tạo nhanh Token (quyền <strong>gist</strong>) trên GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gist ID -->
+                <div class="sync-section">
+                    <label class="sync-label" for="github-gist-id-input">🆔 Gist ID (Mã bản lưu):</label>
+                    <div class="sync-input-group">
+                        <input type="text" id="github-gist-id-input" placeholder="Tự động tạo hoặc dán Gist ID từ thiết bị khác" maxlength="50">
+                        <button id="btn-copy-gist-id" class="btn-sub" title="Sao chép Gist ID">📋 Sao chép</button>
+                    </div>
+                    <p class="sync-hint">💡 <strong>Lần đầu dùng:</strong> Chỉ cần nhập Token rồi bấm <em>"Tải lên Gist"</em> (App sẽ tự động tạo Secret Gist cho bạn).<br>📱 <strong>Trên thiết bị khác:</strong> Nhập cùng Token hoặc dán Gist ID này để tải điểm về.</p>
                 </div>
 
                 <div class="sync-actions-grid">
-                    <button id="btn-cloud-upload" class="btn-sync-action btn-upload">
-                        <span class="icon">☁️ ⬆️</span>
+                    <button id="btn-gist-upload" class="btn-sync-action btn-upload">
+                        <span class="icon">🐙 ⬆️</span>
                         <div class="text-group">
-                            <strong>Tải lên Cloud</strong>
-                            <small>Lưu điểm từ máy này lên đám mây</small>
+                            <strong>Tải lên Gist</strong>
+                            <small>Lưu điểm từ máy này lên GitHub Gist</small>
                         </div>
                     </button>
-                    <button id="btn-cloud-download" class="btn-sync-action btn-download">
-                        <span class="icon">☁️ ⬇️</span>
+                    <button id="btn-gist-download" class="btn-sync-action btn-download">
+                        <span class="icon">🐙 ⬇️</span>
                         <div class="text-group">
-                            <strong>Tải về từ Cloud</strong>
-                            <small>Lấy điểm từ đám mây về máy này</small>
+                            <strong>Tải về từ Gist</strong>
+                            <small>Lấy điểm từ GitHub Gist về máy này</small>
                         </div>
                     </button>
                 </div>
@@ -51,7 +66,7 @@
                 <div class="sync-auto-option">
                     <label>
                         <input type="checkbox" id="chk-auto-sync" checked>
-                        <span>Tự động đồng bộ lên Cloud khi trả lời thẻ</span>
+                        <span>Tự động đồng bộ lên Gist khi trả lời thẻ</span>
                     </label>
                 </div>
 
