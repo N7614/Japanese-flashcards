@@ -972,7 +972,7 @@ window.handleScoreInputChange = function(inputEl, displayIndex) {
 // --- HỆ THỐNG ĐỒNG BỘ CLOUD & SAO LƯU TIẾN ĐỘ --- //
 // ========================================== //
 
-const CLOUD_SYNC_ENDPOINT = 'https://japanese-flashcard-sync-default-rtdb.asia-southeast1.firebasedatabase.app/sync';
+const CLOUD_SYNC_ENDPOINT = 'https://japanese-flashcard-5ae87-default-rtdb.firebaseio.com/sync';
 let autoSyncTimer = null;
 
 function getAllProgressData() {
@@ -1086,7 +1086,12 @@ async function uploadToCloud(showToast = true) {
             body: JSON.stringify(payload)
         });
 
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        if (!response.ok) {
+            if (response.status === 401 || response.status === 403) {
+                throw new Error("Quyền truy cập bị chặn (Vui lòng kiểm tra Rules trên Firebase Console)");
+            }
+            throw new Error(`Mã phản hồi HTTP ${response.status}`);
+        }
 
         const nowStr = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
         localStorage.setItem('last_synced_time', new Date().toISOString());
@@ -1094,7 +1099,8 @@ async function uploadToCloud(showToast = true) {
         return true;
     } catch (err) {
         console.error("Lỗi tải lên Cloud:", err);
-        updateSyncStatusUI("❌ Không thể kết nối Cloud. Vui lòng kiểm tra kết nối mạng!", "error");
+        const detailMsg = err.message ? ` (${err.message})` : '';
+        updateSyncStatusUI(`❌ Không thể kết nối Cloud${detailMsg}. Vui lòng kiểm tra lại!`, "error");
         return false;
     }
 }
@@ -1117,7 +1123,12 @@ async function downloadFromCloud(showToast = true) {
         const cleanKey = encodeURIComponent(syncKey.replace(/[^a-zA-Z0-9_\-]/g, '_'));
         const response = await fetch(`${CLOUD_SYNC_ENDPOINT}/${cleanKey}.json?v=${Date.now()}`);
         
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        if (!response.ok) {
+            if (response.status === 401 || response.status === 403) {
+                throw new Error("Quyền truy cập bị chặn (Vui lòng kiểm tra Rules trên Firebase Console)");
+            }
+            throw new Error(`Mã phản hồi HTTP ${response.status}`);
+        }
 
         const remoteData = await response.json();
         if (!remoteData || !remoteData.progress || Object.keys(remoteData.progress).length === 0) {
@@ -1137,7 +1148,8 @@ async function downloadFromCloud(showToast = true) {
         }
     } catch (err) {
         console.error("Lỗi tải về từ Cloud:", err);
-        updateSyncStatusUI("❌ Không thể kết nối Cloud. Vui lòng kiểm tra kết nối mạng!", "error");
+        const detailMsg = err.message ? ` (${err.message})` : '';
+        updateSyncStatusUI(`❌ Không thể kết nối Cloud${detailMsg}. Vui lòng kiểm tra lại!`, "error");
         return false;
     }
 }
