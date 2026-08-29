@@ -753,19 +753,24 @@ document.addEventListener('mouseup', e => {
 });
 // --- Phím tắt Bàn phím --- //
 document.addEventListener('keydown', (e) => {
+    // Bỏ qua khi đang nhập liệu trong thẻ input hoặc textarea
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable)) return;
+
     // Chỉ kích hoạt phím tắt khi đang ở màn hình học từ vựng
     if (!viewLearn.classList.contains('active-view')) return;
     
-    if (e.key === 'ArrowLeft') {
+    const key = e.key.toLowerCase();
+
+    if (e.key === 'ArrowLeft' || key === 'a') {
         animateAndHandleAction(-1);
-    } else if (e.key === 'ArrowRight') {
+    } else if (e.key === 'ArrowRight' || key === 'd') {
         animateAndHandleAction(1);
-    } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === ' ') {
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === ' ' || key === 'w') {
         e.preventDefault(); // Tránh cuộn trang
         flashcard.classList.toggle('is-flipped');
-    } else if (e.key.toLowerCase() === 's' || e.key.toLowerCase() === 'v') {
+    } else if (key === 's' || key === 'v') {
         speakCurrentWord();
-    } else if (e.key.toLowerCase() === 'r') {
+    } else if (key === 'r') {
         shuffleCurrentQueue();
     }
 });
