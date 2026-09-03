@@ -1,0 +1,194 @@
+[
+  {
+    "name": "切ります_きります",
+    "mean": "cắt"
+  },
+  {
+    "name": "送ります_おくります",
+    "mean": "gửi"
+  },
+  {
+    "name": "あげます",
+    "mean": "cho, tặng"
+  },
+  {
+    "name": "もらいます",
+    "mean": "nhận"
+  },
+  {
+    "name": "貸します_かします",
+    "mean": "cho mượn, cho vay"
+  },
+  {
+    "name": "借ります_かります",
+    "mean": "mượn, vay"
+  },
+  {
+    "name": "教えます_おしえます",
+    "mean": "dạy"
+  },
+  {
+    "name": "習います_ならいます",
+    "mean": "học, tập"
+  },
+  {
+    "name": "かけます [電話を~]_かけます [でんわを~]",
+    "mean": "gọi [điện thoại]"
+  },
+  {
+    "name": "手_て",
+    "mean": "tay"
+  },
+  {
+    "name": "はし",
+    "mean": "đũa"
+  },
+  {
+    "name": "スプーン",
+    "mean": "thìa"
+  },
+  {
+    "name": "ナイフ",
+    "mean": "dao"
+  },
+  {
+    "name": "フォーク",
+    "mean": "dĩa"
+  },
+  {
+    "name": "はさみ",
+    "mean": "kéo"
+  },
+  {
+    "name": "ファクス",
+    "mean": "fax"
+  },
+  {
+    "name": "ワープロ",
+    "mean": "máy đánh chữ"
+  },
+  {
+    "name": "パソコン",
+    "mean": "máy vi tính cá nhân"
+  },
+  {
+    "name": "パンチ",
+    "mean": "cái đục lỗ"
+  },
+  {
+    "name": "ホッチキス",
+    "mean": "cái dập ghim"
+  },
+  {
+    "name": "セロテープ",
+    "mean": "băng dính"
+  },
+  {
+    "name": "消しゴム_けしゴム",
+    "mean": "cái tẩy"
+  },
+  {
+    "name": "紙_かみ",
+    "mean": "giấy"
+  },
+  {
+    "name": "花_はな",
+    "mean": "hoa"
+  },
+  {
+    "name": "シャツ",
+    "mean": "áo sơ mi"
+  },
+  {
+    "name": "プレゼント",
+    "mean": "quà tặng, tặng phẩm"
+  },
+  {
+    "name": "荷物_にもつ",
+    "mean": "đồ đạc, hành lý"
+  },
+  {
+    "name": "お金_おかね",
+    "mean": "tiền"
+  },
+  {
+    "name": "切符_きっぷ",
+    "mean": "vé"
+  },
+  {
+    "name": "クリスマス",
+    "mean": "Giáng sinh"
+  },
+  {
+    "name": "父_ちち",
+    "mean": "bố (dùng khi nói về bố mình)"
+  },
+  {
+    "name": "母_はは",
+    "mean": "mẹ (dùng khi nói về mẹ mình)"
+  },
+  {
+    "name": "お父さん_おとうさん",
+    "mean": "bố (dùng khi nói về bố người khác và dùng khi xưng hô với bố mình)"
+  },
+  {
+    "name": "お母さん_おかあさん",
+    "mean": "mẹ (dùng khi nói về mẹ người khác và dùng khi xưng hô với mẹ mình)"
+  },
+  {
+    "name": "もう",
+    "mean": "đã, rồi"
+  },
+  {
+    "name": "まだ",
+    "mean": "chưa"
+  },
+  {
+    "name": "これから",
+    "mean": "từ bây giờ, sau đây"
+  },
+  {
+    "name": "[~、] すてきですね。",
+    "mean": "[~] hay nhỉ./ đẹp nhỉ."
+  },
+  {
+    "name": "ごめんください。",
+    "mean": "Xin lỗi, có ai ở nhà không?/ Tôi có thể vào được chứ? (câu nói của khách dùng khi đến thăm nhà ai đó)"
+  },
+  {
+    "name": "いらっしゃい。",
+    "mean": "Rất hoan nghênh anh/chị đã đến chơi. / Chào mừng anh/chị đã đến chơi."
+  },
+  {
+    "name": "どうぞお上がりください。_どうぞおあがりください。",
+    "mean": "Mời anh/chị vào."
+  },
+  {
+    "name": "失礼します。_しつれいします。",
+    "mean": "Xin phép tôi vào. Xin phép... (dùng khi bước vào nhà của người khác)"
+  },
+  {
+    "name": "[~は] いかがですか。",
+    "mean": "Anh/Chị dùng [~], có được không? (dùng khi mời ai đó cái gì)"
+  },
+  {
+    "name": "いただきます。",
+    "mean": "Mời anh/chị dùng... (cách nói dùng trước khi ăn hoặc uống)"
+  },
+  {
+    "name": "旅行_りょこう",
+    "mean": "du lịch, chuyến du lịch (~をします: đi du lịch)"
+  },
+  {
+    "name": "お土産_おみやげ",
+    "mean": "quà (mua khi đi xa về hoặc mang đi khi thăm nhà người nào đó)"
+  },
+  {
+    "name": "ヨーロッパ",
+    "mean": "châu Âu"
+  },
+  {
+    "name": "スペイン",
+    "mean": "Tây Ban Nha"
+  }
+]

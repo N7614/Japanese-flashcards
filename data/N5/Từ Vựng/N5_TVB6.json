@@ -1,0 +1,218 @@
+[
+  {
+    "name": "食べます_たべます",
+    "mean": "ăn"
+  },
+  {
+    "name": "飲みます_のみます",
+    "mean": "uống"
+  },
+  {
+    "name": "吸います [たばこを~]_すいます [たばこを~]",
+    "mean": "hút [thuốc lá]"
+  },
+  {
+    "name": "見ます_みます",
+    "mean": "xem, nhìn, trông"
+  },
+  {
+    "name": "聞きます_ききます",
+    "mean": "nghe"
+  },
+  {
+    "name": "読みます_よみます",
+    "mean": "đọc"
+  },
+  {
+    "name": "書きます_かきます",
+    "mean": "viết, vẽ"
+  },
+  {
+    "name": "買います_かいます",
+    "mean": "mua"
+  },
+  {
+    "name": "撮ります [写真を~]_とります [しゃしんを~]",
+    "mean": "chụp [ảnh]"
+  },
+  {
+    "name": "します",
+    "mean": "làm"
+  },
+  {
+    "name": "会います [友達に~]_あいます [ともだちに~]",
+    "mean": "gặp [bạn]"
+  },
+  {
+    "name": "ごはん",
+    "mean": "cơm, bữa ăn"
+  },
+  {
+    "name": "朝ごはん_あさごはん",
+    "mean": "cơm sáng"
+  },
+  {
+    "name": "昼ごはん_ひるごはん",
+    "mean": "cơm trưa"
+  },
+  {
+    "name": "晩ごはん_ばんごはん",
+    "mean": "cơm tối"
+  },
+  {
+    "name": "パン",
+    "mean": "bánh mì"
+  },
+  {
+    "name": "卵_たまご",
+    "mean": "trứng"
+  },
+  {
+    "name": "肉_にく",
+    "mean": "thịt"
+  },
+  {
+    "name": "魚_さかな",
+    "mean": "cá"
+  },
+  {
+    "name": "野菜_やさい",
+    "mean": "rau"
+  },
+  {
+    "name": "果物_くだもの",
+    "mean": "hoa quả, trái cây"
+  },
+  {
+    "name": "水_みず",
+    "mean": "nước"
+  },
+  {
+    "name": "お茶_おちゃ",
+    "mean": "trà (nói chung)"
+  },
+  {
+    "name": "紅茶_こうちゃ",
+    "mean": "trà đen"
+  },
+  {
+    "name": "牛乳 (ミルク)_ぎゅうにゅう (ミルク)",
+    "mean": "sữa bò"
+  },
+  {
+    "name": "ジュース",
+    "mean": "nước hoa quả"
+  },
+  {
+    "name": "ビール",
+    "mean": "bia"
+  },
+  {
+    "name": "[お] 酒_[お] さけ",
+    "mean": "rượu, rượu sake"
+  },
+  {
+    "name": "ビデオ",
+    "mean": "video, băng video, đầu video"
+  },
+  {
+    "name": "映画_えいが",
+    "mean": "phim, điện ảnh"
+  },
+  {
+    "name": "CD",
+    "mean": "đĩa CD"
+  },
+  {
+    "name": "手紙_てがみ",
+    "mean": "thư"
+  },
+  {
+    "name": "レポート",
+    "mean": "báo cáo"
+  },
+  {
+    "name": "写真_しゃしん",
+    "mean": "ảnh"
+  },
+  {
+    "name": "店_みせ",
+    "mean": "cửa hàng, tiệm"
+  },
+  {
+    "name": "レストラン",
+    "mean": "nhà hàng"
+  },
+  {
+    "name": "庭_にわ",
+    "mean": "vườn"
+  },
+  {
+    "name": "宿題_しゅくだい",
+    "mean": "bài tập về nhà (~をします: làm bài tập)"
+  },
+  {
+    "name": "テニス",
+    "mean": "quần vợt (~をします: đánh quần vợt)"
+  },
+  {
+    "name": "サッカー",
+    "mean": "bóng đá (~をします: chơi bóng đá)"
+  },
+  {
+    "name": "[お] 花見_[お] はなみ",
+    "mean": "việc ngắm hoa anh đào (~をします: ngắm hoa anh đào)"
+  },
+  {
+    "name": "何_なに",
+    "mean": "cái gì, gì"
+  },
+  {
+    "name": "いっしょに",
+    "mean": "cùng, cùng nhau"
+  },
+  {
+    "name": "ちょっと",
+    "mean": "một chút"
+  },
+  {
+    "name": "いつも",
+    "mean": "luôn luôn, lúc nào cũng"
+  },
+  {
+    "name": "時々_ときどき",
+    "mean": "thỉnh thoảng"
+  },
+  {
+    "name": "それから",
+    "mean": "sau đó, tiếp theo"
+  },
+  {
+    "name": "ええ",
+    "mean": "vâng/được (cách nói thân mật của 「はい」)"
+  },
+  {
+    "name": "いいですね。",
+    "mean": "Được đấy nhỉ. / Hay quá."
+  },
+  {
+    "name": "わかりました。",
+    "mean": "Tôi hiểu rồi. / Vâng ạ."
+  },
+  {
+    "name": "何ですか。_なんですか。",
+    "mean": "Có gì đấy ạ?/ Cái gì vậy?/ Vâng có tôi. (câu trả lời khi ai đó gọi tên mình)"
+  },
+  {
+    "name": "じゃ、また [あした]。",
+    "mean": "Hẹn gặp lại [ngày mai]."
+  },
+  {
+    "name": "メキシコ",
+    "mean": "Mexico"
+  },
+  {
+    "name": "大阪城公園_おおさかじょうこうえん",
+    "mean": "Công viên lâu đài Osaka"
+  }
+]

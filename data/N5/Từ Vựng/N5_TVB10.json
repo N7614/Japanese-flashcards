@@ -1,0 +1,198 @@
+[
+  {
+    "name": "います",
+    "mean": "có, ở (tồn tại, dùng cho người và động vật)"
+  },
+  {
+    "name": "あります",
+    "mean": "có (tồn tại, dùng cho đồ vật)"
+  },
+  {
+    "name": "いろいろ [な]",
+    "mean": "nhiều, đa dạng"
+  },
+  {
+    "name": "男の人_おとこのひと",
+    "mean": "người đàn ông"
+  },
+  {
+    "name": "女の人_おんなのひと",
+    "mean": "người đàn bà"
+  },
+  {
+    "name": "男の子_おとこのこ",
+    "mean": "cậu con trai"
+  },
+  {
+    "name": "女の子_おんなのこ",
+    "mean": "cô con gái"
+  },
+  {
+    "name": "犬_いぬ",
+    "mean": "chó"
+  },
+  {
+    "name": "猫_ねこ",
+    "mean": "mèo"
+  },
+  {
+    "name": "木_き",
+    "mean": "cây, gỗ"
+  },
+  {
+    "name": "物_もの",
+    "mean": "vật, đồ vật"
+  },
+  {
+    "name": "フィルム",
+    "mean": "phim"
+  },
+  {
+    "name": "電池_でんち",
+    "mean": "pin"
+  },
+  {
+    "name": "箱_はこ",
+    "mean": "hộp"
+  },
+  {
+    "name": "スイッチ",
+    "mean": "công tắc"
+  },
+  {
+    "name": "冷蔵庫_れいぞうこ",
+    "mean": "tủ lạnh"
+  },
+  {
+    "name": "テーブル",
+    "mean": "bàn"
+  },
+  {
+    "name": "ベッド",
+    "mean": "giường"
+  },
+  {
+    "name": "棚_たな",
+    "mean": "giá sách"
+  },
+  {
+    "name": "ドア",
+    "mean": "cửa"
+  },
+  {
+    "name": "窓_まど",
+    "mean": "cửa sổ"
+  },
+  {
+    "name": "ポスト",
+    "mean": "hộp thư, hòm thư"
+  },
+  {
+    "name": "ビル",
+    "mean": "tòa nhà"
+  },
+  {
+    "name": "公園_こうえん",
+    "mean": "công viên"
+  },
+  {
+    "name": "喫茶店_きっさてん",
+    "mean": "quán giải khát, quán cà-phê"
+  },
+  {
+    "name": "本屋_ほんや",
+    "mean": "hiệu sách"
+  },
+  {
+    "name": "~屋_~や",
+    "mean": "cửa hàng ~, hiệu ~"
+  },
+  {
+    "name": "乗り場_のりば",
+    "mean": "bến xe, điểm lên xuống xe"
+  },
+  {
+    "name": "県_けん",
+    "mean": "tỉnh"
+  },
+  {
+    "name": "上_うえ",
+    "mean": "trên"
+  },
+  {
+    "name": "下_した",
+    "mean": "dưới"
+  },
+  {
+    "name": "前_まえ",
+    "mean": "trước"
+  },
+  {
+    "name": "後ろ_うしろ",
+    "mean": "sau"
+  },
+  {
+    "name": "右_みぎ",
+    "mean": "phải"
+  },
+  {
+    "name": "左_ひだり",
+    "mean": "trái"
+  },
+  {
+    "name": "中_なか",
+    "mean": "trong, giữa"
+  },
+  {
+    "name": "外_そと",
+    "mean": "ngoài"
+  },
+  {
+    "name": "隣_となり",
+    "mean": "bên cạnh"
+  },
+  {
+    "name": "近く_ちかく",
+    "mean": "gần"
+  },
+  {
+    "name": "間_あいだ",
+    "mean": "giữa"
+  },
+  {
+    "name": "~や~ [など]",
+    "mean": "~ và ~, [v.v.]"
+  },
+  {
+    "name": "いちばん~",
+    "mean": "~ nhất (いちばんうえ: vị trí cao nhất)"
+  },
+  {
+    "name": "~段目_~だんめ",
+    "mean": "giá thứ ~, tầng thứ ~ (「だん」 được dùng cho giá sách v.v.)"
+  },
+  {
+    "name": "[どうも] すみません。",
+    "mean": "Cám ơn."
+  },
+  {
+    "name": "チリソース",
+    "mean": "tương ớt (chili sauce)"
+  },
+  {
+    "name": "奥_おく",
+    "mean": "bên trong cùng, phía sâu bên trong"
+  },
+  {
+    "name": "スパイス・コーナー",
+    "mean": "góc gia vị (spice corner)"
+  },
+  {
+    "name": "東京ディズニーランド_とうきょうディズニーランド",
+    "mean": "Công viên Tokyo Disneyland"
+  },
+  {
+    "name": "ユニューヤ・ストア",
+    "mean": "tên một siêu thị (giả tưởng)"
+  }
+]
