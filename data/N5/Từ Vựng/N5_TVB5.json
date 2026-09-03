@@ -1,0 +1,238 @@
+[
+  {
+    "name": "行きます_いきます",
+    "mean": "đi"
+  },
+  {
+    "name": "来ます_きます",
+    "mean": "đến"
+  },
+  {
+    "name": "帰ります_かえります",
+    "mean": "về"
+  },
+  {
+    "name": "学校_がっこう",
+    "mean": "trường học"
+  },
+  {
+    "name": "スーパー",
+    "mean": "siêu thị"
+  },
+  {
+    "name": "駅_えき",
+    "mean": "ga, nhà ga"
+  },
+  {
+    "name": "飛行機_ひこうき",
+    "mean": "máy bay"
+  },
+  {
+    "name": "船_ふね",
+    "mean": "thuyền, tàu thủy"
+  },
+  {
+    "name": "電車_でんしゃ",
+    "mean": "tàu điện"
+  },
+  {
+    "name": "地下鉄_ちかてつ",
+    "mean": "tàu điện ngầm"
+  },
+  {
+    "name": "新幹線_しんかんせん",
+    "mean": "tàu Shinkansen (tàu điện siêu tốc của Nhật)"
+  },
+  {
+    "name": "バス",
+    "mean": "xe buýt"
+  },
+  {
+    "name": "タクシー",
+    "mean": "tắc-xi"
+  },
+  {
+    "name": "自転車_じてんしゃ",
+    "mean": "xe đạp"
+  },
+  {
+    "name": "歩いて_あるいて",
+    "mean": "đi bộ"
+  },
+  {
+    "name": "人_ひと",
+    "mean": "người"
+  },
+  {
+    "name": "友達_ともだち",
+    "mean": "bạn, bạn bè"
+  },
+  {
+    "name": "彼_かれ",
+    "mean": "anh ấy, bạn trai"
+  },
+  {
+    "name": "彼女_かのじょ",
+    "mean": "chị ấy, bạn gái"
+  },
+  {
+    "name": "家族_かぞく",
+    "mean": "gia đình"
+  },
+  {
+    "name": "一人で_ひとりで",
+    "mean": "một mình"
+  },
+  {
+    "name": "先週_せんしゅう",
+    "mean": "tuần trước"
+  },
+  {
+    "name": "今週_こんしゅう",
+    "mean": "tuần này"
+  },
+  {
+    "name": "来週_らいしゅう",
+    "mean": "tuần sau"
+  },
+  {
+    "name": "先月_せんげつ",
+    "mean": "tháng trước"
+  },
+  {
+    "name": "今月_こんげつ",
+    "mean": "tháng này"
+  },
+  {
+    "name": "来月_らいげつ",
+    "mean": "tháng sau"
+  },
+  {
+    "name": "去年_きょねん",
+    "mean": "năm ngoái"
+  },
+  {
+    "name": "ことし",
+    "mean": "năm nay"
+  },
+  {
+    "name": "来年_らいねん",
+    "mean": "sang năm"
+  },
+  {
+    "name": "~月_~がつ",
+    "mean": "tháng"
+  },
+  {
+    "name": "何月_なんがつ",
+    "mean": "tháng mấy"
+  },
+  {
+    "name": "1日_ついたち",
+    "mean": "ngày mồng 1"
+  },
+  {
+    "name": "2日_ふつか",
+    "mean": "ngày mồng 2, 2 ngày"
+  },
+  {
+    "name": "3日_みっか",
+    "mean": "ngày mồng 3, 3 ngày"
+  },
+  {
+    "name": "4日_よっか",
+    "mean": "ngày mồng 4, 4 ngày"
+  },
+  {
+    "name": "5日_いつか",
+    "mean": "ngày mồng 5, 5 ngày"
+  },
+  {
+    "name": "6日_むいか",
+    "mean": "ngày mồng 6, 6 ngày"
+  },
+  {
+    "name": "7日_なのか",
+    "mean": "ngày mồng 7, 7 ngày"
+  },
+  {
+    "name": "8日_ようか",
+    "mean": "ngày mồng 8, 8 ngày"
+  },
+  {
+    "name": "9日_ここのか",
+    "mean": "ngày mồng 9, 9 ngày"
+  },
+  {
+    "name": "10日_とおか",
+    "mean": "ngày mồng 10, 10 ngày"
+  },
+  {
+    "name": "14日_じゅうよっか",
+    "mean": "ngày 14, 14 ngày"
+  },
+  {
+    "name": "20日_はつか",
+    "mean": "ngày 20, 20 ngày"
+  },
+  {
+    "name": "24日_にじゅうよっか",
+    "mean": "ngày 24, 24 ngày"
+  },
+  {
+    "name": "~日_~にち",
+    "mean": "ngày, ngày"
+  },
+  {
+    "name": "何日_なんにち",
+    "mean": "ngày mấy, ngày bao nhiêu, mấy ngày, bao nhiêu ngày"
+  },
+  {
+    "name": "いつ",
+    "mean": "bao giờ, khi nào"
+  },
+  {
+    "name": "誕生日_たんじょうび",
+    "mean": "sinh nhật"
+  },
+  {
+    "name": "普通_ふつう",
+    "mean": "tàu thường (dừng cả ở các ga lẻ)"
+  },
+  {
+    "name": "急行_きゅうこう",
+    "mean": "tàu tốc hành"
+  },
+  {
+    "name": "特急_とっきゅう",
+    "mean": "tàu tốc hành đặc biệt"
+  },
+  {
+    "name": "次の_つぎの",
+    "mean": "tiếp theo"
+  },
+  {
+    "name": "どういたしまして。",
+    "mean": "Không có gì."
+  },
+  {
+    "name": "~番線_~ばんせん",
+    "mean": "sân ga số -"
+  },
+  {
+    "name": "博多_はかた",
+    "mean": "tên một khu phố ở Kyushu"
+  },
+  {
+    "name": "伏見_ふしみ",
+    "mean": "tên một khu phố ở Kyoto"
+  },
+  {
+    "name": "甲子園_こうしえん",
+    "mean": "tên một khu phố ở gần Osaka"
+  },
+  {
+    "name": "大阪城_おおさかじょう",
+    "mean": "Lâu đài Osaka, một lâu đài nổi tiếng ở Osaka"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "name": "起きます_おきます",
+    "mean": "dậy, thức dậy"
+  },
+  {
+    "name": "寝ます_ねます",
+    "mean": "ngủ, đi ngủ"
+  },
+  {
+    "name": "働きます_はたらきます",
+    "mean": "làm việc"
+  },
+  {
+    "name": "休みます_やすみます",
+    "mean": "nghỉ, nghỉ ngơi"
+  },
+  {
+    "name": "勉強します_べんきょうします",
+    "mean": "học"
+  },
+  {
+    "name": "終わります_おわります",
+    "mean": "hết, kết thúc, xong"
+  },
+  {
+    "name": "デパート",
+    "mean": "bách hóa"
+  },
+  {
+    "name": "銀行_ぎんこう",
+    "mean": "ngân hàng"
+  },
+  {
+    "name": "郵便局_ゆうびんきょく",
+    "mean": "bưu điện"
+  },
+  {
+    "name": "図書館_としょかん",
+    "mean": "thư viện"
+  },
+  {
+    "name": "美術館_びじゅつかん",
+    "mean": "bảo tàng mỹ thuật"
+  },
+  {
+    "name": "今_いま",
+    "mean": "bây giờ"
+  },
+  {
+    "name": "~時_~じ",
+    "mean": "giờ"
+  },
+  {
+    "name": "~分_~ふん (~ぷん)",
+    "mean": "phút"
+  },
+  {
+    "name": "半_はん",
+    "mean": "rưỡi, nửa"
+  },
+  {
+    "name": "何時_なんじ",
+    "mean": "mấy giờ"
+  },
+  {
+    "name": "何分_なんぷん",
+    "mean": "mấy phút"
+  },
+  {
+    "name": "午前_ごぜん",
+    "mean": "trước mười hai giờ trưa, sáng"
+  },
+  {
+    "name": "午後_ごご",
+    "mean": "sau mười hai giờ trưa, chiều"
+  },
+  {
+    "name": "朝_あさ",
+    "mean": "buổi sáng, sáng"
+  },
+  {
+    "name": "昼_ひる",
+    "mean": "buổi trưa, trưa"
+  },
+  {
+    "name": "晩 (夜)_ばん (よる)",
+    "mean": "buổi tối, tối"
+  },
+  {
+    "name": "おととい",
+    "mean": "hôm kia"
+  },
+  {
+    "name": "きのう",
+    "mean": "hôm qua"
+  },
+  {
+    "name": "きょう",
+    "mean": "hôm nay"
+  },
+  {
+    "name": "あした",
+    "mean": "ngày mai"
+  },
+  {
+    "name": "あさって",
+    "mean": "ngày kia"
+  },
+  {
+    "name": "けさ",
+    "mean": "sáng nay"
+  },
+  {
+    "name": "今晩_こんばん",
+    "mean": "tối nay"
+  },
+  {
+    "name": "休み_やすみ",
+    "mean": "nghỉ, nghỉ phép, ngày nghỉ"
+  },
+  {
+    "name": "昼休み_ひるやすみ",
+    "mean": "nghỉ trưa"
+  },
+  {
+    "name": "毎朝_まいあさ",
+    "mean": "hàng sáng, mỗi sáng"
+  },
+  {
+    "name": "毎晩_まいばん",
+    "mean": "hàng tối, mỗi tối"
+  },
+  {
+    "name": "毎日_まいにち",
+    "mean": "hàng ngày, mỗi ngày"
+  },
+  {
+    "name": "月曜日_げつようび",
+    "mean": "thứ hai"
+  },
+  {
+    "name": "火曜日_かようび",
+    "mean": "thứ ba"
+  },
+  {
+    "name": "水曜日_すいようび",
+    "mean": "thứ tư"
+  },
+  {
+    "name": "木曜日_もくようび",
+    "mean": "thứ năm"
+  },
+  {
+    "name": "金曜日_きんようび",
+    "mean": "thứ sáu"
+  },
+  {
+    "name": "土曜日_どようび",
+    "mean": "thứ bảy"
+  },
+  {
+    "name": "日曜日_にちようび",
+    "mean": "chủ nhật"
+  },
+  {
+    "name": "何曜日_なんようび",
+    "mean": "thứ mấy"
+  },
+  {
+    "name": "番号_ばんごう",
+    "mean": "số (số điện thoại, số phòng)"
+  },
+  {
+    "name": "何番_なんばん",
+    "mean": "số bao nhiêu, số mấy"
+  },
+  {
+    "name": "~から",
+    "mean": "từ"
+  },
+  {
+    "name": "~まで",
+    "mean": "đến"
+  },
+  {
+    "name": "~と~",
+    "mean": "và (dùng để nối hai danh từ)"
+  },
+  {
+    "name": "そちら",
+    "mean": "ông/bà, phía ông/phía bà"
+  },
+  {
+    "name": "大変ですね。_たいへんですね。",
+    "mean": "Anh/Chị vất vả quá. (dùng để bày tỏ sự thông cảm)"
+  },
+  {
+    "name": "えーと",
+    "mean": "ờ, à (từ đệm trong hội thoại khi đang nghĩ điều muốn nói)"
+  },
+  {
+    "name": "104",
+    "mean": "số điện thoại của dịch vụ hướng dẫn số điện thoại"
+  },
+  {
+    "name": "お願いします。_おねがいします。",
+    "mean": "Nhờ anh/chị. Phiền anh/chị. Xin vui lòng giúp đỡ."
+  },
+  {
+    "name": "かしこまりました。",
+    "mean": "Tôi hiểu rồi ạ./ Vâng, được rồi ạ."
+  },
+  {
+    "name": "お問い合わせの番号_おといあわせのばんごう",
+    "mean": "số điện thoại mà ông/bà muốn hỏi"
+  },
+  {
+    "name": "[どうも] ありがとうございました。",
+    "mean": "Xin cám ơn ông/bà."
+  },
+  {
+    "name": "ニューヨーク",
+    "mean": "New York"
+  },
+  {
+    "name": "ペキン",
+    "mean": "Bắc Kinh (北京)"
+  },
+  {
+    "name": "ロンドン",
+    "mean": "Luân Đôn"
+  },
+  {
+    "name": "バンコク",
+    "mean": "Băng Cốc"
+  },
+  {
+    "name": "ロサンゼルス",
+    "mean": "Los Angeles"
+  },
+  {
+    "name": "やまと美術館_やまとびじゅつかん",
+    "mean": "tên một bảo tàng mỹ thuật (giả tưởng)"
+  },
+  {
+    "name": "大阪デパート_おおさかデパート",
+    "mean": "tên một bách hóa (giả tưởng)"
+  },
+  {
+    "name": "みどり図書館_みどりとしょかん",
+    "mean": "tên một thư viện (giả tưởng)"
+  },
+  {
+    "name": "アップル銀行_アップルぎんこう",
+    "mean": "tên một ngân hàng (giả tưởng)"
+  }
+]
