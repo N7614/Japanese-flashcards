@@ -1,0 +1,182 @@
+[
+  {
+    "name": "ここ",
+    "mean": "chỗ này, đây"
+  },
+  {
+    "name": "そこ",
+    "mean": "chỗ đó, đó"
+  },
+  {
+    "name": "あそこ",
+    "mean": "chỗ kia, kia"
+  },
+  {
+    "name": "どこ",
+    "mean": "chỗ nào, đâu"
+  },
+  {
+    "name": "こちら",
+    "mean": "phía này, đằng này, chỗ này, đây (cách nói lịch sự của 「ここ」)"
+  },
+  {
+    "name": "そちら",
+    "mean": "phía đó, đằng đó, chỗ đó, đó (cách nói lịch sự của 「そこ」)"
+  },
+  {
+    "name": "あちら",
+    "mean": "phía kia, đằng kia, chỗ kia, kia (cách nói lịch sự của 「あそこ」)"
+  },
+  {
+    "name": "どちら",
+    "mean": "phía nào, đằng nào, chỗ nào, đâu (cách nói lịch sự của 「どこ」)"
+  },
+  {
+    "name": "教室_きょうしつ",
+    "mean": "lớp học, phòng học"
+  },
+  {
+    "name": "食堂_しょくどう",
+    "mean": "nhà ăn"
+  },
+  {
+    "name": "事務所_じむしょ",
+    "mean": "văn phòng"
+  },
+  {
+    "name": "会議室_かいぎしつ",
+    "mean": "phòng họp"
+  },
+  {
+    "name": "受付_うけつけ",
+    "mean": "bộ phận tiếp tân, phòng thường trực"
+  },
+  {
+    "name": "ロビー",
+    "mean": "hành lang, đại sảnh"
+  },
+  {
+    "name": "部屋_へや",
+    "mean": "căn phòng"
+  },
+  {
+    "name": "トイレ (お手洗い)_トイレ (おてあらい)",
+    "mean": "nhà vệ sinh, phòng vệ sinh, toa-lét"
+  },
+  {
+    "name": "階段_かいだん",
+    "mean": "cầu thang"
+  },
+  {
+    "name": "エレベーター",
+    "mean": "thang máy"
+  },
+  {
+    "name": "エスカレーター",
+    "mean": "thang cuốn"
+  },
+  {
+    "name": "[お] 国_[お] くに",
+    "mean": "đất nước (của anh/chị)"
+  },
+  {
+    "name": "会社_かいしゃ",
+    "mean": "công ty"
+  },
+  {
+    "name": "うち",
+    "mean": "nhà"
+  },
+  {
+    "name": "電話_でんわ",
+    "mean": "máy điện thoại, điện thoại"
+  },
+  {
+    "name": "靴_くつ",
+    "mean": "giầy"
+  },
+  {
+    "name": "ネクタイ",
+    "mean": "cà-vạt"
+  },
+  {
+    "name": "ワイン",
+    "mean": "rượu vang"
+  },
+  {
+    "name": "たばこ",
+    "mean": "thuốc lá"
+  },
+  {
+    "name": "売り場_うりば",
+    "mean": "quầy bán (trong một bách hóa)"
+  },
+  {
+    "name": "地下_ちか",
+    "mean": "tầng hầm, dưới mặt đất"
+  },
+  {
+    "name": "一階_~かい (~がい)",
+    "mean": "tầng thứ"
+  },
+  {
+    "name": "何階_なんがい",
+    "mean": "tầng mấy"
+  },
+  {
+    "name": "一円_~えん",
+    "mean": "yên"
+  },
+  {
+    "name": "いくら",
+    "mean": "bao nhiêu tiền"
+  },
+  {
+    "name": "百_ひゃく",
+    "mean": "trăm"
+  },
+  {
+    "name": "千_せん",
+    "mean": "nghìn"
+  },
+  {
+    "name": "万_まん",
+    "mean": "mười nghìn, vạn"
+  },
+  {
+    "name": "すみません。",
+    "mean": "Xin lỗi."
+  },
+  {
+    "name": "~でございます。",
+    "mean": "(cách nói lịch sự của 「です」)"
+  },
+  {
+    "name": "[~を] 見せてください。_[~を] みせてください。",
+    "mean": "Cho tôi xem [~]."
+  },
+  {
+    "name": "じゃ",
+    "mean": "thế thì, vậy thì"
+  },
+  {
+    "name": "[~を] ください。",
+    "mean": "Cho tôi [~]."
+  },
+  {
+    "name": "新大阪_しんおおさか",
+    "mean": "tên một nhà ga ở Osaka"
+  },
+  {
+    "name": "イタリア",
+    "mean": "Ý"
+  },
+  {
+    "name": "スイス",
+    "mean": "Thụy Sĩ"
+  },
+  {
+    "name": "MT/ヨーネン/アキックス",
+    "mean": "tên các công ty giả tưởng"
+  }
+]

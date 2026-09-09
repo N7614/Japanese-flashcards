@@ -1,0 +1,162 @@
+[
+  {
+    "name": "遭います [事故に~]_あいます [じこに~]",
+    "mean": "gặp [tai nạn]"
+  },
+  {
+    "name": "貯金します_ちょきんします",
+    "mean": "tiết kiệm tiền"
+  },
+  {
+    "name": "過ぎます [7時を~]_すぎます [7じを~]",
+    "mean": "quá [7 giờ]"
+  },
+  {
+    "name": "慣れます [仕事に~]_なれます [しごとに~]",
+    "mean": "quen với [công việc]"
+  },
+  {
+    "name": "腐ります [食べ物が~]_くさります [たべものが~]",
+    "mean": "bị hỏng, bị thiu, bị ôi, bị nát [thức ăn ~]"
+  },
+  {
+    "name": "剣道_けんどう",
+    "mean": "kiếm đạo (môn đấu kiếm truyền thống kiểu Nhật)"
+  },
+  {
+    "name": "柔道_じゅうどう",
+    "mean": "Judo"
+  },
+  {
+    "name": "ラッシュ",
+    "mean": "tắc đường"
+  },
+  {
+    "name": "宇宙_うちゅう",
+    "mean": "vũ trụ"
+  },
+  {
+    "name": "曲_きょく",
+    "mean": "khúc, bản nhạc, ca khúc"
+  },
+  {
+    "name": "毎週_まいしゅう",
+    "mean": "hàng tuần"
+  },
+  {
+    "name": "毎月_まいつき",
+    "mean": "hàng tháng"
+  },
+  {
+    "name": "毎年_まいとし (まいねん)",
+    "mean": "hàng năm"
+  },
+  {
+    "name": "このごろ",
+    "mean": "dạo này"
+  },
+  {
+    "name": "やっと",
+    "mean": "cuối cùng thì cũng"
+  },
+  {
+    "name": "かなり",
+    "mean": "khá"
+  },
+  {
+    "name": "必ず_かならず",
+    "mean": "nhất định"
+  },
+  {
+    "name": "絶対に_ぜったいに",
+    "mean": "tuyệt đối"
+  },
+  {
+    "name": "上手に_じょうずに",
+    "mean": "giỏi"
+  },
+  {
+    "name": "できるだけ",
+    "mean": "trong khả năng có thể"
+  },
+  {
+    "name": "ほとんど",
+    "mean": "hầu hết, phần lớn (trong câu khẳng định), gần như hoàn toàn (trong câu phủ định)"
+  },
+  {
+    "name": "ショパン",
+    "mean": "Chopin, nhà soạn nhạc người Ba Lan (1810-49)"
+  },
+  {
+    "name": "お客様_きゃくさま",
+    "mean": "quý khách (kính ngữ của おきゃくさん)"
+  },
+  {
+    "name": "特別 [な]_とくべつ [な]",
+    "mean": "đặc biệt"
+  },
+  {
+    "name": "していらっしゃいます",
+    "mean": "đang làm (kính ngữ của しています)"
+  },
+  {
+    "name": "水泳_すいえい",
+    "mean": "bơi"
+  },
+  {
+    "name": "違います_ちがいます",
+    "mean": "khác nhau"
+  },
+  {
+    "name": "使っていらっしゃるんですね。_つかっていらっしゃるんですね。",
+    "mean": "đang dùng (kính ngữ của つかっているんですね)"
+  },
+  {
+    "name": "チャレンジします",
+    "mean": "thử sức, thử làm"
+  },
+  {
+    "name": "気持ち_きもち",
+    "mean": "tâm thế"
+  },
+  {
+    "name": "乗り物_のりもの",
+    "mean": "phương tiện đi lại"
+  },
+  {
+    "name": "~世紀_~せいき",
+    "mean": "thế kỷ"
+  },
+  {
+    "name": "遠く_とおく",
+    "mean": "nơi xa"
+  },
+  {
+    "name": "珍しい_めずらしい",
+    "mean": "hiếm"
+  },
+  {
+    "name": "汽車_きしゃ",
+    "mean": "tàu lửa chạy bằng hơi nước"
+  },
+  {
+    "name": "汽船_きせん",
+    "mean": "tàu thủy chạy bằng hơi nước"
+  },
+  {
+    "name": "大勢の~_おおぜいの~",
+    "mean": "nhiều ~ (dùng cho người)"
+  },
+  {
+    "name": "運びます_はこびます",
+    "mean": "vận chuyển"
+  },
+  {
+    "name": "利用します_りようします",
+    "mean": "sử dụng"
+  },
+  {
+    "name": "自由に_じゆうに",
+    "mean": "thoải mái"
+  }
+]

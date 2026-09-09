@@ -1,0 +1,250 @@
+[
+  {
+    "name": "褒めます_ほめます",
+    "mean": "khen"
+  },
+  {
+    "name": "しかります",
+    "mean": "mắng"
+  },
+  {
+    "name": "誘います_さそいます",
+    "mean": "mời, rủ"
+  },
+  {
+    "name": "招待します_しょうたいします",
+    "mean": "mời"
+  },
+  {
+    "name": "頼みます_たのみます",
+    "mean": "nhờ"
+  },
+  {
+    "name": "注意します_ちゅういします",
+    "mean": "nhắc nhở"
+  },
+  {
+    "name": "とります",
+    "mean": "lấy cắp"
+  },
+  {
+    "name": "踏みます_ふみます",
+    "mean": "dẫm"
+  },
+  {
+    "name": "壊します_こわします",
+    "mean": "làm hỏng"
+  },
+  {
+    "name": "汚します_よごします",
+    "mean": "làm bẩn"
+  },
+  {
+    "name": "行います_おこないます",
+    "mean": "tổ chức"
+  },
+  {
+    "name": "輸出します_ゆしゅつします",
+    "mean": "xuất khẩu"
+  },
+  {
+    "name": "輸入します_ゆにゅうします",
+    "mean": "nhập khẩu"
+  },
+  {
+    "name": "翻訳します_ほんやくします",
+    "mean": "biên dịch"
+  },
+  {
+    "name": "発明します_はつめいします",
+    "mean": "giải thích, thuyết trình"
+  },
+  {
+    "name": "発見します_はっけんします",
+    "mean": "phát hiện"
+  },
+  {
+    "name": "米_こめ",
+    "mean": "gạo"
+  },
+  {
+    "name": "麦_むぎ",
+    "mean": "lúa mạch"
+  },
+  {
+    "name": "石油_せきゆ",
+    "mean": "dầu mỏ"
+  },
+  {
+    "name": "原料_げんりょう",
+    "mean": "nguyên liệu"
+  },
+  {
+    "name": "インスタントラーメン",
+    "mean": "mỳ ăn liền, mỳ gói"
+  },
+  {
+    "name": "デート",
+    "mean": "hẹn hò"
+  },
+  {
+    "name": "泥棒_どろぼう",
+    "mean": "kẻ trộm"
+  },
+  {
+    "name": "警官_けいかん",
+    "mean": "cảnh sát"
+  },
+  {
+    "name": "世界中_せかいじゅう",
+    "mean": "trên toàn thế giới"
+  },
+  {
+    "name": "~中_~じゅう",
+    "mean": "toàn ~"
+  },
+  {
+    "name": "~世紀_~せいき",
+    "mean": "thế kỷ"
+  },
+  {
+    "name": "何語_なにご",
+    "mean": "tiếng gì"
+  },
+  {
+    "name": "だれか",
+    "mean": "ai đó"
+  },
+  {
+    "name": "よかったですね。",
+    "mean": "Hay quá nhỉ./Vui quá nhỉ."
+  },
+  {
+    "name": "オリンピック",
+    "mean": "Olympic"
+  },
+  {
+    "name": "ワールドカップ",
+    "mean": "Cúp bóng đá thế giới"
+  },
+  {
+    "name": "東大寺_とうだいじ",
+    "mean": "Chùa Todaiji"
+  },
+  {
+    "name": "大仏_だいぶつ",
+    "mean": "tượng phật lớn"
+  },
+  {
+    "name": "江戸時代_えどじだい",
+    "mean": "thời Edo (1603-1868)"
+  },
+  {
+    "name": "ポルトガル",
+    "mean": "Bồ Đào Nha"
+  },
+  {
+    "name": "サウジアラビア",
+    "mean": "Ả rập xê út"
+  },
+  {
+    "name": "ロシア",
+    "mean": "Nga"
+  },
+  {
+    "name": "皆様_みなさま",
+    "mean": "quý vị (kính ngữ của みなさん)"
+  },
+  {
+    "name": "焼けます [うちが~]_やけます [うちが~]",
+    "mean": "cháy [nhà ~]"
+  },
+  {
+    "name": "その後_そのご",
+    "mean": "sau đó"
+  },
+  {
+    "name": "世界遺産_せかいいさん",
+    "mean": "di sản thế giới"
+  },
+  {
+    "name": "~の一つ_~のひとつ",
+    "mean": "một trong những ~"
+  },
+  {
+    "name": "金色_きんいろ",
+    "mean": "màu (của) vàng"
+  },
+  {
+    "name": "本物_ほんもの",
+    "mean": "đồ thật"
+  },
+  {
+    "name": "金_きん",
+    "mean": "vàng"
+  },
+  {
+    "name": "~キロ",
+    "mean": "kilôgam, kilômét"
+  },
+  {
+    "name": "美しい_うつくしい",
+    "mean": "đẹp"
+  },
+  {
+    "name": "豪華 [な]_ごうか [な]",
+    "mean": "sang trọng, hoành tráng"
+  },
+  {
+    "name": "彫刻_ちょうこく",
+    "mean": "điêu khắc"
+  },
+  {
+    "name": "言い伝え_いいつたえ",
+    "mean": "truyền thuyết"
+  },
+  {
+    "name": "眠ります_ねむります",
+    "mean": "ngủ"
+  },
+  {
+    "name": "彫ります_ほります",
+    "mean": "khắc"
+  },
+  {
+    "name": "仲間_なかま",
+    "mean": "đồng nghiệp"
+  },
+  {
+    "name": "しかし",
+    "mean": "nhưng"
+  },
+  {
+    "name": "そのあと",
+    "mean": "sau đó"
+  },
+  {
+    "name": "一生懸命_いっしょうけんめい",
+    "mean": "chăm chỉ, gắng hết sức"
+  },
+  {
+    "name": "ねずみ",
+    "mean": "chuột"
+  },
+  {
+    "name": "一匹もいません。_いっぴきもいません。",
+    "mean": "Không có một con nào cả."
+  },
+  {
+    "name": "東照宮_とうしょうぐう",
+    "mean": "đền thờ thờ Tokugawa Ieyasu nằm ở Nikko, tỉnh Tochigi"
+  },
+  {
+    "name": "眠り猫_ねむりねこ",
+    "mean": "con mèo ngủ"
+  },
+  {
+    "name": "左甚五郎_ひだりじんごろう",
+    "mean": "nhà điêu khắc nổi tiếng thời Edo (1594 - 1651)"
+  }
+]
