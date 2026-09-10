@@ -1,0 +1,250 @@
+[
+  {
+    "name": "ハンサム [な]",
+    "mean": "đẹp trai"
+  },
+  {
+    "name": "きれい [な]",
+    "mean": "đẹp, sạch"
+  },
+  {
+    "name": "静か [な]_しずか [な]",
+    "mean": "yên tĩnh"
+  },
+  {
+    "name": "にぎやか [な]",
+    "mean": "náo nhiệt"
+  },
+  {
+    "name": "有名 [な]_ゆうめい [な]",
+    "mean": "nổi tiếng"
+  },
+  {
+    "name": "親切 [な]_しんせつ [な]",
+    "mean": "tốt bụng, thân thiện"
+  },
+  {
+    "name": "元気 [な]_げんき [な]",
+    "mean": "khỏe"
+  },
+  {
+    "name": "暇 [な]_ひま [な]",
+    "mean": "rảnh rỗi"
+  },
+  {
+    "name": "便利 [な]_べんり [な]",
+    "mean": "tiện lợi"
+  },
+  {
+    "name": "すてき [な]",
+    "mean": "đẹp, hay"
+  },
+  {
+    "name": "大きい_おおきい",
+    "mean": "lớn, to"
+  },
+  {
+    "name": "小さい_ちいさい",
+    "mean": "bé, nhỏ"
+  },
+  {
+    "name": "新しい_あたらしい",
+    "mean": "mới"
+  },
+  {
+    "name": "古い_ふるい",
+    "mean": "cũ"
+  },
+  {
+    "name": "いい (よい)",
+    "mean": "tốt"
+  },
+  {
+    "name": "悪い_わるい",
+    "mean": "xấu"
+  },
+  {
+    "name": "暑い、熱い_あつい",
+    "mean": "nóng"
+  },
+  {
+    "name": "寒い_さむい",
+    "mean": "lạnh, rét (dùng cho thời tiết)"
+  },
+  {
+    "name": "冷たい_つめたい",
+    "mean": "lạnh, buốt (dùng cho cảm giác)"
+  },
+  {
+    "name": "難しい_むずかしい",
+    "mean": "khó"
+  },
+  {
+    "name": "易しい_やさしい",
+    "mean": "dễ"
+  },
+  {
+    "name": "高い_たかい",
+    "mean": "đắt, cao"
+  },
+  {
+    "name": "安い_やすい",
+    "mean": "rẻ"
+  },
+  {
+    "name": "低い_ひくい",
+    "mean": "thấp"
+  },
+  {
+    "name": "おもしろい",
+    "mean": "thú vị, hay"
+  },
+  {
+    "name": "おいしい",
+    "mean": "ngon"
+  },
+  {
+    "name": "忙しい_いそがしい",
+    "mean": "bận"
+  },
+  {
+    "name": "楽しい_たのしい",
+    "mean": "vui"
+  },
+  {
+    "name": "白い_しろい",
+    "mean": "trắng"
+  },
+  {
+    "name": "黒い_くろい",
+    "mean": "đen"
+  },
+  {
+    "name": "赤い_あかい",
+    "mean": "đỏ"
+  },
+  {
+    "name": "青い_あおい",
+    "mean": "xanh da trời"
+  },
+  {
+    "name": "桜_さくら",
+    "mean": "anh đào (hoa, cây)"
+  },
+  {
+    "name": "山_やま",
+    "mean": "núi"
+  },
+  {
+    "name": "町_まち",
+    "mean": "thị trấn, thị xã, thành phố"
+  },
+  {
+    "name": "食べ物_たべもの",
+    "mean": "đồ ăn"
+  },
+  {
+    "name": "車_くるま",
+    "mean": "xe ô-tô"
+  },
+  {
+    "name": "所_ところ",
+    "mean": "nơi, chỗ"
+  },
+  {
+    "name": "寮_りょう",
+    "mean": "kí túc xá"
+  },
+  {
+    "name": "勉強_べんきょう",
+    "mean": "học"
+  },
+  {
+    "name": "生活_せいかつ",
+    "mean": "cuộc sống, sinh hoạt"
+  },
+  {
+    "name": "[お] 仕事_[お] しごと",
+    "mean": "công việc (~をします: làm việc)"
+  },
+  {
+    "name": "どう",
+    "mean": "thế nào"
+  },
+  {
+    "name": "どんな〜",
+    "mean": "như thế nào"
+  },
+  {
+    "name": "どれ",
+    "mean": "cái nào"
+  },
+  {
+    "name": "とても",
+    "mean": "rất, lắm"
+  },
+  {
+    "name": "あまり",
+    "mean": "không ~ lắm"
+  },
+  {
+    "name": "そして",
+    "mean": "và, thêm nữa (dùng để nối hai câu)"
+  },
+  {
+    "name": "~が、~",
+    "mean": "~, nhưng ~"
+  },
+  {
+    "name": "お元気ですか。_おげんきですか。",
+    "mean": "Anh/Chị có khỏe không?"
+  },
+  {
+    "name": "そうですね。",
+    "mean": "Thế à./ Để tôi xem. (cách nói trong lúc suy nghĩ câu trả lời)"
+  },
+  {
+    "name": "日本の生活に慣れましたか。_にほんのせいかつになれましたか。",
+    "mean": "Anh/Chị đã quen với cuộc sống ở Nhật chưa?"
+  },
+  {
+    "name": "[~、] もう一杯いかがですか。_[~、] もういっぱいいかがですか。",
+    "mean": "Anh/Chị dùng thêm một chén [~] nữa được không ạ?"
+  },
+  {
+    "name": "いいえ、けっこうです。",
+    "mean": "Không, đủ rồi ạ."
+  },
+  {
+    "name": "もう〜です [ね]。",
+    "mean": "Đã ~ rồi nhỉ./ Đã ~ rồi, đúng không ạ?"
+  },
+  {
+    "name": "そろそろ失礼します。_そろそろしつれいします。",
+    "mean": "Sắp đến lúc tôi phải xin phép rồi./ Đã đến lúc tôi phải về."
+  },
+  {
+    "name": "またいらっしゃってください。",
+    "mean": "Lần sau anh/chị lại đến chơi nhé."
+  },
+  {
+    "name": "富士山_ふじさん",
+    "mean": "Núi Phú Sĩ (ngọn núi cao nhất Nhật Bản)"
+  },
+  {
+    "name": "琵琶湖_びわこ",
+    "mean": "Hồ Biwa"
+  },
+  {
+    "name": "シャンハイ",
+    "mean": "Thượng Hải (上海)"
+  },
+  {
+    "name": "「七人の侍」_「しちにんのさむらい」",
+    "mean": "“Bảy chàng võ sĩ Samurai” (tên một bộ phim kinh điển của đạo diễn Kurosawa Akira)"
+  },
+  {
+    "name": "金閣寺_きんかくじ",
+    "mean": "Chùa Kinkaku-ji (Chùa Vàng)"
+  }
+]

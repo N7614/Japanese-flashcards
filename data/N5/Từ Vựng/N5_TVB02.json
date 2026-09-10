@@ -1,0 +1,122 @@
+[
+  {
+    "name": "これ",
+    "mean": "cái này, đây (vật ở gần người nói)"
+  },
+  {
+    "name": "それ",
+    "mean": "cái đó, đó (vật ở gần người nghe)"
+  },
+  {
+    "name": "あれ",
+    "mean": "cái kia, kia (vật ở xa cả người nói và người nghe)"
+  },
+  {
+    "name": "この~",
+    "mean": "này"
+  },
+  {
+    "name": "その~",
+    "mean": "đó"
+  },
+  {
+    "name": "あの~",
+    "mean": "kia"
+  },
+  {
+    "name": "本_ほん",
+    "mean": "sách"
+  },
+  {
+    "name": "辞書_じしょ",
+    "mean": "từ điển"
+  },
+  {
+    "name": "雑誌_ざっし",
+    "mean": "tạp chí"
+  },
+  {
+    "name": "新聞_しんぶん",
+    "mean": "báo"
+  },
+  {
+    "name": "ノート",
+    "mean": "vở"
+  },
+  {
+    "name": "手帳_てちょう",
+    "mean": "sổ tay"
+  },
+  {
+    "name": "名刺_めいし",
+    "mean": "danh thiếp"
+  },
+  {
+    "name": "カード",
+    "mean": "thẻ, các, cạc"
+  },
+  {
+    "name": "テレホンカード",
+    "mean": "thẻ điện thoại"
+  },
+  {
+    "name": "鉛筆_えんぴつ",
+    "mean": "bút chì"
+  },
+  {
+    "name": "ボールペン",
+    "mean": "bút bi"
+  },
+  {
+    "name": "シャープペンシル",
+    "mean": "bút chì kim, bút chì bấm"
+  },
+  {
+    "name": "かぎ",
+    "mean": "chìa khóa"
+  },
+  {
+    "name": "時計_とけい",
+    "mean": "đồng hồ"
+  },
+  {
+    "name": "傘_かさ",
+    "mean": "ô, dù"
+  },
+  {
+    "name": "かばん",
+    "mean": "cặp sách, túi sách"
+  },
+  {
+    "name": "[カセット] テープ",
+    "mean": "băng [cát-xét]"
+  },
+  {
+    "name": "テープレコーダー",
+    "mean": "máy ghi âm"
+  },
+  {
+    "name": "テレビ",
+    "mean": "tivi"
+  },
+  {
+    "name": "ラジオ",
+    "mean": "radio"
+  },
+  {
+    "name": "カメラ",
+    "mean": "máy ảnh"
+  },
+  {
+    "name": "コンピューター",
+    "mean": "máy vi tính"
+  },
+  {
+    "name": "自動車_じどうしゃ",
+    "mean": "ô tô, xe hơi"
+  },
+  {
+    "name": "ほんの気持ちです。_ほんのきもちです。",
+    "mean": "Đây là chút lòng thành của tôi (dùng khi tặng quà chào hỏi hàng xóm khi chuyển nhà)"
+  }
+]
