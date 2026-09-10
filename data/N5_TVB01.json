@@ -1,0 +1,202 @@
+[
+  {
+    "name": "わたし",
+    "mean": "tôi"
+  },
+  {
+    "name": "わたしたち",
+    "mean": "chúng tôi, chúng ta"
+  },
+  {
+    "name": "あなた",
+    "mean": "anh/chị, ông/bà, bạn (ngôi thứ II số ít)"
+  },
+  {
+    "name": "あの人_あのひと",
+    "mean": "người kia, người đó"
+  },
+  {
+    "name": "あの方_あのかた",
+    "mean": "(「あのかた」 là cách nói lịch sự của 「あのひと」, vị kia)"
+  },
+  {
+    "name": "皆さん_みなさん",
+    "mean": "các anh chị, các ông bà, các bạn, quý vị"
+  },
+  {
+    "name": "~さん",
+    "mean": "anh, chị, ông, bà (cách gọi người khác một cách lịch sự bằng cách thêm từ này vào sau tên của người đó)"
+  },
+  {
+    "name": "~ちゃん",
+    "mean": "(hậu tố thêm vào sau tên của trẻ em thay cho 「~さん」)"
+  },
+  {
+    "name": "~君_~くん",
+    "mean": "(hậu tố thêm vào sau tên của em trai)"
+  },
+  {
+    "name": "~人_~じん",
+    "mean": "(hậu tố mang nghĩa “người (nước) ~ ; ví dụ 「アメリカじん」: người Mỹ)"
+  },
+  {
+    "name": "先生_せんせい",
+    "mean": "thầy/cô (không dùng khi nói về nghề nghiệp giáo viên của mình)"
+  },
+  {
+    "name": "教師_きょうし",
+    "mean": "giáo viên"
+  },
+  {
+    "name": "学生_がくせい",
+    "mean": "học sinh, sinh viên"
+  },
+  {
+    "name": "会社員_かいしゃいん",
+    "mean": "nhân viên công ty"
+  },
+  {
+    "name": "社員_しゃいん",
+    "mean": "nhân viên Công ty (dùng kèm theo tên công ty; ví dụ 「IMCのしゃいん」)"
+  },
+  {
+    "name": "銀行員_ぎんこういん",
+    "mean": "nhân viên ngân hàng"
+  },
+  {
+    "name": "医者_いしゃ",
+    "mean": "bác sĩ"
+  },
+  {
+    "name": "研究者_けんきゅうしゃ",
+    "mean": "nhà nghiên cứu"
+  },
+  {
+    "name": "エンジニア",
+    "mean": "kỹ sư"
+  },
+  {
+    "name": "大学_だいがく",
+    "mean": "đại học, trường đại học"
+  },
+  {
+    "name": "病院_びょういん",
+    "mean": "bệnh viện"
+  },
+  {
+    "name": "電気_でんき",
+    "mean": "điện, đèn điện"
+  },
+  {
+    "name": "だれ",
+    "mean": "ai"
+  },
+  {
+    "name": "どなた",
+    "mean": "(cách nói lịch sự của 「だれ」, vị nào)"
+  },
+  {
+    "name": "~歳_~さい",
+    "mean": "- tuổi"
+  },
+  {
+    "name": "何歳_なんさい",
+    "mean": "mấy tuổi, bao nhiêu tuổi"
+  },
+  {
+    "name": "おいくつ",
+    "mean": "(cách nói lịch sự của 「なんさい」)"
+  },
+  {
+    "name": "はい",
+    "mean": "vâng, dạ"
+  },
+  {
+    "name": "いいえ",
+    "mean": "không"
+  },
+  {
+    "name": "失礼ですが_しつれいですが",
+    "mean": "xin lỗi,..."
+  },
+  {
+    "name": "お名前は?_おなまえは?",
+    "mean": "Tên anh/chị là gì?"
+  },
+  {
+    "name": "初めまして。_はじめまして。",
+    "mean": "Rất hân hạnh được gặp anh/chị (Đây là lời chào với người lần đầu tiên gặp, là câu nói đầu tiên trước khi giới thiệu về mình.)"
+  },
+  {
+    "name": "どうぞよろしく [お願いします]。_どうぞよろしく [おねがいします]。",
+    "mean": "Rất mong được sự giúp đỡ của anh/chị, rất vui được làm quen với anh/chị (Dùng làm câu kết thúc sau khi giới thiệu về mình.)"
+  },
+  {
+    "name": "こちらは〜さんです。",
+    "mean": "Đây là anh/chị/ông/bà ~."
+  },
+  {
+    "name": "~から来ました。_~からきました。",
+    "mean": "(Tôi) đến từ -"
+  },
+  {
+    "name": "アメリカ",
+    "mean": "Mỹ"
+  },
+  {
+    "name": "イギリス",
+    "mean": "Anh"
+  },
+  {
+    "name": "インド",
+    "mean": "Ấn Độ"
+  },
+  {
+    "name": "インドネシア",
+    "mean": "Indonesia"
+  },
+  {
+    "name": "韓国_かんこく",
+    "mean": "Hàn Quốc"
+  },
+  {
+    "name": "タイ",
+    "mean": "Thái Lan"
+  },
+  {
+    "name": "中国_ちゅうごく",
+    "mean": "Trung Quốc"
+  },
+  {
+    "name": "ドイツ",
+    "mean": "Đức"
+  },
+  {
+    "name": "日本_にほん",
+    "mean": "Nhật Bản"
+  },
+  {
+    "name": "フランス",
+    "mean": "Pháp"
+  },
+  {
+    "name": "ブラジル",
+    "mean": "Braxin"
+  },
+  {
+    "name": "さくら大学/富士大学_さくらだいがく/ふじだいがく",
+    "mean": "tên các trường đại học (giả tưởng)"
+  },
+  {
+    "name": "IMC/パワー電気/ブラジルエアー_IMC/パワーでんき/ブラジルエアー",
+    "mean": "tên các công ty (giả tưởng)"
+  },
+  {
+    "name": "AKC",
+    "mean": "tên một tổ chức (giả tưởng)"
+  },
+  {
+    "name": "神戸病院_こうべびょういん",
+    "mean": "tên một bệnh viện (giả tưởng)"
+  }
+]
