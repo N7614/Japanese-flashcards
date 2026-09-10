@@ -1,0 +1,138 @@
+[
+  {
+    "name": "聞きます [先生に~]_ききます [せんせいに~]",
+    "mean": "hỏi [giáo viên]"
+  },
+  {
+    "name": "回します_まわします",
+    "mean": "vặn (núm)"
+  },
+  {
+    "name": "引きます_ひきます",
+    "mean": "kéo"
+  },
+  {
+    "name": "変えます_かえます",
+    "mean": "đổi"
+  },
+  {
+    "name": "触ります [ドアに~]_さわります [ドアに~]",
+    "mean": "sờ, chạm vào [cửa]"
+  },
+  {
+    "name": "出ます [お釣りが~]_でます [おつりが~]",
+    "mean": "ra, đi ra [tiền thừa ~]"
+  },
+  {
+    "name": "動きます [時計が~]_うごきます [とけいが~]",
+    "mean": "chuyển động, chạy [đồng hồ ~]"
+  },
+  {
+    "name": "歩きます [道を~]_あるきます [みちを~]",
+    "mean": "đi bộ [trên đường]"
+  },
+  {
+    "name": "渡ります [橋を~]_わたります [はしを~]",
+    "mean": "qua, đi qua [cầu]"
+  },
+  {
+    "name": "気をつけます [車に~]_きをつけます [くるまに~]",
+    "mean": "chú ý, cẩn thận [với ô-tô]"
+  },
+  {
+    "name": "引っ越しします_ひっこしします",
+    "mean": "chuyển nhà"
+  },
+  {
+    "name": "電気屋_でんきや",
+    "mean": "cửa hàng đồ điện"
+  },
+  {
+    "name": "~屋_~や",
+    "mean": "cửa hàng ~"
+  },
+  {
+    "name": "サイズ",
+    "mean": "cỡ, kích thước"
+  },
+  {
+    "name": "音_おと",
+    "mean": "âm thanh"
+  },
+  {
+    "name": "機械_きかい",
+    "mean": "máy, máy móc"
+  },
+  {
+    "name": "つまみ",
+    "mean": "núm vặn"
+  },
+  {
+    "name": "故障_こしょう",
+    "mean": "hỏng (~します: bị hỏng)"
+  },
+  {
+    "name": "道_みち",
+    "mean": "đường"
+  },
+  {
+    "name": "交差点_こうさてん",
+    "mean": "ngã tư"
+  },
+  {
+    "name": "信号_しんごう",
+    "mean": "đèn tín hiệu"
+  },
+  {
+    "name": "角_かど",
+    "mean": "góc"
+  },
+  {
+    "name": "橋_はし",
+    "mean": "cầu"
+  },
+  {
+    "name": "駐車場_ちゅうしゃじょう",
+    "mean": "bãi đỗ xe"
+  },
+  {
+    "name": "~目_~め",
+    "mean": "thứ ~, số ~ (biểu thị thứ tự)"
+  },
+  {
+    "name": "[お] 正月_[お] しょうがつ",
+    "mean": "Tết (Dương lịch)"
+  },
+  {
+    "name": "ごちそうさまでした。",
+    "mean": "Xin cám ơn anh/chị đã đãi tôi bữa cơm. (câu nói dùng khi ăn xong bữa cơm)"
+  },
+  {
+    "name": "建物_たてもの",
+    "mean": "tòa nhà"
+  },
+  {
+    "name": "外国人登録証_がいこくじんとうろくしょう",
+    "mean": "thẻ đăng ký người nước ngoài, thẻ đăng ký ngoại kiều"
+  },
+  {
+    "name": "聖徳太子_しょうとくたいし",
+    "mean": "Thái tử Shotoku (574-622)"
+  },
+  {
+    "name": "法隆寺_ほうりゅうじ",
+    "mean": "Chùa Horyu-ji (một ngôi chùa ở Nara do Hoàng tử Shotoku xây vào thế kỷ thứ 7)"
+  },
+  {
+    "name": "元気茶_げんきちゃ",
+    "mean": "tên một loại trà (giả tưởng)"
+  },
+  {
+    "name": "本田駅_ほんだえき",
+    "mean": "tên một nhà ga (giả tưởng)"
+  },
+  {
+    "name": "図書館前_としょかんまえ",
+    "mean": "tên một bến xe buýt (giả tưởng)"
+  }
+]

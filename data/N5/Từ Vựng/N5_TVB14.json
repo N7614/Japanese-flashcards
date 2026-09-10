@@ -1,0 +1,166 @@
+[
+  {
+    "name": "つけます",
+    "mean": "bật (điện, máy điều hòa)"
+  },
+  {
+    "name": "消します_けします",
+    "mean": "tắt (điện, máy điều hòa)"
+  },
+  {
+    "name": "開けます_あけます",
+    "mean": "mở (cửa, cửa sổ)"
+  },
+  {
+    "name": "閉めます_しめます",
+    "mean": "đóng (cửa, cửa sổ)"
+  },
+  {
+    "name": "急ぎます_いそぎます",
+    "mean": "vội, gấp"
+  },
+  {
+    "name": "待ちます_まちます",
+    "mean": "đợi, chờ"
+  },
+  {
+    "name": "止めます_とめます",
+    "mean": "dừng (băng cát-xét, ô-tô), đỗ (ô-tô)"
+  },
+  {
+    "name": "曲がります [右へ~]_まがります [みぎへ~]",
+    "mean": "rẽ, quẹo [phải]"
+  },
+  {
+    "name": "持ちます_もちます",
+    "mean": "mang, cầm"
+  },
+  {
+    "name": "取ります_とります",
+    "mean": "lấy (muối)"
+  },
+  {
+    "name": "手伝います_てつだいます",
+    "mean": "giúp (làm việc)"
+  },
+  {
+    "name": "呼びます_よびます",
+    "mean": "gọi (tắc-xi, tên)"
+  },
+  {
+    "name": "話します_はなします",
+    "mean": "nói, nói chuyện"
+  },
+  {
+    "name": "見せます_みせます",
+    "mean": "cho xem, trình"
+  },
+  {
+    "name": "教えます [住所を~]_おしえます [じゅうしょを~]",
+    "mean": "nói, cho biết [địa chỉ]"
+  },
+  {
+    "name": "始めます_はじめます",
+    "mean": "bắt đầu"
+  },
+  {
+    "name": "降ります [雨が~]_ふります [あめが~]",
+    "mean": "rơi [mưa, tuyết ~]"
+  },
+  {
+    "name": "コピーします",
+    "mean": "copy"
+  },
+  {
+    "name": "エアコン",
+    "mean": "máy điều hòa"
+  },
+  {
+    "name": "パスポート",
+    "mean": "hộ chiếu"
+  },
+  {
+    "name": "名前_なまえ",
+    "mean": "tên"
+  },
+  {
+    "name": "住所_じゅうしょ",
+    "mean": "địa chỉ"
+  },
+  {
+    "name": "地図_ちず",
+    "mean": "bản đồ"
+  },
+  {
+    "name": "塩_しお",
+    "mean": "muối"
+  },
+  {
+    "name": "砂糖_さとう",
+    "mean": "đường"
+  },
+  {
+    "name": "読み方_よみかた",
+    "mean": "cách đọc"
+  },
+  {
+    "name": "~方_~かた",
+    "mean": "cách ~"
+  },
+  {
+    "name": "ゆっくり",
+    "mean": "chậm, thong thả, thoải mái"
+  },
+  {
+    "name": "すぐ",
+    "mean": "ngay, lập tức"
+  },
+  {
+    "name": "また",
+    "mean": "lại (~ đến)"
+  },
+  {
+    "name": "あとで",
+    "mean": "sau"
+  },
+  {
+    "name": "もう少し_もうすこし",
+    "mean": "thêm một chút nữa thôi"
+  },
+  {
+    "name": "もう~",
+    "mean": "thêm ~"
+  },
+  {
+    "name": "いいですよ。",
+    "mean": "Được chứ./ Được ạ."
+  },
+  {
+    "name": "さあ",
+    "mean": "thôi,/ nào, (dùng để thúc giục hoặc khuyến khích ai đó làm gì.)"
+  },
+  {
+    "name": "あれ?",
+    "mean": "Ô! (câu cảm thán khi phát hiện hoặc thấy cái gì đó lạ, hoặc bất ngờ)"
+  },
+  {
+    "name": "信号を右へ曲がってください。_しんごうをみぎへまがってください。",
+    "mean": "Anh/Chị rẽ phải ở chỗ đèn tín hiệu."
+  },
+  {
+    "name": "まっすぐ",
+    "mean": "thẳng"
+  },
+  {
+    "name": "これでお願いします。_これでおねがいします。",
+    "mean": "Gửi anh tiền này."
+  },
+  {
+    "name": "お釣り_おつり",
+    "mean": "tiền lẻ"
+  },
+  {
+    "name": "梅田_うめだ",
+    "mean": "tên một địa phương ở Osaka"
+  }
+]

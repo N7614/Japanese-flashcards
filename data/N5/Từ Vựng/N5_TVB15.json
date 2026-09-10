@@ -1,0 +1,114 @@
+[
+  {
+    "name": "立ちます_たちます",
+    "mean": "đứng"
+  },
+  {
+    "name": "座ります_すわります",
+    "mean": "ngồi"
+  },
+  {
+    "name": "使います_つかいます",
+    "mean": "dùng, sử dụng"
+  },
+  {
+    "name": "置きます_おきます",
+    "mean": "đặt, để"
+  },
+  {
+    "name": "作ります、造ります_つくります",
+    "mean": "làm, chế tạo, sản xuất"
+  },
+  {
+    "name": "売ります_うります",
+    "mean": "bán"
+  },
+  {
+    "name": "知ります_しります",
+    "mean": "biết"
+  },
+  {
+    "name": "住みます_すみます",
+    "mean": "sống, ở"
+  },
+  {
+    "name": "研究します_けんきゅうします",
+    "mean": "nghiên cứu"
+  },
+  {
+    "name": "知っています_しっています",
+    "mean": "biết"
+  },
+  {
+    "name": "住んでいます [大阪に~]_すんでいます [おおさかに~]",
+    "mean": "sống [ở Osaka]"
+  },
+  {
+    "name": "資料_しりょう",
+    "mean": "tài liệu, tư liệu"
+  },
+  {
+    "name": "カタログ",
+    "mean": "ca-ta-lô"
+  },
+  {
+    "name": "時刻表_じこくひょう",
+    "mean": "bảng giờ chạy tàu"
+  },
+  {
+    "name": "服_ふく",
+    "mean": "quần áo"
+  },
+  {
+    "name": "製品_せいひん",
+    "mean": "sản phẩm"
+  },
+  {
+    "name": "ソフト",
+    "mean": "phần mềm"
+  },
+  {
+    "name": "専門_せんもん",
+    "mean": "chuyên môn"
+  },
+  {
+    "name": "歯医者_はいしゃ",
+    "mean": "nha sĩ"
+  },
+  {
+    "name": "床屋_とこや",
+    "mean": "hiệu cắt tóc"
+  },
+  {
+    "name": "プレイガイド",
+    "mean": "quầy bán vé (trong nhà hát)"
+  },
+  {
+    "name": "独身_どくしん",
+    "mean": "độc thân"
+  },
+  {
+    "name": "特に_とくに",
+    "mean": "đặc biệt"
+  },
+  {
+    "name": "思いまします_おもいだします",
+    "mean": "nhớ lại, hồi tưởng lại"
+  },
+  {
+    "name": "ご家族_ごかぞく",
+    "mean": "gia đình (dùng cho người khác)"
+  },
+  {
+    "name": "いらっしゃいます",
+    "mean": "thể kính trọng của 「います」"
+  },
+  {
+    "name": "高校_こうこう",
+    "mean": "trường trung học phổ thông"
+  },
+  {
+    "name": "日本橋_にっぽんばし",
+    "mean": "tên một khu phố buôn bán ở Osaka"
+  }
+]

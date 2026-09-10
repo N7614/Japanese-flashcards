@@ -1,0 +1,118 @@
+[
+  {
+    "name": "できます",
+    "mean": "có thể"
+  },
+  {
+    "name": "洗います_あらいます",
+    "mean": "rửa"
+  },
+  {
+    "name": "弾きます_ひきます",
+    "mean": "chơi (nhạc cụ)"
+  },
+  {
+    "name": "歌います_うたいます",
+    "mean": "hát"
+  },
+  {
+    "name": "集めます_あつめます",
+    "mean": "sưu tầm, thu thập"
+  },
+  {
+    "name": "捨てます_すてます",
+    "mean": "vứt, bỏ đi"
+  },
+  {
+    "name": "換えます_かえます",
+    "mean": "đổi"
+  },
+  {
+    "name": "運転します_うんてんします",
+    "mean": "lái"
+  },
+  {
+    "name": "予約します_よやくします",
+    "mean": "đặt chỗ, đặt trước"
+  },
+  {
+    "name": "見学します_けんがくします",
+    "mean": "thăm quan với mục đích học tập"
+  },
+  {
+    "name": "ピアノ",
+    "mean": "đàn piano"
+  },
+  {
+    "name": "~メートル",
+    "mean": "mét"
+  },
+  {
+    "name": "国際~_こくさい~",
+    "mean": "quốc tế ~"
+  },
+  {
+    "name": "現金_げんきん",
+    "mean": "tiền mặt"
+  },
+  {
+    "name": "趣味_しゅみ",
+    "mean": "sở thích, thú vui"
+  },
+  {
+    "name": "日記_にっき",
+    "mean": "nhật ký"
+  },
+  {
+    "name": "[お] 祈り_[お] いのり",
+    "mean": "việc cầu nguyện (~をします: cầu nguyện)"
+  },
+  {
+    "name": "課長_かちょう",
+    "mean": "tổ trưởng"
+  },
+  {
+    "name": "部長_ぶちょう",
+    "mean": "trưởng phòng"
+  },
+  {
+    "name": "社長_しゃちょう",
+    "mean": "giám đốc"
+  },
+  {
+    "name": "動物_どうぶつ",
+    "mean": "động vật"
+  },
+  {
+    "name": "馬_うま",
+    "mean": "ngựa"
+  },
+  {
+    "name": "へえ",
+    "mean": "Thế à! (dùng để biểu thị sự ngạc nhiên hoặc quan tâm)"
+  },
+  {
+    "name": "それはおもしろいですね。",
+    "mean": "Hay thật nhỉ."
+  },
+  {
+    "name": "なかなか",
+    "mean": "khó mà, không dễ, mãi mà (dùng với thể phủ định)"
+  },
+  {
+    "name": "牧場_ぼくじょう",
+    "mean": "trang trại chăn nuôi"
+  },
+  {
+    "name": "本当ですか。_ほんとうですか。",
+    "mean": "Thật không ạ?"
+  },
+  {
+    "name": "ぜひ",
+    "mean": "nhất định, rất"
+  },
+  {
+    "name": "ビートルズ",
+    "mean": "Beatles, một ban nhạc nổi tiếng nước Anh"
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "name": "簡単 [な]_かんたん [な]",
+    "mean": "đơn giản, dễ"
+  },
+  {
+    "name": "近い_ちかい",
+    "mean": "gần"
+  },
+  {
+    "name": "遠い_とおい",
+    "mean": "xa"
+  },
+  {
+    "name": "速い、早い_はやい",
+    "mean": "nhanh, sớm"
+  },
+  {
+    "name": "遅い_おそい",
+    "mean": "chậm, muộn"
+  },
+  {
+    "name": "多い [人が~]_おおい [ひとが~]",
+    "mean": "nhiều [người]"
+  },
+  {
+    "name": "少ない [人が~]_すくない [ひとが~]",
+    "mean": "ít [người]"
+  },
+  {
+    "name": "暖かい、温かい_あたたかい",
+    "mean": "ấm"
+  },
+  {
+    "name": "涼しい_すずしい",
+    "mean": "mát"
+  },
+  {
+    "name": "甘い_あまい",
+    "mean": "ngọt"
+  },
+  {
+    "name": "辛い_からい",
+    "mean": "cay"
+  },
+  {
+    "name": "重い_おもい",
+    "mean": "nặng"
+  },
+  {
+    "name": "軽い_かるい",
+    "mean": "nhẹ"
+  },
+  {
+    "name": "いい [コーヒーが~]",
+    "mean": "thích, chọn, dùng [cà-phê]"
+  },
+  {
+    "name": "季節_きせつ",
+    "mean": "mùa"
+  },
+  {
+    "name": "春_はる",
+    "mean": "mùa xuân"
+  },
+  {
+    "name": "夏_なつ",
+    "mean": "mùa hè"
+  },
+  {
+    "name": "秋_あき",
+    "mean": "mùa thu"
+  },
+  {
+    "name": "冬_ふゆ",
+    "mean": "mùa đông"
+  },
+  {
+    "name": "天気_てんき",
+    "mean": "thời tiết"
+  },
+  {
+    "name": "雨_あめ",
+    "mean": "mưa"
+  },
+  {
+    "name": "雪_ゆき",
+    "mean": "tuyết"
+  },
+  {
+    "name": "曇り_くもり",
+    "mean": "có mây"
+  },
+  {
+    "name": "ホテル",
+    "mean": "khách sạn"
+  },
+  {
+    "name": "空港_くうこう",
+    "mean": "sân bay"
+  },
+  {
+    "name": "海_うみ",
+    "mean": "biển, đại dương"
+  },
+  {
+    "name": "世界_せかい",
+    "mean": "thế giới"
+  },
+  {
+    "name": "パーティー",
+    "mean": "tiệc (~をします: tổ chức tiệc)"
+  },
+  {
+    "name": "[お] 祭り_[お] まつり",
+    "mean": "lễ hội"
+  },
+  {
+    "name": "試験_しけん",
+    "mean": "kỳ thi, bài thi"
+  },
+  {
+    "name": "すき焼き_すきやき",
+    "mean": "Sukiyaki (món thịt bò nấu rau)"
+  },
+  {
+    "name": "刺身_さしみ",
+    "mean": "Sashimi (món gỏi cá sống)"
+  },
+  {
+    "name": "[お] すし",
+    "mean": "Sushi"
+  },
+  {
+    "name": "てんぷら",
+    "mean": "Tempura (món hải sản và rau chiên tẩm bột)"
+  },
+  {
+    "name": "生け花_いけばな",
+    "mean": "nghệ thuật cắm hoa (~をします: cắm hoa)"
+  },
+  {
+    "name": "紅葉_もみじ",
+    "mean": "lá đỏ"
+  },
+  {
+    "name": "どちら",
+    "mean": "cái nào"
+  },
+  {
+    "name": "どちらも",
+    "mean": "cả hai"
+  },
+  {
+    "name": "ずっと",
+    "mean": "(hơn) hẳn (dùng để nhấn mạnh sự khác biệt giữa hai đối tượng)"
+  },
+  {
+    "name": "初めて_はじめて",
+    "mean": "lần đầu tiên"
+  },
+  {
+    "name": "ただいま。",
+    "mean": "Tôi đã về đây. (dùng để nói khi về đến nhà)"
+  },
+  {
+    "name": "お帰りなさい。_おかえりなさい。",
+    "mean": "Anh/Chị đã về đấy à. (dùng để nói với ai đó mới về đến nhà)"
+  },
+  {
+    "name": "すごいですね。",
+    "mean": "Ghê quá nhỉ./ Hay quá nhỉ."
+  },
+  {
+    "name": "でも",
+    "mean": "nhưng"
+  },
+  {
+    "name": "疲れました。_つかれました。",
+    "mean": "Tôi mệt rồi."
+  },
+  {
+    "name": "祇園祭_ぎおんまつり",
+    "mean": "Lễ hội Gi-ôn (lễ hội nổi tiếng nhất ở Kyoto)"
+  },
+  {
+    "name": "ホンコン",
+    "mean": "Hồng Kông (香港)"
+  },
+  {
+    "name": "シンガポール",
+    "mean": "Singapore"
+  },
+  {
+    "name": "毎日屋_まいにちや",
+    "mean": "tên một siêu thị (giả tưởng)"
+  },
+  {
+    "name": "ABCストア",
+    "mean": "tên một siêu thị (giả tưởng)"
+  },
+  {
+    "name": "ジャパン",
+    "mean": "tên một siêu thị (giả tưởng)"
+  }
+]

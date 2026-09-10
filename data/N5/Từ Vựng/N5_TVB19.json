@@ -1,0 +1,126 @@
+[
+  {
+    "name": "登ります [山に~]_のぼります [やまに~]",
+    "mean": "leo [núi]"
+  },
+  {
+    "name": "泊まります [ホテルに~]_とまります [ホテルに~]",
+    "mean": "trọ [ở khách sạn]"
+  },
+  {
+    "name": "掃除します_そうじします",
+    "mean": "dọn vệ sinh"
+  },
+  {
+    "name": "洗濯します_せんたくします",
+    "mean": "giặt"
+  },
+  {
+    "name": "練習します_れんしゅうします",
+    "mean": "luyện tập, thực hành"
+  },
+  {
+    "name": "なります",
+    "mean": "trở thành, trở nên"
+  },
+  {
+    "name": "眠い_ねむい",
+    "mean": "buồn ngủ"
+  },
+  {
+    "name": "強い_つよい",
+    "mean": "mạnh"
+  },
+  {
+    "name": "弱い_よわい",
+    "mean": "yếu"
+  },
+  {
+    "name": "調子がいい_ちょうしがいい",
+    "mean": "trong tình trạng tốt"
+  },
+  {
+    "name": "調子が悪い_ちょうしがわるい",
+    "mean": "trong tình trạng xấu"
+  },
+  {
+    "name": "調子_ちょうし",
+    "mean": "tình trạng, trạng thái"
+  },
+  {
+    "name": "ゴルフ",
+    "mean": "gôn (~をします: chơi gôn)"
+  },
+  {
+    "name": "相撲_すもう",
+    "mean": "vật Sumo"
+  },
+  {
+    "name": "パチンコ",
+    "mean": "trò chơi pachinko (~をします: chơi trò chơi pachinko)"
+  },
+  {
+    "name": "お茶_おちゃ",
+    "mean": "trà đạo"
+  },
+  {
+    "name": "日_ひ",
+    "mean": "ngày"
+  },
+  {
+    "name": "一度_いちど",
+    "mean": "một lần"
+  },
+  {
+    "name": "一度も_いちども",
+    "mean": "chưa lần nào"
+  },
+  {
+    "name": "だんだん",
+    "mean": "dần dần"
+  },
+  {
+    "name": "もうすぐ",
+    "mean": "sắp"
+  },
+  {
+    "name": "おかげさまで",
+    "mean": "cám ơn anh/chị (dùng để bày tỏ sự cám ơn khi nhận được sự giúp đỡ của ai đó)"
+  },
+  {
+    "name": "乾杯_かんぱい",
+    "mean": "Nâng cốc!/ Cạn chén!"
+  },
+  {
+    "name": "実は_じつは",
+    "mean": "thật ra là, sự tình là"
+  },
+  {
+    "name": "ダイエット",
+    "mean": "việc ăn kiêng, chế độ giảm cân (~をします: ăn kiêng)"
+  },
+  {
+    "name": "何回も_なんかいも",
+    "mean": "nhiều lần"
+  },
+  {
+    "name": "しかし",
+    "mean": "nhưng, tuy nhiên"
+  },
+  {
+    "name": "無理 [な]_むり [な]",
+    "mean": "không thể, quá sức"
+  },
+  {
+    "name": "体にいい_からだにいい",
+    "mean": "tốt cho sức khỏe"
+  },
+  {
+    "name": "ケーキ",
+    "mean": "bánh ga-tô, bánh ngọt"
+  },
+  {
+    "name": "葛飾北斎_かつしかほくさい",
+    "mean": "Katsushika Hokusai (1760-1849), một họa sĩ nổi tiếng thời Edo"
+  }
+]

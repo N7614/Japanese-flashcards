@@ -1,0 +1,246 @@
+[
+  {
+    "name": "います [子どもが~]_います [こどもが~]",
+    "mean": "có [con]"
+  },
+  {
+    "name": "います [日本に~]_います [にほんに~]",
+    "mean": "ở [Nhật]"
+  },
+  {
+    "name": "かかります",
+    "mean": "mất, tốn (thời gian, tiền bạc)"
+  },
+  {
+    "name": "休みます [会社を~]_やすみます [かいしゃを~]",
+    "mean": "nghỉ [làm việc]"
+  },
+  {
+    "name": "1つ_ひとつ",
+    "mean": "một cái (dùng để đếm đồ vật)"
+  },
+  {
+    "name": "2つ_ふたつ",
+    "mean": "hai cái"
+  },
+  {
+    "name": "3つ_みっつ",
+    "mean": "ba cái"
+  },
+  {
+    "name": "4つ_よっつ",
+    "mean": "bốn cái"
+  },
+  {
+    "name": "5つ_いつつ",
+    "mean": "năm cái"
+  },
+  {
+    "name": "6つ_むっつ",
+    "mean": "sáu cái"
+  },
+  {
+    "name": "7つ_ななつ",
+    "mean": "bảy cái"
+  },
+  {
+    "name": "8つ_やっつ",
+    "mean": "tám cái"
+  },
+  {
+    "name": "9つ_ここのつ",
+    "mean": "chín cái"
+  },
+  {
+    "name": "10_とお",
+    "mean": "mười cái"
+  },
+  {
+    "name": "いくつ",
+    "mean": "mấy cái, bao nhiêu cái"
+  },
+  {
+    "name": "1人_ひとり",
+    "mean": "một người"
+  },
+  {
+    "name": "2人_ふたり",
+    "mean": "hai người"
+  },
+  {
+    "name": "~人_~にん",
+    "mean": "người"
+  },
+  {
+    "name": "~台_~だい",
+    "mean": "cái (dùng để đếm máy móc, xe cộ v.v.)"
+  },
+  {
+    "name": "~枚_~まい",
+    "mean": "tờ, tấm (dùng để đếm những vật mỏng như tờ giấy, con tem v.v.)"
+  },
+  {
+    "name": "~回_~かい",
+    "mean": "lần"
+  },
+  {
+    "name": "りんご",
+    "mean": "táo"
+  },
+  {
+    "name": "みかん",
+    "mean": "quýt"
+  },
+  {
+    "name": "サンドイッチ",
+    "mean": "bánh san-uých"
+  },
+  {
+    "name": "カレー [ライス]",
+    "mean": "món [cơm] ca-ri"
+  },
+  {
+    "name": "アイスクリーム",
+    "mean": "kem"
+  },
+  {
+    "name": "切手_きって",
+    "mean": "tem"
+  },
+  {
+    "name": "はがき",
+    "mean": "bưu thiếp"
+  },
+  {
+    "name": "封筒_ふうとう",
+    "mean": "phong bì"
+  },
+  {
+    "name": "速達_そくたつ",
+    "mean": "(bưu phẩm) gửi nhanh"
+  },
+  {
+    "name": "書留_かきとめ",
+    "mean": "(bưu phẩm) gửi bảo đảm"
+  },
+  {
+    "name": "エアメール (航空便)_エアメール (こうくうびん)",
+    "mean": "gửi bằng đường hàng không"
+  },
+  {
+    "name": "船便_ふなびん",
+    "mean": "gửi bằng đường biển"
+  },
+  {
+    "name": "両親_りょうしん",
+    "mean": "bố mẹ"
+  },
+  {
+    "name": "兄弟_きょうだい",
+    "mean": "anh chị em"
+  },
+  {
+    "name": "兄_あに",
+    "mean": "anh trai"
+  },
+  {
+    "name": "お兄さん_おにいさん",
+    "mean": "anh trai (dùng cho người khác)"
+  },
+  {
+    "name": "姉_あね",
+    "mean": "chị gái"
+  },
+  {
+    "name": "お姉さん_おねえさん",
+    "mean": "chị gái (dùng cho người khác)"
+  },
+  {
+    "name": "弟_おとうと",
+    "mean": "em trai"
+  },
+  {
+    "name": "弟さん_おとうとさん",
+    "mean": "em trai (dùng cho người khác)"
+  },
+  {
+    "name": "妹_いもうと",
+    "mean": "em gái"
+  },
+  {
+    "name": "妹さん_いもうとさん",
+    "mean": "em gái (dùng cho người khác)"
+  },
+  {
+    "name": "外国_がいこく",
+    "mean": "nước ngoài"
+  },
+  {
+    "name": "~時間_~じかん",
+    "mean": "tiếng"
+  },
+  {
+    "name": "~週間_~しゅうかん",
+    "mean": "tuần"
+  },
+  {
+    "name": "~か月_~かげつ",
+    "mean": "tháng"
+  },
+  {
+    "name": "~年_~ねん",
+    "mean": "năm"
+  },
+  {
+    "name": "~ぐらい",
+    "mean": "khoảng ~"
+  },
+  {
+    "name": "どのくらい",
+    "mean": "bao lâu"
+  },
+  {
+    "name": "全部で_ぜんぶで",
+    "mean": "tổng cộng"
+  },
+  {
+    "name": "みんな",
+    "mean": "tất cả"
+  },
+  {
+    "name": "~だけ",
+    "mean": "chỉ ~"
+  },
+  {
+    "name": "いらっしゃいませ。",
+    "mean": "Xin mời vào./ Xin chào quý khách. (lời chào của người bán hàng đối với khách hàng)"
+  },
+  {
+    "name": "いい [お] 天気ですね。_いい [お] てんきですね。",
+    "mean": "Trời đẹp nhỉ."
+  },
+  {
+    "name": "お出かけですか。_おでかけですか。",
+    "mean": "Anh/Chị đi ra ngoài đấy à?"
+  },
+  {
+    "name": "ちょっと ~まで。",
+    "mean": "Tôi đi ~ một chút."
+  },
+  {
+    "name": "行っていらっしゃい。_いっていらっしゃい。",
+    "mean": "Anh/Chị đi nhé. (nguyên nghĩa: Anh/Chị đi rồi lại về nhé.)"
+  },
+  {
+    "name": "行ってまいります。_いってまいります。",
+    "mean": "Tôi đi đây. (nguyên nghĩa: Tôi đi rồi sẽ về.)"
+  },
+  {
+    "name": "それから",
+    "mean": "sau đó, tiếp nữa"
+  },
+  {
+    "name": "オーストラリア",
+    "mean": "Úc"
+  }
+]

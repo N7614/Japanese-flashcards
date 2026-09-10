@@ -1,0 +1,206 @@
+[
+  {
+    "name": "わかります",
+    "mean": "hiểu, nắm được"
+  },
+  {
+    "name": "あります",
+    "mean": "có (sở hữu)"
+  },
+  {
+    "name": "好き [な]_すき [な]",
+    "mean": "thích"
+  },
+  {
+    "name": "嫌い [な]_きらい [な]",
+    "mean": "ghét, không thích"
+  },
+  {
+    "name": "上手 [な]_じょうず [な]",
+    "mean": "giỏi, khéo"
+  },
+  {
+    "name": "下手 [な]_へた [な]",
+    "mean": "kém"
+  },
+  {
+    "name": "料理_りょうり",
+    "mean": "món ăn, việc nấu ăn"
+  },
+  {
+    "name": "飲み物_のみもの",
+    "mean": "đồ uống"
+  },
+  {
+    "name": "スポーツ",
+    "mean": "thể thao (~をします: chơi thể thao)"
+  },
+  {
+    "name": "野球_やきゅう",
+    "mean": "bóng chày (~をします: chơi bóng chày)"
+  },
+  {
+    "name": "ダンス",
+    "mean": "nhảy, khiêu vũ (~をします: nhảy, khiêu vũ)"
+  },
+  {
+    "name": "音楽_おんがく",
+    "mean": "âm nhạc"
+  },
+  {
+    "name": "歌_うた",
+    "mean": "bài hát"
+  },
+  {
+    "name": "クラシック",
+    "mean": "nhạc cổ điển"
+  },
+  {
+    "name": "ジャズ",
+    "mean": "nhạc jazz"
+  },
+  {
+    "name": "コンサート",
+    "mean": "buổi hòa nhạc"
+  },
+  {
+    "name": "カラオケ",
+    "mean": "karaoke"
+  },
+  {
+    "name": "歌舞伎_かぶき",
+    "mean": "Kabuki (một thể loại ca kịch truyền thống của Nhật)"
+  },
+  {
+    "name": "絵_え",
+    "mean": "tranh, hội họa"
+  },
+  {
+    "name": "字_じ",
+    "mean": "chữ"
+  },
+  {
+    "name": "漢字_かんじ",
+    "mean": "chữ Hán"
+  },
+  {
+    "name": "ひらがな",
+    "mean": "chữ Hiragana"
+  },
+  {
+    "name": "かたかな",
+    "mean": "chữ Katakana"
+  },
+  {
+    "name": "ローマ字_ローマじ",
+    "mean": "chữ La Mã"
+  },
+  {
+    "name": "細かいお金_こまかいおかね",
+    "mean": "tiền lẻ"
+  },
+  {
+    "name": "チケット",
+    "mean": "vé (xem hòa nhạc, xem phim)"
+  },
+  {
+    "name": "時間_じかん",
+    "mean": "thời gian"
+  },
+  {
+    "name": "用事_ようじ",
+    "mean": "việc bận, công chuyện"
+  },
+  {
+    "name": "約束_やくそく",
+    "mean": "cuộc hẹn, lời hứa"
+  },
+  {
+    "name": "ご主人_ごしゅじん",
+    "mean": "chồng (dùng khi nói về chồng người khác)"
+  },
+  {
+    "name": "夫/主人_おっと/しゅじん",
+    "mean": "chồng (dùng khi nói về chồng mình)"
+  },
+  {
+    "name": "奥さん_おくさん",
+    "mean": "vợ (dùng khi nói về vợ người khác)"
+  },
+  {
+    "name": "妻/家内_つま/かない",
+    "mean": "vợ (dùng khi nói về vợ mình)"
+  },
+  {
+    "name": "子ども_こども",
+    "mean": "con cái"
+  },
+  {
+    "name": "よく",
+    "mean": "tốt, rõ (chỉ mức độ)"
+  },
+  {
+    "name": "だいたい",
+    "mean": "đại khái, đại thể"
+  },
+  {
+    "name": "たくさん",
+    "mean": "nhiều"
+  },
+  {
+    "name": "少し_すこし",
+    "mean": "ít, một ít"
+  },
+  {
+    "name": "全然_ぜんぜん",
+    "mean": "hoàn toàn - không"
+  },
+  {
+    "name": "早く、速く_はやく",
+    "mean": "sớm, nhanh"
+  },
+  {
+    "name": "~から",
+    "mean": "vì"
+  },
+  {
+    "name": "どうして",
+    "mean": "tại sao"
+  },
+  {
+    "name": "残念です [ね]。_ざんねんです [ね]。",
+    "mean": "Thật đáng tiếc nhỉ./ Buồn nhỉ."
+  },
+  {
+    "name": "すみません。",
+    "mean": "Xin lỗi."
+  },
+  {
+    "name": "もしもし",
+    "mean": "a-lô"
+  },
+  {
+    "name": "ああ",
+    "mean": "a (cách nói khi đã gặp được đúng người trên điện thoại)"
+  },
+  {
+    "name": "いっしょにいかがですか。",
+    "mean": "Anh/Chị cùng (làm cái gì đó) với chúng tôi có được không?"
+  },
+  {
+    "name": "[~は] ちょっと………………。",
+    "mean": "[~ thì] có lẽ không được rồi. (cách từ chối khéo khi nhận được một lời mời nào đó)"
+  },
+  {
+    "name": "だめですか。",
+    "mean": "Không được à?"
+  },
+  {
+    "name": "また今度お願いします。_またこんどおねがいします。",
+    "mean": "Hẹn anh/chị lần sau vậy. (cách từ chối khéo một lời mời mà không muốn làm phật lòng người đưa ra lời mời)"
+  },
+  {
+    "name": "小沢征爾_おざわせいじ",
+    "mean": "Ozawa Seiji (1935~), một nhạc trưởng nổi tiếng của Nhật"
+  }
+]

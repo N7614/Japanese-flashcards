@@ -1,0 +1,118 @@
+[
+  {
+    "name": "要ります [ビザが~]_いります [ビザが~]",
+    "mean": "cần [thị thực (visa)]"
+  },
+  {
+    "name": "調べます_しらべます",
+    "mean": "tìm hiểu, điều tra, xem"
+  },
+  {
+    "name": "直します_なおします",
+    "mean": "sửa, chữa"
+  },
+  {
+    "name": "修理します_しゅうりします",
+    "mean": "sửa chữa, tu sửa"
+  },
+  {
+    "name": "電話します_でんわします",
+    "mean": "gọi điện thoại"
+  },
+  {
+    "name": "僕_ぼく",
+    "mean": "tớ (cách xưng thân mật của nam giới, cùng nghĩa với 「わたし」)"
+  },
+  {
+    "name": "君_きみ",
+    "mean": "cậu, bạn (cách gọi thân mật dùng cho nam giới, cùng nghĩa với 「あなた」)"
+  },
+  {
+    "name": "~君_~くん",
+    "mean": "anh, cậu (cách gọi thân mật dùng cho nam giới, cùng nghĩa với 「~さん」)"
+  },
+  {
+    "name": "うん",
+    "mean": "ừ (cách nói thân mật của 「はい」)"
+  },
+  {
+    "name": "ううん",
+    "mean": "không (cách nói thân mật của 「いいえ」)"
+  },
+  {
+    "name": "サラリーマン",
+    "mean": "người làm việc cho các công ty"
+  },
+  {
+    "name": "ことば",
+    "mean": "từ, tiếng"
+  },
+  {
+    "name": "物価_ぶっか",
+    "mean": "giá cả, mức giá, vật giá"
+  },
+  {
+    "name": "着物_きもの",
+    "mean": "kimono (trang phục truyền thống của Nhật Bản)"
+  },
+  {
+    "name": "ビザ",
+    "mean": "thị thực, visa"
+  },
+  {
+    "name": "初め_はじめ",
+    "mean": "ban đầu, đầu tiên"
+  },
+  {
+    "name": "終わり_おわり",
+    "mean": "kết thúc"
+  },
+  {
+    "name": "こっち",
+    "mean": "phía này, chỗ này (cách nói thân mật của 「こちら」)"
+  },
+  {
+    "name": "そっち",
+    "mean": "phía đó, chỗ đó (cách nói thân mật của 「そちら」)"
+  },
+  {
+    "name": "あっち",
+    "mean": "phía kia, chỗ kia (cách nói thân mật của 「あちら」)"
+  },
+  {
+    "name": "どっち",
+    "mean": "cái nào, phía nào, đâu (cách nói thân mật của 「どちら」)"
+  },
+  {
+    "name": "この間_このあいだ",
+    "mean": "vừa rồi, hôm nọ"
+  },
+  {
+    "name": "みんなで",
+    "mean": "mọi người cùng"
+  },
+  {
+    "name": "~けど",
+    "mean": "~, nhưng (cách nói thân mật của 「が」)"
+  },
+  {
+    "name": "国へ帰るの?_くにへかえるの?",
+    "mean": "Anh/Chị có về nước không?"
+  },
+  {
+    "name": "どうするの?",
+    "mean": "Anh/Chị tính sao?/ Anh/Chị (sẽ) làm gì?"
+  },
+  {
+    "name": "どうしようかな。",
+    "mean": "Tính sao đây nhỉ?/ Để tôi xem."
+  },
+  {
+    "name": "よかったら",
+    "mean": "nếu anh/chị thích thì"
+  },
+  {
+    "name": "いろいろ",
+    "mean": "nhiều thứ"
+  }
+]

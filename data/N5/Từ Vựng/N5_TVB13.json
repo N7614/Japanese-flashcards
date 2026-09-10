@@ -1,0 +1,170 @@
+[
+  {
+    "name": "遊びます_あそびます",
+    "mean": "chơi"
+  },
+  {
+    "name": "泳ぎます_およぎます",
+    "mean": "bơi"
+  },
+  {
+    "name": "迎えます_むかえます",
+    "mean": "đón"
+  },
+  {
+    "name": "疲れます_つかれます",
+    "mean": "mệt"
+  },
+  {
+    "name": "出します [手紙を~]_だします [てがみを~]",
+    "mean": "gửi [thư]"
+  },
+  {
+    "name": "入ります [喫茶店に~]_はいります [きっさてんに~]",
+    "mean": "vào [quán giải khát]"
+  },
+  {
+    "name": "出ます [喫茶店を~]_でます [きっさてんを~]",
+    "mean": "ra, ra khỏi [quán giải khát]"
+  },
+  {
+    "name": "結婚します_けっこんします",
+    "mean": "kết hôn, lập gia đình, cưới"
+  },
+  {
+    "name": "買い物します_かいものします",
+    "mean": "mua hàng"
+  },
+  {
+    "name": "食事します_しょくじします",
+    "mean": "ăn cơm"
+  },
+  {
+    "name": "散歩します [公園を~]_さんぽします [こうえんを~]",
+    "mean": "đi dạo [ở công viên]"
+  },
+  {
+    "name": "大変 [な]_たいへん [な]",
+    "mean": "vất vả, khó khăn, khổ"
+  },
+  {
+    "name": "欲しい_ほしい",
+    "mean": "muốn có"
+  },
+  {
+    "name": "寂しい_さびしい",
+    "mean": "buồn, cô đơn"
+  },
+  {
+    "name": "広い_ひろい",
+    "mean": "rộng"
+  },
+  {
+    "name": "狭い_せまい",
+    "mean": "chật, hẹp"
+  },
+  {
+    "name": "市役所_しやくしょ",
+    "mean": "văn phòng hành chính quận, thành phố"
+  },
+  {
+    "name": "プール",
+    "mean": "bể bơi"
+  },
+  {
+    "name": "川_かわ",
+    "mean": "sông"
+  },
+  {
+    "name": "経済_けいざい",
+    "mean": "kinh tế"
+  },
+  {
+    "name": "美術_びじゅつ",
+    "mean": "mỹ thuật"
+  },
+  {
+    "name": "釣り_つり",
+    "mean": "việc câu cá (~をします: câu cá)"
+  },
+  {
+    "name": "スキー",
+    "mean": "việc trượt tuyết (~をします: trượt tuyết)"
+  },
+  {
+    "name": "会議_かいぎ",
+    "mean": "họp, cuộc họp (~をします: họp, tổ chức cuộc họp)"
+  },
+  {
+    "name": "登録_とうろく",
+    "mean": "việc đăng ký (~をします: đăng ký)"
+  },
+  {
+    "name": "週末_しゅうまつ",
+    "mean": "cuối tuần"
+  },
+  {
+    "name": "~ごろ",
+    "mean": "khoảng ~ (dùng cho thời gian)"
+  },
+  {
+    "name": "何か_なにか",
+    "mean": "cái gì đó"
+  },
+  {
+    "name": "どこか",
+    "mean": "đâu đó, chỗ nào đó"
+  },
+  {
+    "name": "おなかがすきました。",
+    "mean": "(Tôi) đói rồi."
+  },
+  {
+    "name": "おなかがいっぱいです。",
+    "mean": "(Tôi) no rồi."
+  },
+  {
+    "name": "のどがかわきました。",
+    "mean": "(Tôi) khát."
+  },
+  {
+    "name": "そうですね。",
+    "mean": "Đúng thế. (câu nói khi muốn tỏ thái độ tán thành với người cùng nói chuyện)"
+  },
+  {
+    "name": "そうしましょう。",
+    "mean": "Nhất trí. / Chúng ta thống nhất như thế."
+  },
+  {
+    "name": "ご注文は?_ごちゅうもんは?",
+    "mean": "Anh/Chị dùng món gì ạ? (cách hỏi khách của nhân viên nhà hàng)"
+  },
+  {
+    "name": "定食_ていしょく",
+    "mean": "cơm suất, cơm phần"
+  },
+  {
+    "name": "牛どん_ぎゅうどん",
+    "mean": "món cơm thịt bò"
+  },
+  {
+    "name": "[少々] お待ちください。_[しょうしょう] おまちください。",
+    "mean": "Xin anh/chị vui lòng đợi [một chút]."
+  },
+  {
+    "name": "別々に_べつべつに",
+    "mean": "riêng ra, để riêng"
+  },
+  {
+    "name": "ロシア",
+    "mean": "Nga"
+  },
+  {
+    "name": "つるや",
+    "mean": "tên một nhà hàng (giả tưởng)"
+  },
+  {
+    "name": "おはようテレビ",
+    "mean": "tên một chương trình truyền hình (giả tưởng)"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "name": "くれます",
+    "mean": "cho, tặng (tôi)"
+  },
+  {
+    "name": "連れて行きます_つれていきます",
+    "mean": "dẫn đi"
+  },
+  {
+    "name": "連れて来ます_つれてきます",
+    "mean": "dẫn đến"
+  },
+  {
+    "name": "送ります [人を~]_おくります [ひとを~]",
+    "mean": "đưa đi, đưa đến, tiễn [một ai đó]"
+  },
+  {
+    "name": "紹介します_しょうかいします",
+    "mean": "giới thiệu"
+  },
+  {
+    "name": "案内します_あんないします",
+    "mean": "hướng dẫn, giới thiệu, dẫn đường"
+  },
+  {
+    "name": "説明します_せつめいします",
+    "mean": "giải thích, trình bày"
+  },
+  {
+    "name": "入れます [コーヒーを~]_いれます [コーヒーを~]",
+    "mean": "pha [cà-phê]"
+  },
+  {
+    "name": "おじいさん/おじいちゃん",
+    "mean": "ông nội, ông ngoại, ông"
+  },
+  {
+    "name": "おばあさん/おばあちゃん",
+    "mean": "bà nội, bà ngoại, bà"
+  },
+  {
+    "name": "準備_じゅんび",
+    "mean": "chuẩn bị (~します: chuẩn bị)"
+  },
+  {
+    "name": "意味_いみ",
+    "mean": "ý nghĩa"
+  },
+  {
+    "name": "[お] 菓子_[お] かし",
+    "mean": "bánh kẹo"
+  },
+  {
+    "name": "全部_ぜんぶ",
+    "mean": "toàn bộ, tất cả"
+  },
+  {
+    "name": "自分で_じぶんで",
+    "mean": "tự (mình)"
+  },
+  {
+    "name": "ほかに",
+    "mean": "ngoài ra, bên cạnh đó"
+  },
+  {
+    "name": "ワゴン車_ワゴンしゃ",
+    "mean": "xe ô-tô kiểu wagon (có thùng đóng kín)"
+  },
+  {
+    "name": "[お] 弁当_[お] べんとう",
+    "mean": "cơm hộp"
+  },
+  {
+    "name": "母の日_ははのひ",
+    "mean": "Ngày Mẹ"
+  }
+]

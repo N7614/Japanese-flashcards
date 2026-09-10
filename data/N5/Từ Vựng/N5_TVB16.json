@@ -1,0 +1,218 @@
+[
+  {
+    "name": "乗ります [電車に~]_のります [でんしゃに~]",
+    "mean": "đi, lên [tàu]"
+  },
+  {
+    "name": "降ります [電車を~]_おります [でんしゃを~]",
+    "mean": "xuống [tàu]"
+  },
+  {
+    "name": "乗り換えます_のりかえます",
+    "mean": "chuyển, đổi (tàu)"
+  },
+  {
+    "name": "浴びます [シャワーを~]_あびます [シャワーを~]",
+    "mean": "tắm [vòi hoa sen]"
+  },
+  {
+    "name": "入れます_いれます",
+    "mean": "cho vào, bỏ vào"
+  },
+  {
+    "name": "出します_だします",
+    "mean": "lấy ra, rút (tiền)"
+  },
+  {
+    "name": "入ります [大学に~]_はいります [だいがくに~]",
+    "mean": "vào, nhập học [đại học]"
+  },
+  {
+    "name": "出ます [大学を~]_でます [だいがくを~]",
+    "mean": "ra, tốt nghiệp [đại học]"
+  },
+  {
+    "name": "やめます [会社を~]_やめます [かいしゃを~]",
+    "mean": "bỏ, thôi [việc công ty]"
+  },
+  {
+    "name": "押します_おします",
+    "mean": "bấm, ấn (nút)"
+  },
+  {
+    "name": "若い_わかい",
+    "mean": "trẻ"
+  },
+  {
+    "name": "長い_ながい",
+    "mean": "dài"
+  },
+  {
+    "name": "短い_みじかい",
+    "mean": "ngắn"
+  },
+  {
+    "name": "明るい_あかるい",
+    "mean": "sáng"
+  },
+  {
+    "name": "暗い_くらい",
+    "mean": "tối"
+  },
+  {
+    "name": "背が高い_せがたかい",
+    "mean": "cao (dùng cho người)"
+  },
+  {
+    "name": "頭がいい_あたまがいい",
+    "mean": "thông minh"
+  },
+  {
+    "name": "体_からだ",
+    "mean": "người, cơ thể"
+  },
+  {
+    "name": "頭_あたま",
+    "mean": "đầu"
+  },
+  {
+    "name": "髪_かみ",
+    "mean": "tóc"
+  },
+  {
+    "name": "顔_かお",
+    "mean": "mặt"
+  },
+  {
+    "name": "目_め",
+    "mean": "mắt"
+  },
+  {
+    "name": "耳_みみ",
+    "mean": "tai"
+  },
+  {
+    "name": "口_くち",
+    "mean": "miệng"
+  },
+  {
+    "name": "歯_は",
+    "mean": "răng"
+  },
+  {
+    "name": "おなか",
+    "mean": "bụng"
+  },
+  {
+    "name": "足_あし",
+    "mean": "chân"
+  },
+  {
+    "name": "サービス",
+    "mean": "dịch vụ"
+  },
+  {
+    "name": "ジョギング",
+    "mean": "việc chạy bộ (~をします: chạy bộ)"
+  },
+  {
+    "name": "シャワー",
+    "mean": "vòi hoa sen"
+  },
+  {
+    "name": "緑_みどり",
+    "mean": "màu xanh lá cây"
+  },
+  {
+    "name": "[お] 寺_[お] てら",
+    "mean": "chùa"
+  },
+  {
+    "name": "神社_じんじゃ",
+    "mean": "đền thờ đạo Thần"
+  },
+  {
+    "name": "留学生_りゅうがくせい",
+    "mean": "lưu học sinh, du học sinh"
+  },
+  {
+    "name": "~番_~ばん",
+    "mean": "số ~"
+  },
+  {
+    "name": "どうやって",
+    "mean": "làm thế nào"
+  },
+  {
+    "name": "どの~",
+    "mean": "cái nào (dùng đối với trường hợp từ ba thứ trở lên)"
+  },
+  {
+    "name": "[いいえ、] まだまだです。",
+    "mean": "[Không,] tôi còn kém lắm. (cách nói khiêm nhường khi được ai đó khen)"
+  },
+  {
+    "name": "お引き出しですか。_おひきだしですか。",
+    "mean": "Anh/Chị rút tiền ạ?"
+  },
+  {
+    "name": "まず",
+    "mean": "trước hết, đầu tiên"
+  },
+  {
+    "name": "キャッシュカード",
+    "mean": "thẻ ngân hàng, thẻ ATM"
+  },
+  {
+    "name": "暗証番号_あんしょうばんごう",
+    "mean": "mã số bí mật (mật khẩu)"
+  },
+  {
+    "name": "次に_つぎに",
+    "mean": "tiếp theo"
+  },
+  {
+    "name": "金額_きんがく",
+    "mean": "số tiền, khoản tiền"
+  },
+  {
+    "name": "確認_かくにん",
+    "mean": "sự xác nhận, sự kiểm tra (~します: xác nhận)"
+  },
+  {
+    "name": "ボタン",
+    "mean": "nút"
+  },
+  {
+    "name": "JR",
+    "mean": "Công ty Đường sắt Nhật Bản"
+  },
+  {
+    "name": "アジア",
+    "mean": "châu Á"
+  },
+  {
+    "name": "バンドン",
+    "mean": "Bandung (ở Indonesia)"
+  },
+  {
+    "name": "ベラクルス",
+    "mean": "Veracruz (ở Mexico)"
+  },
+  {
+    "name": "フランケン",
+    "mean": "Franken (ở Đức)"
+  },
+  {
+    "name": "ベトナム",
+    "mean": "Việt Nam"
+  },
+  {
+    "name": "フエ",
+    "mean": "Huế"
+  },
+  {
+    "name": "大学前_だいがくまえ",
+    "mean": "tên một điểm dừng xe buýt (giả tưởng)"
+  }
+]

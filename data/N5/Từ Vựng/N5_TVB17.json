@@ -1,0 +1,154 @@
+[
+  {
+    "name": "覚えます_おぼえます",
+    "mean": "nhớ"
+  },
+  {
+    "name": "忘れます_わすれます",
+    "mean": "quên"
+  },
+  {
+    "name": "なくします",
+    "mean": "mất, đánh mất"
+  },
+  {
+    "name": "出します [レポートを~]_だします [レポートを~]",
+    "mean": "nộp [bản/bài báo cáo]"
+  },
+  {
+    "name": "払います_はらいます",
+    "mean": "trả tiền"
+  },
+  {
+    "name": "返します_かえします",
+    "mean": "trả lại"
+  },
+  {
+    "name": "出かけます_でかけます",
+    "mean": "ra ngoài"
+  },
+  {
+    "name": "脱ぎます_ぬぎます",
+    "mean": "cởi (quần áo, giầy)"
+  },
+  {
+    "name": "持って行きます_もっていきます",
+    "mean": "mang đi, mang theo"
+  },
+  {
+    "name": "持って来ます_もってきます",
+    "mean": "mang đến"
+  },
+  {
+    "name": "心配します_しんぱいします",
+    "mean": "lo lắng"
+  },
+  {
+    "name": "残業します_ざんぎょうします",
+    "mean": "làm thêm, làm quá giờ"
+  },
+  {
+    "name": "出張します_しゅっちょうします",
+    "mean": "đi công tác"
+  },
+  {
+    "name": "飲みます [薬を~]_のみます [くすりを~]",
+    "mean": "uống [thuốc]"
+  },
+  {
+    "name": "入ります [おふろに~]_はいります [おふろに~]",
+    "mean": "tắm bồn [vào bồn tắm]"
+  },
+  {
+    "name": "大切 [な]_たいせつ [な]",
+    "mean": "quan trọng, quý giá"
+  },
+  {
+    "name": "大丈夫 [な]_だいじょうぶ [な]",
+    "mean": "không sao, không có vấn đề gì"
+  },
+  {
+    "name": "危ない_あぶない",
+    "mean": "nguy hiểm"
+  },
+  {
+    "name": "問題_もんだい",
+    "mean": "vấn đề"
+  },
+  {
+    "name": "答え_こたえ",
+    "mean": "câu trả lời"
+  },
+  {
+    "name": "禁煙_きんえん",
+    "mean": "cấm hút thuốc"
+  },
+  {
+    "name": "[健康] 保険証_[けんこう] ほけんしょう",
+    "mean": "thẻ bảo hiểm [y tế]"
+  },
+  {
+    "name": "かぜ",
+    "mean": "cảm, cúm"
+  },
+  {
+    "name": "熱_ねつ",
+    "mean": "sốt"
+  },
+  {
+    "name": "病気_びょうき",
+    "mean": "ốm, bệnh"
+  },
+  {
+    "name": "薬_くすり",
+    "mean": "thuốc"
+  },
+  {
+    "name": "[お] ふろ",
+    "mean": "bồn tắm"
+  },
+  {
+    "name": "上着_うわぎ",
+    "mean": "áo khoác"
+  },
+  {
+    "name": "下着_したぎ",
+    "mean": "quần áo lót"
+  },
+  {
+    "name": "先生_せんせい",
+    "mean": "bác sĩ (cách gọi bác sĩ)"
+  },
+  {
+    "name": "2、3日_2、3にち",
+    "mean": "vài ngày"
+  },
+  {
+    "name": "2、3~",
+    "mean": "vài ~ (\"~\" là hậu tố chỉ cách đếm)"
+  },
+  {
+    "name": "~までに",
+    "mean": "trước ~ (chỉ thời hạn)"
+  },
+  {
+    "name": "ですから",
+    "mean": "vì thế, vì vậy, do đó"
+  },
+  {
+    "name": "どうしましたか。",
+    "mean": "Có vấn đề gì?/ Anh/Chị bị làm sao? (cách bác sĩ hỏi bệnh nhân)"
+  },
+  {
+    "name": "[~が] 痛いです。_[~が] いたいです。",
+    "mean": "Tôi bị đau [~]."
+  },
+  {
+    "name": "のど",
+    "mean": "họng"
+  },
+  {
+    "name": "お大事に。_おだいじに。",
+    "mean": "Anh/Chị nhớ giữ gìn sức khỏe. (câu nói với người bị ốm hoặc bị bệnh)"
+  }
+]
