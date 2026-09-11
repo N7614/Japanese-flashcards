@@ -1,0 +1,162 @@
+[
+  {
+    "name": "基板_きばん",
+    "mean": "Bo mạch điện tử (PCB)"
+  },
+  {
+    "name": "抵抗_ていこう",
+    "mean": "Điện trở"
+  },
+  {
+    "name": "コンデンサ",
+    "mean": "Tụ điện"
+  },
+  {
+    "name": "コイル",
+    "mean": "Cuộn cảm"
+  },
+  {
+    "name": "ダイオード",
+    "mean": "Đi-ốt"
+  },
+  {
+    "name": "トランジスタ",
+    "mean": "Bóng bán dẫn (Transistor)"
+  },
+  {
+    "name": "IC_アイシー",
+    "mean": "Vi mạch / Chíp điện tử (Integrated Circuit)"
+  },
+  {
+    "name": "コネクタ",
+    "mean": "Đầu nối / Jack cắm"
+  },
+  {
+    "name": "アンテナ",
+    "mean": "Ăng-ten"
+  },
+  {
+    "name": "ケーブル",
+    "mean": "Dây cáp (Cáp đồng trục, cáp nguồn,...)"
+  },
+  {
+    "name": "光ファイバー_ひかりファイバー",
+    "mean": "Cáp quang"
+  },
+  {
+    "name": "ルーター",
+    "mean": "Bộ định tuyến (Router)"
+  },
+  {
+    "name": "スイッチ",
+    "mean": "Bộ chuyển mạch (Switch)"
+  },
+  {
+    "name": "基地局_きちきょく",
+    "mean": "Trạm phát sóng / Trạm thu phát gốc (BTS)"
+  },
+  {
+    "name": "送受信_そうじゅしん",
+    "mean": "Thu và phát (Truyền nhận tín hiệu)"
+  },
+  {
+    "name": "信号_しんごう",
+    "mean": "Tín hiệu"
+  },
+  {
+    "name": "周波数_しゅうはすう",
+    "mean": "Tần số"
+  },
+  {
+    "name": "電波_でんぱ",
+    "mean": "Sóng vô tuyến / Sóng điện thoại"
+  },
+  {
+    "name": "ノイズ",
+    "mean": "Nhiễu / Tín hiệu nhiễu"
+  },
+  {
+    "name": "回路図_かいろず",
+    "mean": "Sơ đồ mạch điện"
+  },
+  {
+    "name": "テスター",
+    "mean": "Đồng hồ đo điện vạn năng"
+  },
+  {
+    "name": "オシロスコープ",
+    "mean": "Máy hiện sóng (Oscilloscope)"
+  },
+  {
+    "name": "PLC_ピーエルシー",
+    "mean": "Bộ điều khiển lập trình (Bộ não điều khiển hệ thống máy)"
+  },
+  {
+    "name": "インバータ",
+    "mean": "Biến tần (Điều khiển tốc độ động cơ)"
+  },
+  {
+    "name": "リレー",
+    "mean": "Rơ-le (Thiết bị đóng ngắt trung gian)"
+  },
+  {
+    "name": "マグネットスイッチ",
+    "mean": "Khởi động từ (Contactor)"
+  },
+  {
+    "name": "センサー",
+    "mean": "Cảm biến (Cảm biến quang, cảm biến tiệm cận,...)"
+  },
+  {
+    "name": "モーター",
+    "mean": "Động cơ điện / Mô-tơ"
+  },
+  {
+    "name": "電源_でんげん",
+    "mean": "Nguồn điện / Bộ nguồn"
+  },
+  {
+    "name": "ブレーカー",
+    "mean": "Aptomat / Cầu dao tự động (Thiết bị ngắt mạch bảo vệ)"
+  },
+  {
+    "name": "ヒューズ",
+    "mean": "Cầu chì"
+  },
+  {
+    "name": "端子台_たんしだい",
+    "mean": "Cầu đấu dây / Block đấu nối dây điện"
+  },
+  {
+    "name": "トランス",
+    "mean": "Máy biến áp / Biến thế"
+  },
+  {
+    "name": "バッテリー",
+    "mean": "Ắc-quy / Pin sạc"
+  },
+  {
+    "name": "電圧_でんあつ",
+    "mean": "Điện áp (Vôn - V)"
+  },
+  {
+    "name": "電流_でんりゅう",
+    "mean": "Dòng điện (Ampe - A)"
+  },
+  {
+    "name": "電力_でんりょく",
+    "mean": "Công suất điện (Oat - W)"
+  },
+  {
+    "name": "導通_どうつう",
+    "mean": "Thông mạch (Trạng thái dây dẫn không bị đứt khi đo bằng đồng hồ)"
+  },
+  {
+    "name": "短絡 / ショート_たんらく / ショート",
+    "mean": "Đoản mạch / Chập điện"
+  },
+  {
+    "name": "漏電_ろうでん",
+    "mean": "Rò rỉ điện / Rò điện"
+  }
+]
