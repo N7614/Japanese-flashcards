@@ -1,5 +1,9 @@
 [
   {
+    "name": "電子部品_でんしぶひん",
+    "mean": "Linh kiện điện tử cơ bản"
+  },
+  {
     "name": "基板_きばん",
     "mean": "Bo mạch điện tử (PCB)"
   },
@@ -32,6 +36,10 @@
     "mean": "Đầu nối / Jack cắm"
   },
   {
+    "name": "通信機器・ネットワーク_つうしんきき・ネットワーク",
+    "mean": "Thiết bị và Mạng viễn thông"
+  },
+  {
     "name": "アンテナ",
     "mean": "Ăng-ten"
   },
@@ -58,6 +66,10 @@
   {
     "name": "送受信_そうじゅしん",
     "mean": "Thu và phát (Truyền nhận tín hiệu)"
+  },
+  {
+    "name": "信号・測定_しんごう・そくてい",
+    "mean": "Thuật ngữ tín hiệu và Đo đạc"
   },
   {
     "name": "信号_しんごう",
@@ -88,6 +100,10 @@
     "mean": "Máy hiện sóng (Oscilloscope)"
   },
   {
+    "name": "制御機器_せいぎょきき",
+    "mean": "Thiết bị điều khiển và Tự động hóa"
+  },
+  {
     "name": "PLC_ピーエルシー",
     "mean": "Bộ điều khiển lập trình (Bộ não điều khiển hệ thống máy)"
   },
@@ -112,6 +128,10 @@
     "mean": "Động cơ điện / Mô-tơ"
   },
   {
+    "name": "電源・保護機器_でんげん・ほごきき",
+    "mean": "Thiết bị nguồn và Đóng cắt bảo vệ"
+  },
+  {
     "name": "電源_でんげん",
     "mean": "Nguồn điện / Bộ nguồn"
   },
@@ -134,6 +154,10 @@
   {
     "name": "バッテリー",
     "mean": "Ắc-quy / Pin sạc"
+  },
+  {
+    "name": "電気_でんき",
+    "mean": "Đại lượng và Trạng thái điện (thông số)"
   },
   {
     "name": "電圧_でんあつ",
