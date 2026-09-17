@@ -1,0 +1,230 @@
+[
+  {
+    "name": "参加します [旅行に~]_さんかします [りょこうに~]",
+    "mean": "tham gia [~ đi du lịch]"
+  },
+  {
+    "name": "育てます_そだてます",
+    "mean": "chăm sóc"
+  },
+  {
+    "name": "運びます_はこびます",
+    "mean": "vận chuyển"
+  },
+  {
+    "name": "入院します_にゅういんします",
+    "mean": "nhập viện"
+  },
+  {
+    "name": "退院します_たいいんします",
+    "mean": "ra viện"
+  },
+  {
+    "name": "入れます [電源を~]_いれます [でんげんを~]",
+    "mean": "bật [điện nguồn]"
+  },
+  {
+    "name": "切ります [電源を~]_きります [でんげんを~]",
+    "mean": "tắt [điện nguồn]"
+  },
+  {
+    "name": "掛けます [かぎを~]_かけます [かぎを~]",
+    "mean": "khóa [ổ khóa]"
+  },
+  {
+    "name": "つきます [うそを~]",
+    "mean": "nói dối"
+  },
+  {
+    "name": "気持ちがいい_きもちがいい",
+    "mean": "tâm trạng sảng khoái, tốt"
+  },
+  {
+    "name": "気持ちが悪い_きもちがわるい",
+    "mean": "tâm trạng không tốt"
+  },
+  {
+    "name": "大きな~_おおきな~",
+    "mean": "lớn, to"
+  },
+  {
+    "name": "小さな~_ちいさな~",
+    "mean": "bé, nhỏ"
+  },
+  {
+    "name": "赤ちゃん_あかちゃん",
+    "mean": "em bé"
+  },
+  {
+    "name": "小学校_しょうがっこう",
+    "mean": "trường tiểu học, trường cấp 1"
+  },
+  {
+    "name": "中学校_ちゅうがっこう",
+    "mean": "trường trung học cơ sở, trường cấp 2"
+  },
+  {
+    "name": "駅前_えきまえ",
+    "mean": "trước ga"
+  },
+  {
+    "name": "海岸_かいがん",
+    "mean": "bờ biển"
+  },
+  {
+    "name": "工場_こうじょう",
+    "mean": "nhà máy"
+  },
+  {
+    "name": "村_むら",
+    "mean": "làng"
+  },
+  {
+    "name": "かな",
+    "mean": "chữ Kana"
+  },
+  {
+    "name": "指輪_ゆびわ",
+    "mean": "nhẫn"
+  },
+  {
+    "name": "電源_でんげん",
+    "mean": "điện nguồn"
+  },
+  {
+    "name": "習慣_しゅうかん",
+    "mean": "thói quen, tập quán"
+  },
+  {
+    "name": "健康_けんこう",
+    "mean": "sức khỏe"
+  },
+  {
+    "name": "~製_~せい",
+    "mean": "hàng ~"
+  },
+  {
+    "name": "おととし",
+    "mean": "năm kia"
+  },
+  {
+    "name": "[あ、] いけない。",
+    "mean": "[A,] không được rồi. (dùng khi làm nhầm hay thất bại việc gì đó)"
+  },
+  {
+    "name": "お先に [失礼します]_おさきに [しつれいします]",
+    "mean": "Tôi (xin phép) về trước."
+  },
+  {
+    "name": "原爆ドーム_げんばくドーム",
+    "mean": "nhà vòm tưởng niệm vụ ném bom nguyên tử ở Hiroshima"
+  },
+  {
+    "name": "出雲大社_いずもたいしゃ",
+    "mean": "đền thờ ở thành phố Izumo, tỉnh Shimane"
+  },
+  {
+    "name": "チェンマイ",
+    "mean": "Chiềng Mai (ở Thái Lan)"
+  },
+  {
+    "name": "回覧_かいらん",
+    "mean": "tài liệu thông báo"
+  },
+  {
+    "name": "研究室_けんきゅうしつ",
+    "mean": "phòng nghiên cứu"
+  },
+  {
+    "name": "きちんと",
+    "mean": "ngay ngắn"
+  },
+  {
+    "name": "整理します_せいりします",
+    "mean": "sắp xếp"
+  },
+  {
+    "name": "方法_ほうほう",
+    "mean": "phương pháp"
+  },
+  {
+    "name": "~という",
+    "mean": "có tên gọi là"
+  },
+  {
+    "name": "~冊_~さつ",
+    "mean": "quyển, cuốn (trợ số từ dùng để đếm sách, v.v.)"
+  },
+  {
+    "name": "はんこ",
+    "mean": "con dấu"
+  },
+  {
+    "name": "押します [はんこを~]_おします [はんこを~]",
+    "mean": "đóng [dấu]"
+  },
+  {
+    "name": "双子_ふたご",
+    "mean": "sinh đôi"
+  },
+  {
+    "name": "姉妹_しまい",
+    "mean": "chị em"
+  },
+  {
+    "name": "5年生_5ねんせい",
+    "mean": "năm thứ 5"
+  },
+  {
+    "name": "似ています_にています",
+    "mean": "giống"
+  },
+  {
+    "name": "性格_せいかく",
+    "mean": "tính cách"
+  },
+  {
+    "name": "おとなしい",
+    "mean": "ngoan ngoãn"
+  },
+  {
+    "name": "優しい_やさしい",
+    "mean": "hiền lành"
+  },
+  {
+    "name": "世話をします_せわをします",
+    "mean": "chăm sóc"
+  },
+  {
+    "name": "時間がたちます_じかんがたちます",
+    "mean": "thời gian trôi"
+  },
+  {
+    "name": "大好き [な]_だいすき [な]",
+    "mean": "rất thích"
+  },
+  {
+    "name": "~点_~てん",
+    "mean": "điểm"
+  },
+  {
+    "name": "気が強い_きがつよい",
+    "mean": "tính cách mạnh mẽ"
+  },
+  {
+    "name": "けんかします",
+    "mean": "cãi nhau"
+  },
+  {
+    "name": "不思議 [な]_ふしぎ [な]",
+    "mean": "kỳ lạ"
+  },
+  {
+    "name": "年齢_ねんれい",
+    "mean": "tuổi tác"
+  },
+  {
+    "name": "仕方_しかた",
+    "mean": "cách làm"
+  }
+]
