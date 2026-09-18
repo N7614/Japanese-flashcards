@@ -1,0 +1,86 @@
+[
+  {
+    "name": "機械材料_きかいざいりょう",
+    "mean": "Các loại Vật liệu cơ khí thông dụng"
+  },
+  {
+    "name": "鉄_てつ",
+    "mean": "Sắt"
+  },
+  {
+    "name": "鋼_はがね",
+    "mean": "Thép"
+  },
+  {
+    "name": "アルミ",
+    "mean": "Nhôm"
+  },
+  {
+    "name": "ステンレス / SUS",
+    "mean": "Thép không gỉ (Inox)"
+  },
+  {
+    "name": "真鍮 / ブラス_しんちゅう / ブラス",
+    "mean": "Đồng thau"
+  },
+  {
+    "name": "樹脂 / プラスチック_じゅし / プラスチック",
+    "mean": "Nhựa / Chất dẻo"
+  },
+  {
+    "name": "SS400_エスエスよんひゃく",
+    "mean": "Thép tấm / Thép kết cấu thường (Rất phổ biến)"
+  },
+  {
+    "name": "S45C_エスよんじゅうごシー",
+    "mean": "Thép cacbon chế tạo máy (Thường dùng làm trục, bánh răng)"
+  },
+  {
+    "name": "SUS304_サスさんまるよん",
+    "mean": "Thép không gỉ thông dụng (Inox 304)"
+  },
+  {
+    "name": "板厚_いたあつ",
+    "mean": "Ký hiệu là t: Độ dày tấm vật liệu (Ví dụ: t=3.2 là dày 3.2mm)"
+  },
+  {
+    "name": "溶接_ようせつ",
+    "mean": "Kỹ thuật hàn và Phương pháp hàn (Hàn / Kỹ thuật hàn nói chung)"
+  },
+  {
+    "name": "アーク溶接_アークようせつ",
+    "mean": "Hàn hồ quang (Hàn que)"
+  },
+  {
+    "name": "TIG溶接_ティグようせつ",
+    "mean": "Hàn TIG (Thường dùng cho inox, nhôm)"
+  },
+  {
+    "name": "MIG溶接_ミグようせつ",
+    "mean": "Hàn MIG"
+  },
+  {
+    "name": "スポット溶接_スポットようせつ",
+    "mean": "Hàn điểm / Hàn bấm (Hàn chập)"
+  },
+  {
+    "name": "仮付け_かりづけ",
+    "mean": "Hàn đính / Hàn gá (Hàn tạm để định vị trước khi hàn chính thức)"
+  },
+  {
+    "name": "母材_ぼざい",
+    "mean": "Kim loại nền / Vật liệu cơ bản (Phôi cần hàn)"
+  },
+  {
+    "name": "溶接棒_ようせつぼう",
+    "mean": "Que hàn / Dây hàn"
+  },
+  {
+    "name": "スパッタ",
+    "mean": "Xỉ hàn / Tia lửa hàn bám dính (Cần phải mài sạch sau khi hàn)"
+  },
+  {
+    "name": "ビード",
+    "mean": "Đường hàn / Vân hàn"
+  }
+]
