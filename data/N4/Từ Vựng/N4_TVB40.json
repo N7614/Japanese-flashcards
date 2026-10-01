@@ -1,0 +1,622 @@
+[
+  {
+    "name": "かぞえます",
+    "kanji": "数えます",
+    "mean": "đếm",
+    "word_type": "động từ nhóm 2",
+    "level": "N4",
+    "example_jp": "箱の中のリンゴの数を数えます。",
+    "example_reading": "はこのなかのりんごのかずをかぞえます。",
+    "example_vi": "Tôi đếm số lượng táo ở trong hộp."
+  },
+  {
+    "name": "はかります",
+    "kanji": "測ります、量ります",
+    "mean": "đo, cân",
+    "word_type": "động từ nhóm 1",
+    "level": "N4",
+    "example_jp": "荷物の重さを量ってください。",
+    "example_reading": "にもつのおもさをはかってください。",
+    "example_vi": "Xin hãy cân trọng lượng của hành lý."
+  },
+  {
+    "name": "たしかめます",
+    "kanji": "確かめます",
+    "mean": "xác nhận",
+    "word_type": "động từ nhóm 2",
+    "level": "N4",
+    "example_jp": "書類に間違いがないかどうか確かめます。",
+    "example_reading": "しょるいにまちがいがないかどうかたしかめます。",
+    "example_vi": "Tôi xác nhận xem trong tài liệu có sai sót hay không."
+  },
+  {
+    "name": "あいます",
+    "kanji": "合います",
+    "mean": "vừa [cỡ ~]",
+    "word_type": "động từ nhóm 1",
+    "level": "N4",
+    "example_jp": "この靴のサイズがぴったり合います。",
+    "example_reading": "このくつのサイズがぴったりあいます。",
+    "example_vi": "Kích cỡ của đôi giày này vừa khít."
+  },
+  {
+    "name": "しゅっぱつします",
+    "kanji": "出発します",
+    "mean": "xuất phát",
+    "word_type": "động từ nhóm 3",
+    "level": "N4",
+    "example_jp": "明日の朝8時に駅を出発します。",
+    "example_reading": "あしたのあさはちじにえきをしゅっぱつします。",
+    "example_vi": "Sáng mai lúc 8 giờ chúng tôi sẽ xuất phát từ nhà ga."
+  },
+  {
+    "name": "とうちゃくします",
+    "kanji": "到着します",
+    "mean": "đến, tới nơi",
+    "word_type": "động từ nhóm 3",
+    "level": "N4",
+    "example_jp": "飛行機は何時に空港へ到着しますか。",
+    "example_reading": "ひこうきはなんにくうこうへとうちゃくしますか。",
+    "example_vi": "Máy bay sẽ đến sân bay vào lúc mấy giờ?"
+  },
+  {
+    "name": "よいます",
+    "kanji": "酔います",
+    "mean": "say rượu, say xe",
+    "word_type": "động từ nhóm 1",
+    "level": "N4",
+    "example_jp": "お酒を飲みすぎて酔ってしまいました。",
+    "example_reading": "おさけをのみすぎてよってしまいました。",
+    "example_vi": "Tôi uống nhiều rượu quá nên đã say mất rồi."
+  },
+  {
+    "name": "うまくいきます",
+    "kanji": "上手く行きます",
+    "mean": "thuận lợi",
+    "word_type": "cụm động từ",
+    "level": "N4",
+    "example_jp": "新しいプロジェクトがうまくいきますように。",
+    "example_reading": "あたらしいプロジェクトがうまくいきますように。",
+    "example_vi": "Mong rằng dự án mới sẽ diễn ra thuận lợi."
+  },
+  {
+    "name": "でます",
+    "kanji": "出ます",
+    "mean": "có [nội dung câu hỏi thi], xuất hiện",
+    "word_type": "động từ nhóm 2",
+    "level": "N4",
+    "example_jp": "明日のテストに難しい問題が出ます。",
+    "example_reading": "あしたのテストにむずかしいもんだいがでます。",
+    "example_vi": "Bài kiểm tra ngày mai sẽ ra câu hỏi khó."
+  },
+  {
+    "name": "そうだんします",
+    "kanji": "相談します",
+    "mean": "thảo luận, bàn bạc",
+    "word_type": "động từ nhóm 3",
+    "level": "N4",
+    "example_jp": "進路について先生に相談します。",
+    "example_reading": "しんろについてせんせいにそうだんします。",
+    "example_vi": "Tôi trao đổi với giáo viên về định hướng tương lai."
+  },
+  {
+    "name": "ひつよう",
+    "kanji": "必要",
+    "mean": "cần thiết",
+    "word_type": "tính từ đuôi na",
+    "level": "N4",
+    "example_jp": "日本へ旅行するにはパスポートが必要です。",
+    "example_reading": "にほんへりょこうするにはパスポートがひつようです。",
+    "example_vi": "Để đi du lịch Nhật Bản thì hộ chiếu là cần thiết."
+  },
+  {
+    "name": "てんきよほう",
+    "kanji": "天気予報",
+    "mean": "dự báo thời tiết",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "出かける前に天気予報を確認しました。",
+    "example_reading": "でかけるまにてんきよほうをかくにんしました。",
+    "example_vi": "Tôi đã kiểm tra dự báo thời tiết trước khi ra ngoài."
+  },
+  {
+    "name": "ぼうねんかい",
+    "kanji": "忘年会",
+    "mean": "tiệc cuối năm, tiệc tất niên",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "会社の忘年会に参加します。",
+    "example_reading": "かいしゃのぼうねんかいにさんかします。",
+    "example_vi": "Tôi tham gia bữa tiệc tất niên của công ty."
+  },
+  {
+    "name": "しんねんかい",
+    "kanji": "新年会",
+    "mean": "tiệc đầu năm",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "友達と新年会を開く予定です。",
+    "example_reading": "ともだちとしんねんかいをひらくよていです。",
+    "example_vi": "Tôi dự định tổ chức tiệc tân niên cùng bạn bè."
+  },
+  {
+    "name": "にじかい",
+    "kanji": "二次会",
+    "mean": "tăng hai, hiệp hai",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "一次会の後で二次会に行きました。",
+    "example_reading": "いちじかいのあとでにじかいにいきました。",
+    "example_vi": "Sau bữa tiệc đầu thì chúng tôi đã đi tăng hai."
+  },
+  {
+    "name": "はっぴょうかい",
+    "kanji": "発表会",
+    "mean": "buổi phát biểu, buổi biểu diễn báo cáo",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "ピアノの発表会で上手に弾けました。",
+    "example_reading": "ピアノのはっぴょうかいでじょうずにひけました。",
+    "example_vi": "Tôi đã biểu diễn đàn piano rất tốt tại buổi báo cáo."
+  },
+  {
+    "name": "たいかい",
+    "kanji": "大会",
+    "mean": "hội thi, cuộc thi, đại hội",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "スピーチ大会で優勝しました。",
+    "example_reading": "スピーチたいかいでゆうしょうしました。",
+    "example_vi": "Tôi đã đoạt giải nhất trong cuộc thi hùng biện."
+  },
+  {
+    "name": "マラソン",
+    "kanji": "",
+    "mean": "ma-ra-tông",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "毎朝マラソンの練習をしています。",
+    "example_reading": "まいあさマラソンのれんしゅうをしています。",
+    "example_vi": "Tôi luyện tập chạy ma-ra-tông mỗi sáng."
+  },
+  {
+    "name": "コンテスト",
+    "kanji": "",
+    "mean": "cuộc thi",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "写真コンテストに応募しました。",
+    "example_reading": "しゃしんコンテストにおうぼしました。",
+    "example_vi": "Tôi đã nộp tác phẩm dự thi cuộc thi nhiếp ảnh."
+  },
+  {
+    "name": "おもて",
+    "kanji": "表",
+    "mean": "mặt phải, mặt trước",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "カードの表に名前を書いてください。",
+    "example_reading": "カードのおもてになまえをかいてください。",
+    "example_vi": "Xin hãy viết tên lên mặt trước của thẻ."
+  },
+  {
+    "name": "うら",
+    "kanji": "裏",
+    "mean": "mặt trái, mặt sau",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "紙の裏にメモを書きました。",
+    "example_reading": "かみのうらにメモをかきました。",
+    "example_vi": "Tôi đã ghi chú vào mặt sau tờ giấy."
+  },
+  {
+    "name": "まちがい",
+    "kanji": "間違い",
+    "mean": "sai sót, lỗi lầm",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "計算に間違いがないか調べます。",
+    "example_reading": "けいさんにまちがいがないかしらべます。",
+    "example_vi": "Tôi kiểm tra xem việc tính toán có sai sót không."
+  },
+  {
+    "name": "きず",
+    "kanji": "傷",
+    "mean": "vết thương, vết trầy xước",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "転んで足に傷ができました。",
+    "example_reading": "ころんであしにきずができました。",
+    "example_vi": "Tôi bị ngã nên chân có vết xước."
+  },
+  {
+    "name": "ズボン",
+    "kanji": "",
+    "mean": "quần",
+    "word_type": "danh từ",
+    "level": "N5",
+    "example_jp": "新しいズボンを買いに行きます。",
+    "example_reading": "あたらしいズボンをかいにいきます。",
+    "example_vi": "Tôi đi mua một chiếc quần mới."
+  },
+  {
+    "name": "としより",
+    "kanji": "お年寄り",
+    "mean": "người già, người cao tuổi",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "電車でお年寄りに席を譲りました。",
+    "example_reading": "でんしゃでおとしよりにせきをゆずりました。",
+    "example_vi": "Tôi đã nhường ghế cho người lớn tuổi trên tàu điện."
+  },
+  {
+    "name": "ながさ",
+    "kanji": "長さ",
+    "mean": "chiều dài",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "この橋の長さを測ってみましょう。",
+    "example_reading": "このはしのながさをはかってみましょう。",
+    "example_vi": "Hãy cùng đo chiều dài của cây cầu này nhé."
+  },
+  {
+    "name": "おもさ",
+    "kanji": "重さ",
+    "mean": "trọng lượng, sức nặng",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "スーツケースの重さは20キロです。",
+    "example_reading": "スーツケースのおもさはにじゅうキロです。",
+    "example_vi": "Trọng lượng của va-li là 20 kg."
+  },
+  {
+    "name": "たかさ",
+    "kanji": "高さ",
+    "mean": "chiều cao, độ cao",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "富士山の高さを知っていますか。",
+    "example_reading": "ふじさんのたかさをしっていますか。",
+    "example_vi": "Bạn có biết chiều cao của núi Phú Sĩ không?"
+  },
+  {
+    "name": "おおきさ",
+    "kanji": "大きさ",
+    "mean": "kích thước, độ lớn",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "机の大きさを測ってから買います。",
+    "example_reading": "つくえのおおきさをはかってからかいます。",
+    "example_vi": "Tôi đo kích thước bàn rồi mới mua."
+  },
+  {
+    "name": "びん",
+    "kanji": "便",
+    "mean": "chuyến bay, chuyến xe",
+    "word_type": "hậu tố / trợ số từ",
+    "level": "N4",
+    "example_jp": "次の便は何時に出発しますか。",
+    "example_reading": "つぎのびんはなんじにしゅっぱつしますか。",
+    "example_vi": "Chuyến bay tiếp theo sẽ khởi hành vào lúc mấy giờ?"
+  },
+  {
+    "name": "こ",
+    "kanji": "個",
+    "mean": "cái, quả, chiếc (đếm vật nhỏ)",
+    "word_type": "hậu tố / trợ số từ",
+    "level": "N4",
+    "example_jp": "リンゴを3個買いました。",
+    "example_reading": "リンゴをさんこかいました。",
+    "example_vi": "Tôi đã mua 3 quả táo."
+  },
+  {
+    "name": "ほん",
+    "kanji": "本",
+    "mean": "cái, cây, chiếc (đếm vật hình thon dài)",
+    "word_type": "hậu tố / trợ số từ",
+    "level": "N5",
+    "example_jp": "ペンを2本持っています。",
+    "example_reading": "ペンをにほんもっています。",
+    "example_vi": "Tôi có 2 cây bút."
+  },
+  {
+    "name": "はい",
+    "kanji": "杯",
+    "mean": "cốc, ly, bát",
+    "word_type": "hậu tố / trợ số từ",
+    "level": "N4",
+    "example_jp": "コーヒーをもう一杯いかがですか。",
+    "example_reading": "コーヒーをもういっぱいごいかがですか。",
+    "example_vi": "Bạn có muốn dùng thêm một cốc cà phê nữa không?"
+  },
+  {
+    "name": "センチ",
+    "kanji": "",
+    "mean": "xăng-ti-mét",
+    "word_type": "danh từ",
+    "level": "N5",
+    "example_jp": "髪を5センチ切りました。",
+    "example_reading": "かみををごセンチきりました。",
+    "example_vi": "Tôi đã cắt tóc ngắn đi 5 cm."
+  },
+  {
+    "name": "ミリ",
+    "kanji": "",
+    "mean": "mi-li-mét",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "あと数ミリで届きそうです。",
+    "example_reading": "あとすうミリでとどきそうです。",
+    "example_vi": "Còn vài mi-li-mét nữa là có vẻ sẽ chạm tới."
+  },
+  {
+    "name": "グラム",
+    "kanji": "",
+    "mean": "gam",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "牛肉を300グラム買いました。",
+    "example_reading": "ぎゅうにくをさんびゃくグラムかいました。",
+    "example_vi": "Tôi đã mua 300 gram thịt bò."
+  },
+  {
+    "name": "いじょう",
+    "kanji": "以上",
+    "mean": "trên ~, từ ~ trở lên",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "18歳以上の人が投票できます。",
+    "example_reading": "じゅうはっさいいじょうのひとがとうひょうできます。",
+    "example_vi": "Người từ 18 tuổi trở lên có thể bỏ phiếu."
+  },
+  {
+    "name": "いか",
+    "kanji": "以下",
+    "mean": "dưới ~, từ ~ trở xuống",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "小学生以下の子供は無料です。",
+    "example_reading": "しょうがくせいいかのこどもはむりょうです。",
+    "example_vi": "Trẻ em từ học sinh tiểu học trở xuống được miễn phí."
+  },
+  {
+    "name": "ながさき",
+    "kanji": "長崎",
+    "mean": "thủ phủ của tỉnh Nagasaki",
+    "word_type": "danh từ riêng",
+    "level": "N4",
+    "example_jp": "来週長崎へ旅行に行く予定です。",
+    "example_reading": "らいしゅうながさきへりょこうにいくよていです。",
+    "example_vi": "Tuần tới tôi có kế hoạch đi du lịch đến Nagasaki."
+  },
+  {
+    "name": "せんだい",
+    "kanji": "仙台",
+    "mean": "thủ phủ của tỉnh Miyagi",
+    "word_type": "danh từ riêng",
+    "level": "N4",
+    "example_jp": "新幹線で仙台まで行きました。",
+    "example_reading": "しんかんせんでせんだいまでいきました。",
+    "example_vi": "Tôi đã đi bằng shinkansen đến Sendai."
+  },
+  {
+    "name": "ジェイエル",
+    "kanji": "JL",
+    "mean": "Hãng hàng không Nhật Bản (Japan Airlines)",
+    "word_type": "danh từ riêng",
+    "level": "N4",
+    "example_jp": "JLの飛行機に乗って成田へ向かいます。",
+    "example_reading": "ジェイエルのひこうきにのってなりたへむかいます。",
+    "example_vi": "Tôi lên máy bay của hãng JL để hướng về Narita."
+  },
+  {
+    "name": "たなばたまつり",
+    "kanji": "七夕祭り",
+    "mean": "Lễ hội Tanabata",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "仙台の七夕祭りはとても有名です。",
+    "example_reading": "せんだいのたなばたまつりはとてもゆうめいです。",
+    "example_vi": "Lễ hội Tanabata ở Sendai rất nổi tiếng."
+  },
+  {
+    "name": "とうしょうぐう",
+    "kanji": "東照宮",
+    "mean": "Đền Toshogu",
+    "word_type": "danh từ riêng",
+    "level": "N4",
+    "example_jp": "日光の東照宮へ観光に行きました。",
+    "example_reading": "にっこうのとうしょうぐうへかんこうにいきました。",
+    "example_vi": "Tôi đã đến đền Toshogu ở Nikko để tham quan."
+  },
+  {
+    "name": "どうでしょうか",
+    "kanji": "",
+    "mean": "Như thế nào ạ? (cách nói lịch sự của どうですか)",
+    "word_type": "cụm từ",
+    "level": "N4",
+    "example_jp": "息子は学校でどうでしょうか。",
+    "example_reading": "むすこはがっこうでどうでしょうか。",
+    "example_vi": "Con trai tôi ở trường thế nào rồi ạ?"
+  },
+  {
+    "name": "テスト",
+    "kanji": "",
+    "mean": "bài kiểm tra",
+    "word_type": "danh từ",
+    "level": "N5",
+    "example_jp": "明日は漢字のテストがあります。",
+    "example_reading": "あしたはかんじのテストがあります。",
+    "example_vi": "Ngày mai có bài kiểm tra chữ Hán."
+  },
+  {
+    "name": "せいせき",
+    "kanji": "成績",
+    "mean": "thành tích, kết quả học tập",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "今学期は成績がとても良かったです。",
+    "example_reading": "こんがっきはせいせきがとてもよかったです。",
+    "example_vi": "Học kỳ này kết quả học tập rất tốt."
+  },
+  {
+    "name": "ところで",
+    "kanji": "",
+    "mean": "nhân tiện, tiện thể",
+    "word_type": "liên từ",
+    "level": "N4",
+    "example_jp": "ところで、お父さんはお元気ですか。",
+    "example_reading": "ところで、おとうさんはおげんきですか。",
+    "example_vi": "Nhân tiện, bố của bạn có khỏe không?"
+  },
+  {
+    "name": "いらっしゃいます",
+    "kanji": "",
+    "mean": "đến (kính ngữ của きます)",
+    "word_type": "động từ nhóm 1 (kính ngữ)",
+    "level": "N4",
+    "example_jp": "先生がこちらにいらっしゃいます。",
+    "example_reading": "せんせいがこちらにいらっしゃいます。",
+    "example_vi": "Thầy giáo đang đến phía này ạ."
+  },
+  {
+    "name": "ようす",
+    "kanji": "様子",
+    "mean": "bộ dạng, tình hình",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "子供たちの様子を見に行きます。",
+    "example_reading": "こどもたちのようすをみにいきます。",
+    "example_vi": "Tôi đi xem tình hình của bọn trẻ."
+  },
+  {
+    "name": "じけん",
+    "kanji": "事件",
+    "mean": "vụ án, biến cố",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "警察が事件の原因を調べています。",
+    "example_reading": "けいさつがじけんのげんいんをしらべています。",
+    "example_vi": "Cảnh sát đang điều tra nguyên nhân vụ án."
+  },
+  {
+    "name": "オートバイ",
+    "kanji": "",
+    "mean": "xe mô-tô phân khối lớn",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "オートバイに乗って海へドライブに行きました。",
+    "example_reading": "オートバイにのってうみへドライブにいきました。",
+    "example_vi": "Tôi đã lái xe mô-tô đi hóng gió ngoài biển."
+  },
+  {
+    "name": "ばくだん",
+    "kanji": "爆弾",
+    "mean": "bom, bom mìn",
+    "word_type": "danh từ",
+    "level": "N3",
+    "example_jp": "危険な爆弾が発見されました。",
+    "example_reading": "きけんなばくだんがはっけんされました。",
+    "example_vi": "Một quả bom nguy hiểm đã được phát hiện."
+  },
+  {
+    "name": "つみます",
+    "kanji": "積みます",
+    "mean": "chất lên, xếp lên",
+    "word_type": "động từ nhóm 1",
+    "level": "N4",
+    "example_jp": "トラックにたくさんの荷物を積みます。",
+    "example_reading": "トラックにたくさんのにもつをつみます。",
+    "example_vi": "Chất thật nhiều đồ đạc lên xe tải."
+  },
+  {
+    "name": "うんてんしゅ",
+    "kanji": "運転手",
+    "mean": "tài xế, người lái xe",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "タクシーの運転手に行き先を告げました。",
+    "example_reading": "タクシーのうんてんしゅにいきさきをつげました。",
+    "example_vi": "Tôi đã nói điểm đến cho tài xế taxi."
+  },
+  {
+    "name": "はなれた",
+    "kanji": "離れた",
+    "mean": "xa, cách xa",
+    "word_type": "liên thể từ / động từ bổ nghĩa danh từ",
+    "level": "N4",
+    "example_jp": "駅から少し離れた場所に住んでいます。",
+    "example_reading": "えきからすこしはなれたばしょにすんでいます。",
+    "example_vi": "Tôi sống ở một nơi cách ga tàu một đoạn."
+  },
+  {
+    "name": "きゅうに",
+    "kanji": "急に",
+    "mean": "đột nhiên, bất thình lình",
+    "word_type": "phó từ",
+    "level": "N4",
+    "example_jp": "空が急に暗くなって雨が降ってきました。",
+    "example_reading": "そらがきゅうにくらくなってあめがふってきました。",
+    "example_vi": "Bầu trời đột nhiên tối sầm lại và trời đổ mưa."
+  },
+  {
+    "name": "うごかします",
+    "kanji": "動かします",
+    "mean": "di chuyển, làm chuyển động",
+    "word_type": "động từ nhóm 1",
+    "level": "N4",
+    "example_jp": "重い机を一人で動かしました。",
+    "example_reading": "おもいつくえをひとりでうごかしました。",
+    "example_vi": "Tôi đã tự mình di chuyển chiếc bàn nặng."
+  },
+  {
+    "name": "いっしょうけんめい",
+    "kanji": "一生懸命",
+    "mean": "chăm chỉ, cố gắng hết sức",
+    "word_type": "phó từ / tính từ đuôi na",
+    "level": "N4",
+    "example_jp": "試験のために一生懸命勉強しています。",
+    "example_reading": "しけんのためにいっしょうけんめいべんきょうしています。",
+    "example_vi": "Tôi đang học hành chăm chỉ hết sức cho kỳ thi."
+  },
+  {
+    "name": "はんにん",
+    "kanji": "犯人",
+    "mean": "tên tội phạm, thủ phạm",
+    "word_type": "danh từ",
+    "level": "N4",
+    "example_jp": "警察が事件の犯人を捕まえました。",
+    "example_reading": "けいさつがじけんのはんにんをつかまえました。",
+    "example_vi": "Cảnh sát đã bắt được thủ phạm của vụ án."
+  },
+  {
+    "name": "おとこ",
+    "kanji": "男",
+    "mean": "người đàn ông",
+    "word_type": "danh từ",
+    "level": "N5",
+    "example_jp": "向こうから見知らぬ男が歩いてきます。",
+    "example_reading": "むこうからみしらぬおとこがあるいてきます。",
+    "example_vi": "Từ phía xa có một người đàn ông lạ mặt đang đi tới."
+  },
+  {
+    "name": "てにいれます",
+    "kanji": "手に入れます",
+    "mean": "có được, mua được, sở hữu",
+    "word_type": "động từ nhóm 2",
+    "level": "N4",
+    "example_jp": "ずっと欲しかった本をやっと手に入れました。",
+    "example_reading": "ずっとほしかったほんをやっとてにいれました。",
+    "example_vi": "Cuối cùng tôi cũng mua được cuốn sách mà mình hằng mong muốn."
+  },
+  {
+    "name": "いまでも",
+    "kanji": "今でも",
+    "mean": "ngay cả bây giờ, đến tận bây giờ",
+    "word_type": "phó từ",
+    "level": "N4",
+    "example_jp": "小学校の時の友達と今でも連絡を取り合っています。",
+    "example_reading": "しょうがっこうのときのともだちといまでもれんらくをとりあっています。",
+    "example_vi": "Đến tận bây giờ tôi vẫn còn giữ liên lạc với người bạn thời tiểu học."
+  }
+]
